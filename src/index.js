@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Provider} from "react-redux"
+import {createStore, applyMiddleware } from "redux"
+import {composeWithDevTools} from "redux-devtools-extension"
+import toyReducer from './reducers/toyReducer'
+import thunk from 'redux-thunk';
 
 ReactDOM.render(
   <React.StrictMode>
