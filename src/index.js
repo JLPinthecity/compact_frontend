@@ -4,12 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux"
-import {createStore, applyMiddleware } from "redux"
+import {createStore, applyMiddleware, combineReducers } from "redux"
 import {composeWithDevTools} from "redux-devtools-extension"
-import itemReducer from './reducers/itemReducer'
+import items from './reducers/items'
 import thunk from 'redux-thunk';
 
-const store = createStore(itemReducer, composeWithDevTools(applyMiddleware(thunk)));
+const reducer = combineReducers({
+  items
+})
+//reducer needs to be an object
+//we take each reducer and pass it into an object here
+
+const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <React.StrictMode>
