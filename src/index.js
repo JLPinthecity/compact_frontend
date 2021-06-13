@@ -9,10 +9,12 @@ import {composeWithDevTools} from "redux-devtools-extension"
 import thunk from 'redux-thunk';
 import items from './reducers/items'
 import currentUser from './reducers/currentUser'
+import loginForm from './reducers/loginForm'
 
 const reducer = combineReducers({
   items,
-  currentUser
+  currentUser,
+  loginForm
 })
 //reducer needs to be an object
 //we take each reducer and pass it into an object here
