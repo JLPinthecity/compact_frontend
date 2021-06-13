@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux"
 import {createStore, applyMiddleware, combineReducers } from "redux"
 import {composeWithDevTools} from "redux-devtools-extension"
-import items from './reducers/items'
 import thunk from 'redux-thunk';
+import items from './reducers/items'
+import currentUser from './reducers/currentUser'
 
 const reducer = combineReducers({
   items
+  currentUser
 })
 //reducer needs to be an object
 //we take each reducer and pass it into an object here
@@ -30,3 +32,16 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
+
+
+
+
+
+
+
+
+
+//any time, you change the state, you can see if it ends up in redux store in dev tools
