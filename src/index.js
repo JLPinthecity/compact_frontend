@@ -6,12 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import {Provider} from "react-redux"
 import {createStore, applyMiddleware } from "redux"
 import {composeWithDevTools} from "redux-devtools-extension"
-import toyReducer from './reducers/toyReducer'
+import itemReducer from './reducers/itemReducer'
 import thunk from 'redux-thunk';
+
+const store = createStore(itemReducer, composeWithDevTools(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
