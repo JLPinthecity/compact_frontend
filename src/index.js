@@ -11,7 +11,7 @@ import items from './reducers/items'
 import currentUser from './reducers/currentUser'
 
 const reducer = combineReducers({
-  items
+  items,
   currentUser
 })
 //reducer needs to be an object
