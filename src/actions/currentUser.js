@@ -1,11 +1,12 @@
 //synchronous action creators
-const url = "http://localhost:3000"
+const url = "http://localhost:3001"
 const loginPath = "api/v1/login"
 
 export const setCurrentUser = (user) => ({type: 'SET_CURRENT_USER', payload: user})
 
 //asynchronous action creators (AKA we need to send fetch to backend)
 export const login = (credentials) => {
+    console.log(credentials)
     return dispatch => {
 
         const configObj = {

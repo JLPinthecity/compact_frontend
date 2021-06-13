@@ -1,8 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-import { updateLoginForm } from "../actions/loginForm.js"
+import { updateLoginForm } from "../actions/loginForm.js";
+import { login } from "../actions/currentUser.js"
 
- const Login = ({ loginForm, updateLoginForm }) => {
+ const Login = ({ loginForm, updateLoginForm, login }) => {
 
     const handleChange = (event) => {
         const newFormData = {
@@ -14,6 +15,7 @@ import { updateLoginForm } from "../actions/loginForm.js"
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        login(loginForm)
         
     }
 
@@ -35,7 +37,7 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps, { updateLoginForm })(Login);
+export default connect(mapStateToProps, { updateLoginForm, login })(Login);
 
 
 //our login state lives in the store, so we'll need to connect to redux
