@@ -7,7 +7,7 @@ const loginForm = (state = initialState, action) => {
 
     switch (action.type) {
         case 'UPDATE_LOGIN_FORM':
-            return 
+            return action.formData
 
         default:
             return state

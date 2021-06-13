@@ -14,7 +14,7 @@ export const login = (credentials) => {
                 "Content-Type": "application/json",
                 "Accepts": "application/json"
             },
-            body: JSON.stringify({email: "defaultuser@gmail.com", password: "defaultuser"})
+            body: JSON.stringify()
         }
 
         return fetch(url + "/" + loginPath, configObj)
