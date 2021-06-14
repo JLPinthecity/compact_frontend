@@ -31,12 +31,16 @@
   width: 70vw;
 }
 
-.nav-links{
+.nav-links, .nav-btn{
   font-family: 'Hammersmith One', sans-serif;
   color: rgb(0, 25, 19);
   text-decoration: none;
 }
 
 .nav-links:hover{
+  color: rgb(255, 218, 0);
+}
+
+.nav-btn:hover{
   color: rgb(255, 218, 0);
 }

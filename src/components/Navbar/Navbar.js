@@ -27,9 +27,13 @@ class Navbar extends React.Component{
                             </li>
                         )
                     })}
-                    
+                     
+                    <li>
+                        { this.props.currentUser ? <Logout/> : <Login/> }
+                    </li>
                 </ul>
-                { this.props.currentUser ? <Logout/> : <Login/> }
+
+               
             </nav>
         )
     }
