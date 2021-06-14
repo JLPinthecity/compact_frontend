@@ -68,17 +68,10 @@ export const logout = () => {
         };
 
         return fetch(url + "/" + logoutPath, configObj)
-        .then(res => res.json())
-        .then(user => {
-            if (user.error){
-                alert(user.error)
-            }else {
-                dispatch(setCurrentUser(user))
-            };
-        })
-        .catch(console.log)
     };
 };
+
+
 
 
 //dispatch is a function that comes from redux
