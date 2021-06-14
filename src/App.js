@@ -6,7 +6,7 @@ import { getCurrentUser } from './actions/currentUser.js'
 class App extends Component{
 
   componentDidMount(){
-  
+    this.props.getCurrentUser()
   }
 
   render(){
@@ -18,4 +18,4 @@ class App extends Component{
   };
 }
 
-export default connect()(App);
+export default connect(null, { getCurrentUser })(App);

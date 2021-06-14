@@ -7,8 +7,10 @@ export const setCurrentUser = (user) => ({type: 'SET_CURRENT_USER', user})
 
 //asynchronous action creators
 export const getCurrentUser = () => {
+    console.log("inside getCurrentUser")
     return dispatch => {
         const configObj = {
+            credentials: "include",
             method: 'GET',
             headers: {
                 "Content-Type": "application/json",
@@ -35,6 +37,7 @@ export const login = (credentials) => {
     return dispatch => {
 
         const configObj = {
+            credentials: "include",
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
