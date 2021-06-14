@@ -8,12 +8,11 @@ class App extends Component{
 
 
   componentDidMount(){
-    console.log("component did mount")
     this.props.getCurrentUser()
   }
 
   render(){
-    console.log(this.props.currentUser)
+    console.log("current user is", this.props.currentUser)
     return (
       this.props.currentUser ? <Logout/> : <Login/>
     )
