@@ -7,6 +7,12 @@
   background-color: rgb(234, 233, 245);
 }
 
+.siteTitle {
+  font-family: 'Viaoda Libre', cursive;
+  color:rgb(14, 39,36);
+  font-size: 50px;
+}
+
 .NavbarItems {
   height: 80 px;
   color: rgb(250, 220, 60);

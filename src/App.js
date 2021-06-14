@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
-import Navbar from './components/Navbar/Navbar.js'
+import NavbarContainer from './containers/NavbarContainer.js'
 import { connect } from 'react-redux'
 import { getCurrentUser } from './actions/currentUser.js'
 
@@ -14,7 +14,8 @@ class App extends Component{
     console.log("current user is", this.props.currentUser)
     return (
       <div>
-        <Navbar />
+        <h1 className="siteTitle">COMPACT</h1>
+        <NavbarContainer />
       </div>
     )
   };
