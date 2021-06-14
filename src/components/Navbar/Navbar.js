@@ -3,7 +3,10 @@ import Login from '../Login.js';
 import Logout from '../Logout.js';
 import { connect } from 'react-redux';
 import { MenuItems } from './MenuItems.js'
-
+import About from '../About.js'
+import {
+    Link
+  } from "react-router-dom";
 
 class Navbar extends React.Component{
     state = {
@@ -23,17 +26,15 @@ class Navbar extends React.Component{
                     {MenuItems.map((item, index) => {
                         return (
                             <li>
-                                <a className={item.cName} href={item.url}>{item.title}</a>
+                                <Link className="nav-links" to={item.url}>{item.title}</Link>
                             </li>
                         )
                     })}
-                     
+                    
                     <li>
-                        { this.props.currentUser ? <Logout/> : <Login/> }
+                        { this.props.currentUser ? <Logout/> : <Link className="nav-links" to="/login">LOGIN</Link> }
                     </li>
                 </ul>
-
-               
             </nav>
         )
     }

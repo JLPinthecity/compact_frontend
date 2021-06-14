@@ -39,6 +39,7 @@
 
 .nav-links:hover{
   color: rgb(255, 218, 0);
+  text-decoration: none;
 }
 
 .nav-btn:hover{

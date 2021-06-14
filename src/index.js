@@ -10,6 +10,12 @@ import thunk from 'redux-thunk';
 import items from './reducers/items'
 import currentUser from './reducers/currentUser'
 import loginForm from './reducers/loginForm'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const reducer = combineReducers({
   items,
@@ -24,7 +30,9 @@ const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

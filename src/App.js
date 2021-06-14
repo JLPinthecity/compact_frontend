@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar.js'
 import { connect } from 'react-redux'
 import { getCurrentUser } from './actions/currentUser.js'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 class App extends Component{
 
