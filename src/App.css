@@ -1,34 +1,18 @@
-.App {
+* {
+  box-sizing: border-box;
   text-align: center;
-  font-family: 'EB Garamond', serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NavbarItems {
+  background-color: rgb(0, 103, 133);
+  height: 80 px;
+  color: rgb(250, 220, 60);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 1.2 rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
