@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import './App.css';
-import NavbarContainer from './containers/NavbarContainer.js'
+import Navbar from './components/Navbar/Navbar.js'
 import { connect } from 'react-redux'
 import { getCurrentUser } from './actions/currentUser.js'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 class App extends Component{
 
@@ -15,7 +16,7 @@ class App extends Component{
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
-        <NavbarContainer />
+        <Navbar />
       </div>
     )
   };

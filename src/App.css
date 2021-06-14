@@ -9,7 +9,7 @@
 
 .siteTitle {
   font-family: 'Viaoda Libre', cursive;
-  color:rgb(14, 39,36);
+  color:rgb(20,92,77);
   font-size: 50px;
 }
 
@@ -33,9 +33,10 @@
 
 .nav-links{
   font-family: 'Hammersmith One', sans-serif;
-  color: rgb(34, 24, 224);
+  color: rgb(0, 25, 19);
+  text-decoration: none;
 }
 
 .nav-links:hover{
-  color: rgb(233, 0, 0);
+  color: rgb(255, 218, 0);
 }

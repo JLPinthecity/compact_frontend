@@ -4,6 +4,7 @@ import Logout from '../Logout.js';
 import { connect } from 'react-redux';
 import { MenuItems } from './MenuItems.js'
 
+
 class Navbar extends React.Component{
     state = {
         clicked: false
@@ -18,15 +19,11 @@ class Navbar extends React.Component{
     render(){
         return (
             <nav className="NavbarItems">
-                <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'} ></i>
-                </div>
-                
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'} >
                     {MenuItems.map((item, index) => {
                         return (
                             <li>
-                            <a className={item.cName} href={item.url}>{item.title}</a>
+                                <a className={item.cName} href={item.url}>{item.title}</a>
                             </li>
                         )
                     })}
@@ -40,8 +37,12 @@ class Navbar extends React.Component{
 
 const mapStateToProps = state => {
     return {
-      currentUser: state.currentUser
+        currentUser: state.currentUser
     }
-  }
-  
+}
+
 export default connect(mapStateToProps)(Navbar)
+
+
+//NEXT STEPS...
+//put logout and login in separate
