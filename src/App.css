@@ -4,10 +4,10 @@
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
+  background-color: rgb(234, 233, 245);
 }
 
 .NavbarItems {
-  background-color: rgb(0, 103, 133);
   height: 80 px;
   color: rgb(250, 220, 60);
   display: flex;
@@ -16,3 +16,20 @@
   font-size: 1.2 rem;
 }
 
+.nav-menu{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 20px;
+  list-style:none;
+  text-align: center;
+  width: 70vw;
+}
+
+.nav-links{
+  font-family: 'Hammersmith One', sans-serif;
+  color: rgb(34, 24, 224);
+}
+
+.nav-links:hover{
+  color: rgb(233, 0, 0);
+}
