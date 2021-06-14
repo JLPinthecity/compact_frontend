@@ -22,6 +22,15 @@ export const getCurrentUser = () => {
         }
 
         return fetch(url + "/" + userPath, configObj)
+        .then(resp => resp.json())
+        .then(user => {
+            if (user.error){
+                alert(user.error)
+            } else {
+                dispatch(setCurrentUser(user))
+            }
+        })
+        .catch(console.log)
     };
 };
 
