@@ -30,16 +30,16 @@ class Navbar extends React.Component{
                             </li>
                         )
                     })}
-                    
+
                     <li>
-                        { this.props.currentUser ? <Logout/> : <Link className="nav-links" to="/login">LOGIN</Link> }
+                        { this.props.currentUser ? <Logout/> : <Login/> }
                     </li>
                 </ul>
             </nav>
         )
     }
 }
-
+{/* <Link className="nav-links" to="/login">LOGIN</Link> */}
 const mapStateToProps = state => {
     return {
         currentUser: state.currentUser
@@ -47,7 +47,3 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps)(Navbar)
-
-
-//NEXT STEPS...
-//put logout and login in separate

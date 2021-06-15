@@ -4,7 +4,7 @@ const userPath = "api/v1/get_current_user"
 const logoutPath = "api/v1/logout"
 
 //synchronous action creators
-export const setCurrentUser = (user) => ({type: 'SET_CURRENT_USER', user})
+export const setCurrentUser = (user) => ({type: 'SET_CURRENT_USER', user })
 
 export const clearCurrentUser = () => ({type: 'CLEAR_CURRENT_USER'})
 
@@ -27,7 +27,7 @@ export const getCurrentUser = () => {
             if (user.error){
                 alert(user.error)
             } else {
-                dispatch(setCurrentUser(user))
+                dispatch(setCurrentUser(user.data))
             }
         })
         .catch(console.log)
@@ -50,11 +50,11 @@ export const login = (credentials) => {
 
         return fetch(url + "/" + loginPath, configObj)
         .then(res => res.json())
-        .then(user => {
-            if (user.error){
-                alert(user.error)
+        .then(res => {
+            if (res.error){
+                alert(res.error)
             }else {
-                dispatch(setCurrentUser(user))
+                dispatch(setCurrentUser(res.data))
             };
         })
         .catch(console.log)
