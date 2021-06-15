@@ -1,5 +1,5 @@
 const items = (state = {items: [], loading: false}, action) => {
-    console.log(action.items)
+    // console.log(action.items)
     switch (action.type) {
         case "LOADING":
             return  {...state, loading: true }

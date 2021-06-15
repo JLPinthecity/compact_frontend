@@ -11,7 +11,7 @@ class App extends Component{
   }
 
   render(){
-    console.log("current user is", this.props.currentUser)
+    // console.log("current user is", this.props.currentUser)
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
