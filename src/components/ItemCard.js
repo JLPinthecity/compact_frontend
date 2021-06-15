@@ -11,17 +11,15 @@ const ItemCard = ({item}) => {
             <div class="product-info">
                 <h3>{item.attributes.name}</h3>
                 <h4>Price: ${item.attributes.price}</h4>
-                <p>Purchased: { item.attributes.purchased ? "no" : "yes"  }</p>
+                <h4>Purchased: { item.attributes.purchased ? "no" : "yes"  }</h4>
                 <h4>Quantity: {item.attributes.quantity}</h4>
                 <h4>Weight: {item.attributes.weight} ounces </h4>
-                
             </div>
         </section>
     )
 }
 
 export default ItemCard
-
 
 // attributes:
 // category: {id: 13, name: "Clothing", created_at: "2021-06-13T22:45:03.436Z", updated_at: "2021-06-13T22:45:03.436Z"}

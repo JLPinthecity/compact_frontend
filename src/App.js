@@ -1,9 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar.js'
-import { connect } from 'react-redux'
-import { getCurrentUser } from './actions/currentUser.js'
-import MainContainer from './containers/MainContainer.js'
+import Navbar from './components/Navbar/Navbar.js';
+import { connect } from 'react-redux';
+import { getCurrentUser } from './actions/currentUser.js';
+import MainContainer from './containers/MainContainer.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 class App extends Component{
   componentDidMount(){
@@ -15,8 +21,10 @@ class App extends Component{
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
+        <Router>
         <Navbar />
         <MainContainer />
+        </Router>
       </div>
     )
   };
