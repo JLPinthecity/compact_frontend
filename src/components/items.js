@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
+import ItemCard from './ItemCard.js'
 
 const Items = () => {
     return (
         <div>
             "ITEMS"
+            <ItemCard />
         </div>
     )
 }
