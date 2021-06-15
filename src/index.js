@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Provider} from "react-redux"
-import {createStore, applyMiddleware, combineReducers } from "redux"
-import {composeWithDevTools} from "redux-devtools-extension"
+import {Provider} from "react-redux";
+import {createStore, applyMiddleware, combineReducers } from "redux";
+import {composeWithDevTools} from "redux-devtools-extension";
 import thunk from 'redux-thunk';
-import items from './reducers/items'
-import currentUser from './reducers/currentUser'
-import loginForm from './reducers/loginForm'
+import items from './reducers/items';
+import currentUser from './reducers/currentUser';
+import loginForm from './reducers/loginForm';
+
 import {
   BrowserRouter as Router,
   Switch,

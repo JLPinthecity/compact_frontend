@@ -1,4 +1,5 @@
 import { clearLoginForm } from './loginForm.js'
+import { getItems } from './items.js'
 
 const url = "http://localhost:3001"
 const loginPath = "api/v1/login"
@@ -30,6 +31,8 @@ export const getCurrentUser = () => {
                 alert(user.error)
             } else {
                 dispatch(setCurrentUser(user.data))
+                dispatch(clearLoginForm())
+                dispatch(getItems())
             }
         })
         .catch(console.log)
@@ -58,6 +61,7 @@ export const login = (credentials) => {
             }else {
                 dispatch(setCurrentUser(res.data))
                 dispatch(clearLoginForm())
+                dispatch(getItems())
             };
         })
         .catch(console.log)
