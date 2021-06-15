@@ -45,3 +45,8 @@
 .nav-btn:hover{
   color: rgb(255, 218, 0);
 }
+
+img {
+  max-width:40%;
+  height:auto;
+}

@@ -2,11 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import ItemCard from './ItemCard.js'
 
-const Items = () => {
+const Items = ({items}) => {
+    // console.log(items.items)
+    const itemCards = items.items.map(item => <ItemCard item={item} key={item.id}/>)
     return (
         <div>
-            "ITEMS"
-            <ItemCard />
+            {itemCards.length > 0 ? itemCards : null}
         </div>
     )
 }
