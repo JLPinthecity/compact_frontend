@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar.js'
 import { connect } from 'react-redux'
 import { getCurrentUser } from './actions/currentUser.js'
+import MainContainer from './containers/MainContainer.js'
 
 class App extends Component{
   componentDidMount(){
@@ -15,6 +16,7 @@ class App extends Component{
       <div>
         <h1 className="siteTitle">COMPACT</h1>
         <Navbar />
+        <MainContainer />
       </div>
     )
   };
