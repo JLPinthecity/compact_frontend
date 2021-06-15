@@ -1,3 +1,5 @@
+import { clearLoginForm } from './loginForm.js'
+
 const url = "http://localhost:3001"
 const loginPath = "api/v1/login"
 const userPath = "api/v1/get_current_user"
@@ -55,6 +57,7 @@ export const login = (credentials) => {
                 alert(res.error)
             }else {
                 dispatch(setCurrentUser(res.data))
+                dispatch(clearLoginForm())
             };
         })
         .catch(console.log)

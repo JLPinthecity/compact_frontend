@@ -9,6 +9,9 @@ const loginForm = (state = initialState, action) => {
         case 'UPDATE_LOGIN_FORM':
             return action.formData
 
+        case 'CLEAR_LOGIN_FORM':
+            return initialState
+
         default:
             return state
     }
@@ -19,3 +22,4 @@ const loginForm = (state = initialState, action) => {
 export default loginForm
 
 //we want to set up current user in state
+//added clear login form bc after logging out, login inputs remained 
