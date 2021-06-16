@@ -3,11 +3,11 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar.js';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/currentUser.js';
-import MainContainer from './containers/MainContainer.js';
-import Login from "./components/Login.js"
-import Logout from "./components/Logout.js"
-import Items from "./components/Items.js"
-import About from "./components/About.js"
+import Login from "./components/Login.js";
+import Logout from "./components/Logout.js";
+import Items from "./components/Items.js";
+import About from "./components/About.js";
+import Signup from "./components/Signup.js";
 import {
   Switch,
   Route,
@@ -26,8 +26,9 @@ class App extends Component{
         <h1 className="siteTitle">COMPACT</h1>
         <Navbar />
         <Route exact path="/login" component={Login}/>
-        <Route exact path="/logout" component={Logout}/>
-        <Route exact path="/items" component={Items}>
+        <Route exact path="/items" component={Items}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/about" component={Signup}/>
       </div>
     )
   };
