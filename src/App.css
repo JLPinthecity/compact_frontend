@@ -7,6 +7,12 @@
   background-color: rgb(234, 233, 245);
 }
 
+.gear-list-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 10fr));
+}
+
 .siteTitle {
   font-family: 'Viaoda Libre', cursive;
   color:rgb(20,92,77);
@@ -47,7 +53,7 @@
 }
 
 img {
-  max-width:40%;
+  max-width:75%;
   height:auto;
 }
 

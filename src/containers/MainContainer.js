@@ -3,7 +3,7 @@ import Items from '../components/Items.js'
 
 const MainContainer = () => {
     return (
-        <div>
+        <div >
             <Items/>
         </div>
     )
