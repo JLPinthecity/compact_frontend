@@ -11,6 +11,11 @@ const ItemForm = () => {
             </label><br></br>
 
             <label>
+                Description or notes:
+                <input type="text" name="notes" />
+            </label><br></br>
+
+            <label>
                 Weight (in ounces):
                 <input type="text" name="weight" />
             </label><br></br>
@@ -38,8 +43,8 @@ const ItemForm = () => {
             <label>
                 Purchased?
             <select >
-            <option value="yes">yes</option>
-            <option value="no" selected>no</option>
+            <option name="purchased" value="yes">yes</option>
+            <option name="purchased" value="no" selected>no</option>
             </select>
             </label><br></br>
             {/* value={this.state.value} */}
@@ -47,8 +52,8 @@ const ItemForm = () => {
             <label>
                Item sent home or worn on person:
             <select>
-            <option value="yes">yes</option>
-            <option value="no" selected>no</option>
+            <option name="sent_home" value="yes">yes</option>
+            <option name="sent_home" value="no" selected>no</option>
             </select>
             </label><br></br>
 

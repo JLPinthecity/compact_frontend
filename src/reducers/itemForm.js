@@ -1,8 +1,13 @@
 const initialState = {
     name: "",
+    notes: "",
     weight: "",
     quantity: "",
     price: "",
+    url: "",
+    image: "", 
+    purchased: "",
+    sent_home: ""
 }
 
 const itemForm = (state = initialState, action) => {
