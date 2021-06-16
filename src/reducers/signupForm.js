@@ -21,4 +21,4 @@ const signupForm = (state = initialState, action) => {
 export default signupForm
 
 //we want to set up current user in state
-//added clear login form bc after logging out, login inputs remained 
+
