@@ -10,6 +10,7 @@ import thunk from 'redux-thunk';
 import items from './reducers/items';
 import currentUser from './reducers/currentUser';
 import loginForm from './reducers/loginForm';
+import signupForm from './reducers/loginForm';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
@@ -17,7 +18,8 @@ import {
 const reducer = combineReducers({
   items,
   currentUser,
-  loginForm
+  loginForm,
+  signupForm
 })
 //reducer needs to be an object
 //we take each reducer and pass it into an object here

@@ -24,6 +24,7 @@ class App extends Component{
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
+        <Signup/>
         <Navbar />
         <Route exact path="/login" component={Login}/>
         <Route exact path="/items" component={Items}/>
