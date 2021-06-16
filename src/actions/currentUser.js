@@ -118,6 +118,7 @@ export const signup = (formData) => {
                 console.log("user sent back from backend is", user.data)
                 dispatch(clearLoginForm())
                 dispatch(getItems())
+                history.push("/")
             };
         })
         .catch(console.log)
