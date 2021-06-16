@@ -1,6 +1,6 @@
 import { clearLoginForm } from './loginForm.js'
+import { clearSignupForm } from './signupForm.js'
 import { getItems } from './items.js'
-import signupForm from '../reducers/signupForm.js'
 
 const url = "http://localhost:3001"
 const loginPath = "api/v1/login"
@@ -33,7 +33,7 @@ export const getCurrentUser = () => {
                 alert(user.error)
             } else {
                 dispatch(setCurrentUser(user.data))
-                dispatch(clearLoginForm())
+                dispatch(clearSignupForm())
                 dispatch(getItems())
             }
         })
