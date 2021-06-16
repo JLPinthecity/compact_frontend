@@ -4,8 +4,11 @@ import Navbar from './components/Navbar/Navbar.js';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/currentUser.js';
 import MainContainer from './containers/MainContainer.js';
+import Login from "./components/Login.js"
+import Logout from "./components/Logout.js"
+import Items from "./components/Items.js"
+import About from "./components/About.js"
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link
@@ -21,10 +24,10 @@ class App extends Component{
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
-        <Router>
         <Navbar />
-        <MainContainer />
-        </Router>
+        <Route exact path="/login" component={Login}/>
+        <Route exact path="/logout" component={Logout}/>
+        <Route exact path="/items" component={Items}>
       </div>
     )
   };
