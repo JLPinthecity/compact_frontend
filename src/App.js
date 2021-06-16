@@ -30,7 +30,7 @@ class App extends Component{
         <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>
         <Route exact path="/items" component={Items}/>
-        <Route exact path="/itemsnew" component={ItemForm}/>
+        <Route exact path="/items/new" component={ItemForm}/>
         <Route history={history} exact path="/signup" component={Signup}/>
         <Route history={history} exact path="/login" component={Login}/>
         <Route exact path="/signin" component={SignupLoginContainer}/>
