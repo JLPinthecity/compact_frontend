@@ -2,8 +2,8 @@ import React from 'react'
 
 const ItemForm = () => {
     return (
-        <div>
-            <form>
+        
+        <form>
             <h1>Add New Item</h1>
             <label>
                 Name:
@@ -53,8 +53,8 @@ const ItemForm = () => {
             </label><br></br>
 
             <input type="submit" value="Submit" />
-            </form>
-        </div>
+        </form>
+      
     )
 }
 
