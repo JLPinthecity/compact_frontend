@@ -10,7 +10,8 @@ import Home from "./components/Home.js";
 import Signup from "./components/Signup.js";
 import SignupLoginContainer from "./containers/SignupLoginContainer.js"
 import {
-  Route
+  Route,
+
 } from "react-router-dom";
 
 class App extends Component{
