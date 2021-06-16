@@ -90,7 +90,7 @@ export const logout = () => {
     };
 };
 
-export const signup = (formData) => {
+export const signup = (formData, history) => {
     console.log(formData)
     return dispatch => {
 

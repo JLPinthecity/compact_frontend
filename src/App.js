@@ -14,7 +14,6 @@ import {
   withRouter,
   Route
 } from "react-router-dom";
-
 class App extends Component{
   componentDidMount(){
     this.props.getCurrentUser()
@@ -30,8 +29,8 @@ class App extends Component{
         <Route exact path="/home" component={Home}/>
         <Route exact path="/about" component={About}/>
         <Route exact path="/items" component={Items}/>
-        <Route  history={history} exact path="/signup" component={Signup}/>
-        <Route  history={history} exact path="/login" component={Login}/>
+        <Route history={history} exact path="/signup" component={Signup}/>
+        <Route history={history} exact path="/login" component={Login}/>
         <Route exact path="/signin" component={SignupLoginContainer}/>
       </div>
     )

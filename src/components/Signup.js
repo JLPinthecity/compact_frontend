@@ -5,6 +5,8 @@ import { signup } from "../actions/currentUser.js"
 
  const Signup = ({ signupForm, updateSignupForm, signup, history }) => {
 
+console.log(history)
+
     const handleChange = (event) => {
         const newSignupFormData = {
             ...signupForm,
