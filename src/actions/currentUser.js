@@ -93,6 +93,10 @@ export const signup = (formData) => {
     console.log(formData)
     return dispatch => {
 
+        const newUser = {
+            user: formData
+        }
+
         const configObj = {
             credentials: "include",
             method: 'POST',
@@ -100,16 +104,17 @@ export const signup = (formData) => {
                 "Content-Type": "application/json",
                 "Accepts": "application/json"
             },
-            body: JSON.stringify(formData)
+            body: JSON.stringify(newUser)
         };
 
         return fetch(url + "/" + signupPath, configObj)
             .then(res => res.json())
-            .then(res => {
-            if (res.error){
-                alert(res.error)
+            .then(user => {
+            if (user.error){
+                alert(user.error)
             }else {
-                dispatch(setCurrentUser(res.data))
+                dispatch(setCurrentUser(user.data))
+                console.log("user sent back from backend is", user.data)
                 dispatch(clearLoginForm())
                 dispatch(getItems())
             };

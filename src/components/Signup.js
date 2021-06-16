@@ -18,7 +18,6 @@ import { signup } from "../actions/currentUser.js"
         signup(signupForm)
     }
 
-
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" name="name" placeholder="name" alt="name" value={signupForm.name} onChange={handleChange}>
