@@ -6,7 +6,9 @@ import { getCurrentUser } from './actions/currentUser.js';
 import Login from "./components/Login.js";
 import Items from "./components/Items.js";
 import About from "./components/About.js";
+import Home from "./components/Home.js";
 import Signup from "./components/Signup.js";
+import SignupLoginContainer from "./containers/SignupLoginContainer.js"
 import {
   Switch,
   Route,
@@ -23,12 +25,12 @@ class App extends Component{
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
-        <Signup/>
         <Navbar />
         <Route exact path="/login" component={Login}/>
         <Route exact path="/items" component={Items}/>
         <Route exact path="/about" component={About}/>
-        <Route exact path="/about" component={Signup}/>
+        <Route exact path="/signup" component={Signup}/>
+        <Route exact path="/home" component={Home}/>
       </div>
     )
   };

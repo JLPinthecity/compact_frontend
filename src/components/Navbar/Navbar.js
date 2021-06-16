@@ -1,9 +1,8 @@
 import React from 'react';
-import Login from '../Login.js';
 import Logout from '../Logout.js';
+import SignupLoginContainer from "../../containers/SignupLoginContainer.js"
 import { connect } from 'react-redux';
 import { MenuItems } from './MenuItems.js'
-import About from '../About.js'
 import {
     Link
   } from "react-router-dom";
@@ -31,8 +30,8 @@ class Navbar extends React.Component{
                         )
                     })}
 
-                    <li>
-                        { this.props.currentUser ? <Logout/> : <Login/> }
+                    <li>              
+                        { this.props.currentUser ? <Logout/> : <SignupLoginContainer/>}
                     </li>
                 </ul>
             </nav>
