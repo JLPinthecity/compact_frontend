@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 import { updateLoginForm } from "../actions/loginForm.js";
 import { login } from "../actions/currentUser.js"
 
- const Login = ({ loginForm, updateLoginForm, login }) => {
+ const Login = ({ loginForm, updateLoginForm, login, history }) => {
      
-
+// console.log(history)
     const handleChange = (event) => {
         const newFormData = {
             ...loginForm,
@@ -16,7 +16,7 @@ import { login } from "../actions/currentUser.js"
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        login(loginForm)
+        login(loginForm, history)
     }
 
     return (

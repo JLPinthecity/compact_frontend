@@ -41,7 +41,7 @@ export const getCurrentUser = () => {
     };
 };
 
-export const login = (credentials) => {
+export const login = (credentials, history) => {
     console.log(credentials)
     return dispatch => {
 
@@ -64,6 +64,7 @@ export const login = (credentials) => {
                 dispatch(setCurrentUser(res.data))
                 dispatch(clearLoginForm())
                 dispatch(getItems())
+                history.push("/")
             };
         })
         .catch(console.log)
