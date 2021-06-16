@@ -8,6 +8,7 @@ import Items from "./components/Items.js";
 import About from "./components/About.js";
 import Home from "./components/Home.js";
 import Signup from "./components/Signup.js";
+import ItemForm from "./components/ItemForm.js";
 import { createBrowserHistory} from 'history';
 import SignupLoginContainer from "./containers/SignupLoginContainer.js"
 import {
@@ -26,9 +27,10 @@ class App extends Component{
       <div>
         <h1 className="siteTitle">COMPACT</h1>
         <Navbar />
-        <Route exact path="/home" component={Home}/>
+        <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>
         <Route exact path="/items" component={Items}/>
+        <Route exact path="/itemsnew" component={ItemForm}/>
         <Route history={history} exact path="/signup" component={Signup}/>
         <Route history={history} exact path="/login" component={Login}/>
         <Route exact path="/signin" component={SignupLoginContainer}/>
