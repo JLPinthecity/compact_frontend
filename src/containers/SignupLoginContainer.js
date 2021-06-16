@@ -1,5 +1,5 @@
 import React from 'react'
-import { withRouter, Link } from 'react-router-dom'
+import { withRouter, Router, Link } from 'react-router-dom'
 
 const SignupLoginContainer = () => {
     return (
