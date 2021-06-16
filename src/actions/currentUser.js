@@ -1,10 +1,12 @@
 import { clearLoginForm } from './loginForm.js'
 import { getItems } from './items.js'
+import signupForm from '../reducers/signupForm.js'
 
 const url = "http://localhost:3001"
 const loginPath = "api/v1/login"
 const userPath = "api/v1/get_current_user"
 const logoutPath = "api/v1/logout"
+const signupPath = "api/v1/signup"
 
 //synchronous action creators
 export const setCurrentUser = (user) => ({type: 'SET_CURRENT_USER', user })
@@ -87,34 +89,39 @@ export const logout = () => {
     };
 };
 
-export const signup = (credentials) => {
-    console.log(credentials)
-    // return dispatch => {
+export const signup = (formData) => {
+    console.log(formData)
+    return dispatch => {
 
-        // const configObj = {
-        //     credentials: "include",
-        //     method: 'GET',
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //         "Accepts": "application/json"
-        //     },
-        //     body: JSON.stringify(credentials)
-        // };
+        const configObj = {
+            credentials: "include",
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                "Accepts": "application/json"
+            },
+            body: JSON.stringify(formData)
+        };
 
-        // return fetch(url + "/" + loginPath, configObj)
-        // .then(res => res.json())
-        // .then(res => {
-        //     if (res.error){
-        //         alert(res.error)
-        //     }else {
-        //         dispatch(setCurrentUser(res.data))
-        //         dispatch(clearLoginForm())
-        //         dispatch(getItems())
-    //         };
-    //     })
-    //     .catch(console.log)
-    // };
+        return fetch(url + "/" + signupPath, configObj)
+            .then(res => res.json())
+            .then(res => {
+            if (res.error){
+                alert(res.error)
+            }else {
+                dispatch(setCurrentUser(res.data))
+                dispatch(clearLoginForm())
+                dispatch(getItems())
+            };
+        })
+        .catch(console.log)
+    };
 };
+
+//when user signs up:
+//1) send user to backend to persist
+//2) set as current user on front end
+//3) clear signup form
 
 
 //dispatch is a function that comes from redux

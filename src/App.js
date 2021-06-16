@@ -4,7 +4,6 @@ import Navbar from './components/Navbar/Navbar.js';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/currentUser.js';
 import Login from "./components/Login.js";
-import Logout from "./components/Logout.js";
 import Items from "./components/Items.js";
 import About from "./components/About.js";
 import Signup from "./components/Signup.js";

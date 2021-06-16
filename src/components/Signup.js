@@ -27,7 +27,7 @@ import { signup } from "../actions/currentUser.js"
             </input>
             <input type="text" name="password" placeholder="password" alt="password" value={signupForm.password} onChange={handleChange}>
             </input>
-            <input type="Submit" value="Sign up"></input>
+            <input type="Submit" value="Sign up" readOnly/>
         </form>
     )
 };
