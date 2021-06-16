@@ -10,10 +10,7 @@ import Home from "./components/Home.js";
 import Signup from "./components/Signup.js";
 import SignupLoginContainer from "./containers/SignupLoginContainer.js"
 import {
-  Switch,
-  Route,
-  Link,
-  withRouter
+  Route
 } from "react-router-dom";
 
 class App extends Component{
@@ -31,6 +28,7 @@ class App extends Component{
         <Route exact path="/items" component={Items}/>
         <Route exact path="/signup" component={Signup}/>
         <Route exact path="/login" component={Login}/>
+        <Route exact path="/signin" component={SignupLoginContainer}/>
       </div>
     )
   };

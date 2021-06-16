@@ -18,7 +18,6 @@ import { login } from "../actions/currentUser.js"
         login(loginForm)
     }
 
-
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" name="email" placeholder="email" alt="email" onChange={handleChange}>

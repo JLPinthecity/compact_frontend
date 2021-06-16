@@ -5,7 +5,7 @@ const ItemCard = ({item}) => {
     return (
         <section className="gear"> 
             <div className="product-image">
-                <img src= {item.attributes.image} />
+                <img alt="hiking gear" src= {item.attributes.image} />
             </div>
             
             <div class="product-info">

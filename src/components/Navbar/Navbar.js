@@ -38,7 +38,7 @@ class Navbar extends React.Component{
         )
     }
 }
-{/* <Link className="nav-links" to="/login">LOGIN</Link> */}
+
 const mapStateToProps = state => {
     return {
         currentUser: state.currentUser

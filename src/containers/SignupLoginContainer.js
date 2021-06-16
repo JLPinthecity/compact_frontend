@@ -1,6 +1,4 @@
 import React from 'react'
-import Signup from '../components/Signup.js'
-import Login from '../components/Login.js'
 import { withRouter, Link } from 'react-router-dom'
 
 const SignupLoginContainer = () => {
@@ -13,3 +11,6 @@ const SignupLoginContainer = () => {
 }
 
 export default withRouter(SignupLoginContainer)
+
+//withRouter supplies router props that enables refresh
+//did anything just change? 
