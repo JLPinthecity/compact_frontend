@@ -16,15 +16,14 @@ import { login } from "../actions/currentUser.js"
     const handleSubmit = (event) => {
         event.preventDefault();
         login(loginForm)
-        
     }
 
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" name="email" placeholder="email" value={loginForm.email} alt="email" onChange={handleChange}>
+            <input type="text" name="email" placeholder="email" alt="email" onChange={handleChange}>
             </input>
-            <input type="text" name="password" placeholder="password" value={loginForm.password} alt="password" onChange={handleChange}>
+            <input type="text" name="password" placeholder="password" alt="password" onChange={handleChange}>
             </input>
             <input type="Submit" value="Login"></input>
         </form>

@@ -1,5 +1,3 @@
-
-
 const initialState = {
     name: "",
     email: "",
@@ -10,7 +8,6 @@ const signupForm = (state = initialState, action) => {
 
     switch (action.type) {
         case 'UPDATE_SIGNUP_FORM':
-            console.log(action.formData)
             return action.formData
 
         case 'CLEAR_SIGNUP_FORM':
@@ -22,3 +19,6 @@ const signupForm = (state = initialState, action) => {
 }
 
 export default signupForm
+
+//we want to set up current user in state
+//added clear login form bc after logging out, login inputs remained 

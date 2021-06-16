@@ -87,7 +87,34 @@ export const logout = () => {
     };
 };
 
+export const signup = (credentials) => {
+    console.log(credentials)
+    // return dispatch => {
 
+        // const configObj = {
+        //     credentials: "include",
+        //     method: 'GET',
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //         "Accepts": "application/json"
+        //     },
+        //     body: JSON.stringify(credentials)
+        // };
+
+        // return fetch(url + "/" + loginPath, configObj)
+        // .then(res => res.json())
+        // .then(res => {
+        //     if (res.error){
+        //         alert(res.error)
+        //     }else {
+        //         dispatch(setCurrentUser(res.data))
+        //         dispatch(clearLoginForm())
+        //         dispatch(getItems())
+    //         };
+    //     })
+    //     .catch(console.log)
+    // };
+};
 
 
 //dispatch is a function that comes from redux

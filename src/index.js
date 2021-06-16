@@ -10,7 +10,7 @@ import thunk from 'redux-thunk';
 import items from './reducers/items';
 import currentUser from './reducers/currentUser';
 import loginForm from './reducers/loginForm';
-import signupForm from './reducers/loginForm';
+import signupForm from './reducers/signupForm';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
