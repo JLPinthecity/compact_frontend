@@ -1,14 +1,15 @@
 import React from 'react'
 import Signup from '../components/Signup.js'
 import Login from '../components/Login.js'
+import { withRouter, Link } from 'react-router-dom'
 
 const SignupLoginContainer = () => {
     return (
         <div>
-            <Signup/>
-            <Login/>
+            <Link to="/signup" className="nav-btn">SIGNUP | </Link>
+            <Link to="/login" className="nav-btn">LOGIN</Link>
         </div>
     )
 }
 
-export default SignupLoginContainer
+export default withRouter(SignupLoginContainer)

@@ -12,7 +12,8 @@ import SignupLoginContainer from "./containers/SignupLoginContainer.js"
 import {
   Switch,
   Route,
-  Link
+  Link,
+  withRouter
 } from "react-router-dom";
 
 class App extends Component{
@@ -21,19 +22,21 @@ class App extends Component{
   }
 
   render(){
-    // console.log("current user is", this.props.currentUser)
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
         <Navbar />
-        <Route exact path="/login" component={Login}/>
-        <Route exact path="/items" component={Items}/>
-        <Route exact path="/about" component={About}/>
-        <Route exact path="/signup" component={Signup}/>
         <Route exact path="/home" component={Home}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/items" component={Items}/>
+        <Route exact path="/signup" component={Signup}/>
+        <Route exact path="/login" component={Login}/>
       </div>
     )
   };
 }
 
-export default connect(null, { getCurrentUser })(App);
+export default (connect(null, { getCurrentUser })(App));
+
+
+// console.log("current user is", this.props.currentUser)
