@@ -3,10 +3,10 @@ const initialState = {
     password: ""
 }
 
-const loginForm = (state = initialState, action) => {
+const signupForm = (state = initialState, action) => {
 
     switch (action.type) {
-        case 'UPDATE_LOGIN_FORM':
+        case 'UPDATE_SIGNUP_FORM':
             return action.formData
 
         case 'CLEAR_LOGIN_FORM':
@@ -17,7 +17,4 @@ const loginForm = (state = initialState, action) => {
     }
 }
 
-export default loginForm
-
-//we want to set up current user in state
-//added clear login form bc after logging out, login inputs remained 
+export default signupForm
