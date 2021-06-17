@@ -13,14 +13,12 @@ const ItemForm = ({categories, updateItemForm, itemForm, history}) => {
     }
 
     const handleChange = (event) => {
-   
         const newItemFormData = {
-            ...itemForm,
+           ...itemForm, 
             [event.target.name]: event.target.value
         }
-        debugger
+        // console.log("newItemFormData is", newItemFormData)
         updateItemForm(newItemFormData)
-        
     }
     
     const handleSubmit = (event) => {
@@ -106,13 +104,14 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        updateItemForm: () => dispatch(updateItemForm())
+        updateItemForm: (formData) => dispatch(updateItemForm(formData))
     }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ItemForm)
 
 //reminder about mapDispatchToProps. What we import is not what we are calling. Yes, we import the action creator here. We don't invoke it directly. We HAVE to tell redux to invoke it (AKA dispatch the action) or else we won't see the values change in the store.
+//another reminder: make to to PASS THE FORMDATA TO THE ACTION!!!
 
 
 

@@ -12,7 +12,7 @@ const initialState = {
 }
 
 const itemForm = (state = initialState, action) => {
-  
+//   console.log("action in itemformreducer is", action)
 
     switch (action.type) {
        

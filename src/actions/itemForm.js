@@ -1,6 +1,6 @@
 //synchronous actions
 export const updateItemForm = (formData) => {
-    console.log(formData)
+    // console.log("from updateitemform", formData)
     return {
         type: 'UPDATE_ITEM_FORM', formData
     }
