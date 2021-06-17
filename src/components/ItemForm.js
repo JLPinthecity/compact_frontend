@@ -1,9 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { updateItemForm } from '../actions/itemForm.js'
-// import { getCategories } from '../actions/categories.js'
 
 const ItemForm = (props) => {
+    // debugger
  // {console.log("inside itemForm categories:", props.categories.categories)} 
     const categoryMapper = () => {
         let {categories} = props.categories
@@ -15,7 +15,12 @@ const ItemForm = (props) => {
     }
 
     const handleChange = (event) => {
-        debugger
+        // debugger
+        const newItemFormData = {
+            ...props.itemForm,
+            [event.target.name]: event.target.value
+        }
+        props.updateItemForm(newItemFormData)
     }
     
     return (
@@ -89,7 +94,8 @@ const ItemForm = (props) => {
 
 const mapStateToProps = state => {
     return {
-        categories: state.categories
+        categories: state.categories,
+        itemForm: state.itemForm
     }
 }
 
@@ -101,9 +107,7 @@ const mapDispatchToProps = (dispatch) => {
 
 export default connect(mapStateToProps, mapDispatchToProps)(ItemForm)
 
-
-
-
+//we import the action creator here, we need to tell redux to invoke it or else we won't see the values change in the store
 
 
 
