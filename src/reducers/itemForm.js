@@ -12,13 +12,15 @@ const initialState = {
 }
 
 const itemForm = (state = initialState, action) => {
-    // console.log(action.payload)
+  
 
     switch (action.type) {
+       
         case 'UPDATE_ITEM_FORM':
+            console.log(action)
             return {
-                ...state, 
-                [action.newItemFormData.name]: action.newItemFormData.value
+                ...state
+                // [action.payload.name]: action.payload.value
             }
 
         case 'CLEAR_ITEM_FORM':

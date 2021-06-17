@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { updateItemForm } from '../actions/itemForm.js'
 
-const ItemForm = ({categories, updateItemForm, itemForm}) => {
+const ItemForm = ({categories, updateItemForm, itemForm, history}) => {
  // {console.log("inside itemForm categories:", props.categories.categories)} 
     const categoryMapper = () => {
         let list = categories.categories.map(category=>{
@@ -13,12 +13,14 @@ const ItemForm = ({categories, updateItemForm, itemForm}) => {
     }
 
     const handleChange = (event) => {
-        // debugger
+   
         const newItemFormData = {
             ...itemForm,
             [event.target.name]: event.target.value
         }
+        debugger
         updateItemForm(newItemFormData)
+        
     }
     
     const handleSubmit = (event) => {

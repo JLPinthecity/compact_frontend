@@ -1,7 +1,8 @@
 //synchronous actions
-export const updateItemForm = (newItemFormData) => {
+export const updateItemForm = (formData) => {
+    console.log(formData)
     return {
-        type: 'UPDATE_ITEM_FORM', payload: newItemFormData
+        type: 'UPDATE_ITEM_FORM', formData
     }
 }
 
