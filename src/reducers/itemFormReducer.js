@@ -17,7 +17,7 @@ const itemForm = (state = initialState, action) => {
     switch (action.type) {
        
         case 'UPDATE_ITEM_FORM':
-            console.log(action)
+            // console.log(action)
             return action.formData
 
         case 'CLEAR_ITEM_FORM':
