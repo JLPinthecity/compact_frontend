@@ -4,7 +4,7 @@ import { getCategories } from '../actions/categories.js'
 import { connect } from 'react-redux'
 
 const ItemForm = (props) => {
-// {console.log("inside itemform categoris:",this.props.categories.categories)} 
+ // {console.log("inside itemform categories:", props.categories.categories)} 
     const categoryMapper = () => {
         let {categories} = props.categories
         let list = categories.map(category=>{
@@ -91,13 +91,13 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        getCategories: () => dispatch(getCategories())
-    }
-}
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         getCategories: () => dispatch(getCategories())
+//     }
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ItemForm)
+export default connect(mapStateToProps)(ItemForm)
 
 
 
