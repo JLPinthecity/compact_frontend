@@ -5,13 +5,21 @@ import { connect } from 'react-redux'
 
 class ItemForm extends React.Component{
 
-    componentDidMount(){
-        this.props.getCategories()
-    }
+categoryMapper = () => {
+    let {categories} = this.props.categories
+    let list = categories.map(category=>{
+        return <option name={category.name} value={category.id}>{category.name}</option>
+    })
+    console.log(list)
+    return list     
+}
+    
+    render(){
 
-    render(){ 
+
+
+        {console.log("Me am props.",this.props.categories.categories)} 
         return (
-            
             <form>
                 <h1>Add New Item</h1>
                 <label>
@@ -66,9 +74,23 @@ class ItemForm extends React.Component{
                 </select>
                 </label><br></br>
 
+                <label>
+                Categories:
+                <select>
+                {this.categoryMapper()}
+
+                </select>
+                </label><br/><br/>
+
                 <input type="submit" value="Submit" />
             </form>
         )
+    }
+}
+
+const mapStateToProps = state => {
+    return {
+        categories: state.categories
     }
 }
 
@@ -78,7 +100,7 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(ItemForm)
+export default connect(mapStateToProps, mapDispatchToProps)(ItemForm)
 
 
 

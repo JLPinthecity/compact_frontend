@@ -1,6 +1,7 @@
 import { clearLoginForm } from './loginForm.js'
 import { clearSignupForm } from './signupForm.js'
 import { getItems } from './items.js'
+import { getCategories } from './categories'
 
 const url = "http://localhost:3001"
 const loginPath = "api/v1/login"
@@ -36,6 +37,7 @@ export const getCurrentUser = () => {
                 dispatch(setCurrentUser(user.data))
                 dispatch(clearSignupForm())
                 dispatch(getItems())
+                dispatch(getCategories())
             }
         })
         .catch(console.log)

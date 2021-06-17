@@ -10,7 +10,7 @@ export const setCategories = (categories) => {
 
 //asynchronous actions
 export const getCategories = () => {
-    // console.log("inside getCategories")
+    console.log("inside getCategories")
     return dispatch => {
         const configObj = {
             credentials: "include",

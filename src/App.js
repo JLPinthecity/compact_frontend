@@ -16,6 +16,7 @@ import {
   Route
 } from "react-router-dom";
 class App extends Component{
+  
   componentDidMount(){
     this.props.getCurrentUser()
   }
