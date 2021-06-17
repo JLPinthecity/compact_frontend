@@ -2,12 +2,10 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { updateItemForm } from '../actions/itemForm.js'
 
-const ItemForm = (props) => {
- // debugger
+const ItemForm = ({categories, updateItemForm, itemForm}) => {
  // {console.log("inside itemForm categories:", props.categories.categories)} 
     const categoryMapper = () => {
-        let {categories} = props.categories
-        let list = categories.map(category=>{
+        let list = categories.categories.map(category=>{
             return <option name={category.name} value={category.id}>{category.name}</option>
         })
         // console.log(list)
@@ -17,10 +15,10 @@ const ItemForm = (props) => {
     const handleChange = (event) => {
         // debugger
         const newItemFormData = {
-            ...props.itemForm,
+            ...itemForm,
             [event.target.name]: event.target.value
         }
-        props.updateItemForm(newItemFormData)
+        updateItemForm(newItemFormData)
     }
     
     const handleSubmit = (event) => {
@@ -33,37 +31,37 @@ const ItemForm = (props) => {
             <h1>Add New Item</h1>
             <label>
                 Name:
-                <input type="text" name="name" placeholder="name" alt="name field" onChange={handleChange}/>
+                <input type="text" name="name" placeholder="name" alt="name field" value={itemForm.name} onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Description or notes:
-                <input type="text" name="notes" placeholder="description or notes" alt="notes field" onChange={handleChange}/>
+                <input type="text" name="notes" placeholder="description or notes" alt="notes field" value={itemForm.notes} onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Weight (in ounces):
-                <input type="text" name="weight" placeholder="weight (ounces)" alt="weight field" onChange={handleChange}/>
+                <input type="text" name="weight" placeholder="weight (ounces)" alt="weight field" value={itemForm.weight} onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Quantity:
-                <input type="text" name="quantity" placeholder="quantity" alt="quantity field" onChange={handleChange}/>
+                <input type="text" name="quantity" placeholder="quantity" alt="quantity field" value={itemForm.quantity} onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Price:
-                <input type="text" name="price" placeholder="price" alt="price field" onChange={handleChange}/>
+                <input type="text" name="price" placeholder="price" alt="price field" value={itemForm.price} onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Link:
-                <input type="text" name="url" placeholder="url" alt="url field" onChange={handleChange}/>
+                <input type="text" name="url" placeholder="url" alt="url field" value={itemForm.url} onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Image link:
-                <input type="text" name="image" placeholder="image url" alt="image url field" onChange={handleChange}/>
+                <input type="text" name="image" placeholder="image url" alt="image url field" value={itemForm.image}onChange={handleChange}/>
             </label><br></br>
 
             <label>
