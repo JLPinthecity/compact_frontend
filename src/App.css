@@ -3,7 +3,6 @@
   text-align: center;
   margin: 40;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
   background-color: rgb(234, 233, 245);
 }
 
@@ -58,9 +57,10 @@ img {
 }
 
 form{
+  font-family: 'Poppins', sans-serif;
   display: inline-block;
   border-style: none;
-  margin: 150px;
+  margin: 40px;
   padding: 10px   
 }
 
