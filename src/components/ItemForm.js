@@ -6,8 +6,7 @@ import { connect } from 'react-redux'
 class ItemForm extends React.Component{
 
     componentDidMount(){
-        debugger
-        getCategories();
+        this.props.getCategories()
     }
 
     render(){ 
@@ -54,7 +53,7 @@ class ItemForm extends React.Component{
                     Purchased?
                 <select >
                 <option name="purchased" value="true">yes</option>
-                <option name="purchased" value="false" selected>no</option>
+                <option name="purchased" value="false" defaultValue>no</option>
                 </select>
                 </label><br></br>
                 {/* value={this.state.value} */}
@@ -63,7 +62,7 @@ class ItemForm extends React.Component{
                 Item sent home or worn on person:
                 <select>
                 <option name="sent_home" value="true">yes</option>
-                <option name="sent_home" value="false" selected>no</option>
+                <option name="sent_home" value="false" defaultValue>no</option>
                 </select>
                 </label><br></br>
 
@@ -80,6 +79,13 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(null, mapDispatchToProps)(ItemForm)
+
+
+
+
+
+
+
 
 
 // t.string "name"

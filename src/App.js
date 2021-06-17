@@ -22,7 +22,7 @@ class App extends Component{
 
   render(){
     const history = createBrowserHistory();
-    console.log(history)
+    // console.log(history)
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
