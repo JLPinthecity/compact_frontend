@@ -7,7 +7,7 @@ const items = (state = {items: [], loading: false}, action) => {
         case "SET_ITEMS":
             return {...state, items: action.items, loading: false}
 
-        case "ADD_ITEMS":
+        case "ADD_ITEM":
             return state.concat(action.item)
         default:
             return state

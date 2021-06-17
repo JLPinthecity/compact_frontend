@@ -1,8 +1,10 @@
 import { clearItemForm } from './itemForm.js'
- 
+
 const url = "http://localhost:3001/api/v1/items"
 //synchronous actions 
 export const setItems = (items) => ({type: 'SET_ITEMS', items })
+
+export const addItem = (item) => ({type: 'ADD_ITEM', item })
 
 //asynchronous actions
 export const getItems = () => {
@@ -64,11 +66,13 @@ export const createItem = (itemFormData, userId) => {
 
         return fetch(url, configObj)
         .then(res => res.json())
-        .then(res => {
-            if (res.error){
-                alert(res.error)
+        .then(item => {
+            if (item.error){
+                alert(item.error)
             }else {
+                dispatch(addItem(item))
                 dispatch(clearItemForm())
+                
 
             };
         })
