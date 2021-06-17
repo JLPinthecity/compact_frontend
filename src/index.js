@@ -11,7 +11,7 @@ import items from './reducers/items';
 import currentUser from './reducers/currentUser';
 import loginForm from './reducers/loginForm';
 import signupForm from './reducers/signupForm';
-import itemFormReducer from './reducers/itemFormReducer';
+import itemForm from './reducers/itemForm';
 import categories from './reducers/categories';
 import {
   BrowserRouter as Router,
@@ -22,7 +22,7 @@ const reducer = combineReducers({
   currentUser,
   loginForm,
   signupForm,
-  itemFormReducer,
+  itemForm,
   categories
 })
 //reducer needs to be an object

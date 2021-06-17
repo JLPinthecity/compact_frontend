@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { updateItemForm } from '../actions/itemForm.js'
 
 const ItemForm = ({categories, updateItemForm, itemForm, history}) => {
+    // debugger
  // {console.log("inside itemForm categories:", props.categories.categories)} 
     const categoryMapper = () => {
         let list = categories.categories.map(category=>{
@@ -12,12 +13,8 @@ const ItemForm = ({categories, updateItemForm, itemForm, history}) => {
         return list     
     }
     const handleChange = (event) => {
-        const newItemFormData = {
-            ...itemForm,
-            [event.target.name]: event.target.value
-        }
-        console.log("newItemFormData is", newItemFormData)
-        updateItemForm(newItemFormData)
+        const { name, value } = event.target
+        updateItemForm(name, value)
     };
     
     const handleSubmit = (event) => {
