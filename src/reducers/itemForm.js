@@ -12,7 +12,7 @@ const initialState = {
 }
 
 const itemForm = (state = initialState, action) => {
-    console.log(action.payload)
+    // console.log(action.payload)
 
     switch (action.type) {
         case 'UPDATE_ITEM_FORM':
