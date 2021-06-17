@@ -2,7 +2,8 @@
 export const updateItemForm = (formData) => {
     // console.log("from updateitemform", formData)
     return {
-        type: 'UPDATE_ITEM_FORM', formData
+        type: 'UPDATE_ITEM_FORM', 
+        formData
     }
 }
 

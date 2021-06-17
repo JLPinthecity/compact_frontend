@@ -10,6 +10,7 @@ import { signup } from "../actions/currentUser.js"
             ...signupForm,
             [event.target.name]: event.target.value
         }
+        // console.log("newSignFormData is", newSignupFormData)
         updateSignupForm(newSignupFormData)
     };
 
