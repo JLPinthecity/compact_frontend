@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-// import { updateItemForm } from '../actions/itemForm.js'
+import { updateItemForm } from '../actions/itemForm.js'
 // import { getCategories } from '../actions/categories.js'
 
 const ItemForm = (props) => {
@@ -13,67 +13,73 @@ const ItemForm = (props) => {
         // console.log(list)
         return list     
     }
+
+    const handleChange = (event) => {
+        debugger
+    }
     
     return (
         <form>
             <h1>Add New Item</h1>
             <label>
                 Name:
-                <input type="text" name="name" placeholder="name" alt="name field"/>
+                <input type="text" name="name" placeholder="name" alt="name field" onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Description or notes:
-                <input type="text" name="notes" placeholder="description or notes" alt="notes field"/>
+                <input type="text" name="notes" placeholder="description or notes" alt="notes field" onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Weight (in ounces):
-                <input type="text" name="weight" placeholder="weight (ounces)" alt="weight field"/>
+                <input type="text" name="weight" placeholder="weight (ounces)" alt="weight field" onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Quantity:
-                <input type="text" name="quantity" placeholder="quantity" alt="quantity field"/>
+                <input type="text" name="quantity" placeholder="quantity" alt="quantity field" onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Price:
-                <input type="text" name="price" placeholder="price" alt="price field"/>
+                <input type="text" name="price" placeholder="price" alt="price field" onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Link:
-                <input type="text" name="url" placeholder="url" alt="url field"/>
+                <input type="text" name="url" placeholder="url" alt="url field" onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Image link:
-                <input type="text" name="image" placeholder="image url" alt="image url field"/>
+                <input type="text" name="image" placeholder="image url" alt="image url field" onChange={handleChange}/>
             </label><br></br>
 
             <label>
                 Purchased?
-            <select >
-            <option name="purchased" value="true">yes</option>
-            <option name="purchased" value="false" defaultValue>no</option>
+            <select name="purchased" onChange={handleChange}>
+            <option value="false" defaultValue>no</option>
+            <option value="true">yes</option>
+           
             </select>
             </label><br></br>
             {/* value={this.state.value} */}
 
             <label>
             Item sent home or worn on person:
-            <select>
-            <option name="sent_home" value="true">yes</option>
-            <option name="sent_home" value="false" defaultValue>no</option>
+            <select name="sent_home" onChange={handleChange}>
+            <option value="false" defaultValue>no</option>
+            <option value="true">yes</option>
+          
             </select>
             </label><br></br>
 
             <label>
             Categories:
-            <select>
+            <select name="category" onChange={handleChange}>
             {categoryMapper()}
-            </select>
+            </select >
             </label><br/><br/>
 
             <input type="submit" value="Submit" />
@@ -87,13 +93,13 @@ const mapStateToProps = state => {
     }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         getCategories: () => dispatch(getCategories())
-//     }
-// }
+const mapDispatchToProps = (dispatch) => {
+    return {
+        updateItemForm: () => dispatch(updateItemForm())
+    }
+}
 
-export default connect(mapStateToProps)(ItemForm)
+export default connect(mapStateToProps, mapDispatchToProps)(ItemForm)
 
 
 
