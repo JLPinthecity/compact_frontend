@@ -12,6 +12,7 @@ import currentUser from './reducers/currentUser';
 import loginForm from './reducers/loginForm';
 import signupForm from './reducers/signupForm';
 import itemForm from './reducers/itemForm';
+import categories from './reducers/categories';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
@@ -21,7 +22,8 @@ const reducer = combineReducers({
   currentUser,
   loginForm,
   signupForm,
-  itemForm
+  itemForm,
+  categories
 })
 //reducer needs to be an object
 //we take each reducer and pass it into an object here
