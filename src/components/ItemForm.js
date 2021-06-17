@@ -3,22 +3,19 @@ import { updateItemForm } from '../actions/itemForm.js'
 import { getCategories } from '../actions/categories.js'
 import { connect } from 'react-redux'
 
-class ItemForm extends React.Component{
-
-categoryMapper = () => {
-    let {categories} = this.props.categories
-    let list = categories.map(category=>{
-        return <option name={category.name} value={category.id}>{category.name}</option>
-    })
-    console.log(list)
-    return list     
-}
+const ItemForm = (props) => {
+// {console.log("inside itemform categoris:",this.props.categories.categories)} 
+    const categoryMapper = () => {
+        let {categories} = props.categories
+        let list = categories.map(category=>{
+            return <option name={category.name} value={category.id}>{category.name}</option>
+        })
+        // console.log(list)
+        return list     
+    }
     
-    render(){
-
-
-
-        {console.log("Me am props.",this.props.categories.categories)} 
+    
+        
         return (
             <form>
                 <h1>Add New Item</h1>
@@ -77,7 +74,7 @@ categoryMapper = () => {
                 <label>
                 Categories:
                 <select>
-                {this.categoryMapper()}
+                {categoryMapper()}
 
                 </select>
                 </label><br/><br/>
@@ -86,7 +83,7 @@ categoryMapper = () => {
             </form>
         )
     }
-}
+
 
 const mapStateToProps = state => {
     return {
