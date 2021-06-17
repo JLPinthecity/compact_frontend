@@ -1,4 +1,3 @@
-//synchronous actions
 export const updateItemForm = (name, value) => {
     // console.log("from updateitemform", formData)
     const formData = { name, value }
@@ -14,5 +13,3 @@ export const clearItemForm = () => {
     }
 }
 
-
-//asynchronous actions

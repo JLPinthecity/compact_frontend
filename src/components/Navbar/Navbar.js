@@ -25,7 +25,7 @@ class Navbar extends React.Component{
                     {MenuItems.map((item, index) => {
                         return (
                             <li>
-                                <Link className="nav-links" to={item.url}>{item.title}</Link>
+                                <Link className="nav-links" key={index} to={item.url}>{item.title}</Link>
                             </li>
                         )
                     })}

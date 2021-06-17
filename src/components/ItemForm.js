@@ -1,13 +1,20 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { updateItemForm } from '../actions/itemForm.js'
+import { createItem } from '../actions/items.js'
 
-const ItemForm = ({categories, updateItemForm, itemForm, history}) => {
-    // debugger
+const ItemForm = ({categories, updateItemForm, itemForm, history, createItem, currentUser}) => {
+
  // {console.log("inside itemForm categories:", props.categories.categories)} 
     const categoryMapper = () => {
         let list = categories.categories.map(category=>{
-            return <option name={category.name} value={category.id}>{category.name}</option>
+            if (category.id === 1){
+                return <option name={category.name} key={category.id} value={category.id} defaultValue>{category.name}</option>
+            }
+            else {
+                return <option name={category.name} key={category.id} value={category.id}>{category.name}</option>
+            }
+
         })
         // console.log(list)
         return list     
@@ -19,7 +26,9 @@ const ItemForm = ({categories, updateItemForm, itemForm, history}) => {
     
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log("inside handle submit..need to add fetch action creator")
+        console.log(event)
+        const userId = currentUser.id
+        createItem(itemForm, userId)
     }
     
     return (
@@ -62,27 +71,25 @@ const ItemForm = ({categories, updateItemForm, itemForm, history}) => {
 
             <label>
                 Purchased?
-            <select name="purchased" onChange={handleChange}>
-            <option value="false" defaultValue>no</option>
-            <option value="true">yes</option>
-           
+            <select name="purchased" value={itemForm.purchased} onChange={handleChange}>
+                <option value="false" defaultValue>no</option>
+                <option value="true">yes</option>
             </select>
             </label><br></br>
-            {/* value={this.state.value} */}
+           
 
             <label>
             Item sent home or worn on person:
-            <select name="sent_home" onChange={handleChange}>
-            <option value="false" defaultValue>no</option>
-            <option value="true">yes</option>
-          
+            <select name="sent_home" value={itemForm.sent_home} onChange={handleChange}>
+                <option value="false" defaultValue>no</option>
+                <option value="true">yes</option>
             </select>
             </label><br></br>
 
             <label>
             Categories:
-            <select name="category" onChange={handleChange}>
-            {categoryMapper()}
+            <select name="category" value={itemForm.category} onChange={handleChange}>
+                {categoryMapper()}
             </select >
             </label><br/><br/>
 
@@ -94,20 +101,14 @@ const ItemForm = ({categories, updateItemForm, itemForm, history}) => {
 const mapStateToProps = state => {
     return {
         categories: state.categories,
-        itemForm: state.itemForm
+        itemForm: state.itemForm,
+        currentUser: state.currentUser
     }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         updateItemForm: (formData) => dispatch(updateItemForm(formData))
-//     }
-// }
-
-export default connect(mapStateToProps, { updateItemForm })(ItemForm)
+export default connect(mapStateToProps, { updateItemForm, createItem })(ItemForm)
 
 //reminder about mapDispatchToProps. What we import is not what we are calling. Yes, we import the action creator here. We don't invoke it directly. We HAVE to tell redux to invoke it (AKA dispatch the action) or else we won't see the values change in the store.
-//another reminder: make to to PASS THE FORMDATA TO THE ACTION!!!
 
 
 
