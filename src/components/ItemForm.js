@@ -1,66 +1,69 @@
 import React from 'react'
+import { updateItemForm } from '../actions/itemForm.js'
 
-const ItemForm = () => {
-    return (
-        
-        <form>
-            <h1>Add New Item</h1>
-            <label>
-                Name:
-                <input type="text" name="name" />
-            </label><br></br>
+class ItemForm extends React.Component{
 
-            <label>
-                Description or notes:
-                <input type="text" name="notes" />
-            </label><br></br>
+    render(){ 
+        return (
+            
+            <form>
+                <h1>Add New Item</h1>
+                <label>
+                    Name:
+                    <input type="text" name="name" placeholder="name" />
+                </label><br></br>
 
-            <label>
-                Weight (in ounces):
-                <input type="text" name="weight" />
-            </label><br></br>
+                <label>
+                    Description or notes:
+                    <input type="text" name="notes" placeholder="description or notes" />
+                </label><br></br>
 
-            <label>
-                Quantity:
-                <input type="text" name="quantity" />
-            </label><br></br>
+                <label>
+                    Weight (in ounces):
+                    <input type="text" name="weight" placeholder="weight (ounces)"/>
+                </label><br></br>
 
-            <label>
-                Price:
-                <input type="text" name="price" />
-            </label><br></br>
+                <label>
+                    Quantity:
+                    <input type="text" name="quantity" placeholder="quantity"/>
+                </label><br></br>
 
-            <label>
-                Link:
-                <input type="text" name="url" />
-            </label><br></br>
+                <label>
+                    Price:
+                    <input type="text" name="price" placeholder="price"/>
+                </label><br></br>
 
-            <label>
-                Image link:
-                <input type="text" name="image" />
-            </label><br></br>
+                <label>
+                    Link:
+                    <input type="text" name="url" placeholder="url"/>
+                </label><br></br>
 
-            <label>
-                Purchased?
-            <select >
-            <option name="purchased" value="yes">yes</option>
-            <option name="purchased" value="no" selected>no</option>
-            </select>
-            </label><br></br>
-            {/* value={this.state.value} */}
+                <label>
+                    Image link:
+                    <input type="text" name="image" placeholder="image url" />
+                </label><br></br>
 
-            <label>
-               Item sent home or worn on person:
-            <select>
-            <option name="sent_home" value="yes">yes</option>
-            <option name="sent_home" value="no" selected>no</option>
-            </select>
-            </label><br></br>
+                <label>
+                    Purchased?
+                <select >
+                <option name="purchased" value="true">yes</option>
+                <option name="purchased" value="false" selected>no</option>
+                </select>
+                </label><br></br>
+                {/* value={this.state.value} */}
 
-            <input type="submit" value="Submit" />
-        </form>
-      
-    )
+                <label>
+                Item sent home or worn on person:
+                <select>
+                <option name="sent_home" value="true">yes</option>
+                <option name="sent_home" value="false" selected>no</option>
+                </select>
+                </label><br></br>
+
+                <input type="submit" value="Submit" />
+            </form>
+        )
+    }
 }
 
 export default ItemForm
