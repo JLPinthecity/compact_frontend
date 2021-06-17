@@ -8,6 +8,7 @@ const userPath = "api/v1/get_current_user"
 const logoutPath = "api/v1/logout"
 const signupPath = "api/v1/signup"
 
+
 //synchronous action creators
 export const setCurrentUser = (user) => ({type: 'SET_CURRENT_USER', user })
 

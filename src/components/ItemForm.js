@@ -1,7 +1,14 @@
 import React from 'react'
 import { updateItemForm } from '../actions/itemForm.js'
+import { getCategories } from '../actions/categories.js'
+import { connect } from 'react-redux'
 
 class ItemForm extends React.Component{
+
+    componentDidMount(){
+        debugger
+        getCategories();
+    }
 
     render(){ 
         return (
@@ -66,8 +73,13 @@ class ItemForm extends React.Component{
     }
 }
 
-export default ItemForm
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getCategories: () => dispatch(getCategories())
+    }
+}
 
+export default connect(null, mapDispatchToProps)(ItemForm)
 
 
 // t.string "name"
