@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { updateItemForm } from '../actions/itemForm.js'
 
 const ItemForm = (props) => {
-    // debugger
+ // debugger
  // {console.log("inside itemForm categories:", props.categories.categories)} 
     const categoryMapper = () => {
         let {categories} = props.categories
@@ -23,8 +23,13 @@ const ItemForm = (props) => {
         props.updateItemForm(newItemFormData)
     }
     
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log("inside handle submit.. need to add another action creator to dispatch")
+    }
+    
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <h1>Add New Item</h1>
             <label>
                 Name:
@@ -107,7 +112,7 @@ const mapDispatchToProps = (dispatch) => {
 
 export default connect(mapStateToProps, mapDispatchToProps)(ItemForm)
 
-//we import the action creator here, we need to tell redux to invoke it or else we won't see the values change in the store
+//reminder about mapDispatchToProps. What we import is not what we are calling. Yes, we import the action creator here. We don't invoke it directly. We HAVE to tell redux to invoke it (AKA dispatch the action) or else we won't see the values change in the store.
 
 
 
