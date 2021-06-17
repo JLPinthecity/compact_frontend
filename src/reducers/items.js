@@ -1,5 +1,5 @@
 const items = (state = {items: [], loading: false}, action) => {
-    // console.log(action.items)
+    console.log("FROM ITEMS REDUCER", action)
     switch (action.type) {
         case "LOADING":
             return  {...state, loading: true }
@@ -7,6 +7,8 @@ const items = (state = {items: [], loading: false}, action) => {
         case "SET_ITEMS":
             return {...state, items: action.items, loading: false}
 
+        case "ADD_ITEMS":
+            return state.concat(action.item)
         default:
             return state
     }
@@ -15,7 +17,3 @@ const items = (state = {items: [], loading: false}, action) => {
 }
 
 export default items
-
-//@@INIT will return default state of all reducers
-
-//the reducer is where the change actually happens
