@@ -8,17 +8,17 @@ The first iteration of this project was submitted as my final project for the Fl
 
 To learn more about the project, please read my post on [Medium.](https://joannpan.medium.com/building-a-gear-list-planner-for-backpackers-as-my-final-project-with-react-and-redux-4147551ddebf).
 
-### How to use
+## Installation
 
 1. Navigate to the directory in your terminal where you want to save the files.
 
 2. Git clone this repo and the [Rails API backend.](https://github.com/JLPinthecity/compact_backend).
 
-3. Once you have cloned the front end and backend, cd into the backend using <code>cd compact-backend</code>.
+3. Once you have cloned the front end and backend, cd into the backend using <code>cd compact_backend</code>.
 
 4. From inside the terminal, run Rails Puma server using <code>rails s</code>. The back-end server will start on port. [http://localhost:3001](http://localhost:3001)
 
-5. Next, run the front end server. cd into the front-end using <code>cd compact-frontend</code>.
+5. cd back to directory where front-end repo is located. Next, run the front end server. cd into the front-end using <code>cd compact_frontend</code>.
 
 6. Run <code> npm install </code>in your terminal. Once complete, run <code>npm start </code> to run the front-end's Webpack dev server. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
