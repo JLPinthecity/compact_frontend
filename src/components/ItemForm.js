@@ -28,7 +28,7 @@ const ItemForm = ({categories, updateItemForm, itemForm, history, createItem, cu
         event.preventDefault();
         console.log(event)
         const userId = currentUser.id
-        createItem(itemForm, userId)
+        createItem(itemForm, userId, history)
     }
     
     return (

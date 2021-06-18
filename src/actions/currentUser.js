@@ -118,7 +118,7 @@ export const signup = (formData, history) => {
                 alert(user.error)
             }else {
                 dispatch(setCurrentUser(user.data))
-                console.log("user sent back from backend is", user.data)
+                // console.log("user sent back from backend is", user.data)
                 dispatch(clearLoginForm())
                 dispatch(getItems())
                 history.push("/")

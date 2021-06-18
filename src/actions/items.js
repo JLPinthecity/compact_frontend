@@ -40,7 +40,7 @@ export const getItems = () => {
     }
 }
 
-export const createItem = (itemFormData, userId) => {
+export const createItem = (itemFormData, userId, history) => {
     debugger
     // console.log("inside createItem action creator", userId)
     // console.log(itemFormData)    
@@ -58,7 +58,7 @@ export const createItem = (itemFormData, userId) => {
         user_id: parseInt(userId)
     }
 
-    console.log("sending to backend", item)
+    // console.log("sending to backend", item)
     return dispatch => {
         const configObj = {
             credentials: "include",
@@ -78,8 +78,7 @@ export const createItem = (itemFormData, userId) => {
             }else {
                 dispatch(addItem(item.data))
                 dispatch(clearItemForm())
-                
-
+                history.push("/items")
             };
         })
         .catch(console.log)
