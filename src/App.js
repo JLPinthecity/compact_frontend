@@ -13,6 +13,7 @@ import { createBrowserHistory} from 'history';
 import SignupLoginContainer from "./containers/SignupLoginContainer.js"
 import {
   withRouter,
+  Switch,
   Route
 } from "react-router-dom";
 class App extends Component{
@@ -28,13 +29,15 @@ class App extends Component{
       <div>
         <h1 className="siteTitle">COMPACT</h1>
         <Navbar />
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/about" component={About}/>
-        <Route exact path="/items" component={Items}/>
-        <Route exact path="/items/new" component={ItemForm}/>
-        <Route history={history} exact path="/signup" component={Signup}/>
-        <Route history={history} exact path="/login" component={Login}/>
-        <Route exact path="/signin" component={SignupLoginContainer}/>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/items" component={Items}/>
+          <Route exact path="/items/new" component={ItemForm}/>
+          <Route history={history} exact path="/signup" component={Signup}/>
+          <Route history={history} exact path="/login" component={Login}/>
+          <Route exact path="/signin" component={SignupLoginContainer}/>
+        </Switch>
       </div>
     )
   };

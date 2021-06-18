@@ -13,6 +13,12 @@ export const MenuItems = [
         title: "GEAR LIST",
         url: "/items",
         cName: "nav-links"
+    },
+
+    {
+        title: "ADD ITEM",
+        url: "/items/new",
+        cName: "nav-links"
     }
 
 ]

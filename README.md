@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Compact
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Compact is a gear list planner built for thru-hikers and backpackers. Use Compact to calculate your pack's final weight and track details about individual items. The front end was built using React and Redux with a Rails API backend. The backend repo can be found [here.](https://github.com/JLPinthecity/compact_backend).
 
-## Available Scripts
+## Learn More 
 
-In the project directory, you can run:
+The first iteration of this project was submitted as my final project for the Flatiron School's online web dev program. 
 
-### `npm start`
+To learn more about the project, please read my post on [Medium.](https://joannpan.medium.com/building-a-gear-list-planner-for-backpackers-as-my-final-project-with-react-and-redux-4147551ddebf).
 
-Runs the app in the development mode.\
-Open [http://localhost:3001](http://localhost:3000) to view it in the browser.
+### How to use
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Navigate to the directory in your terminal where you want to save the files.
 
-### `npm test`
+2. Git clone this repo and the [Rails API backend.](https://github.com/JLPinthecity/compact_backend).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Once you have cloned the front end and backend, cd into the backend using <code>cd compact-backend</code>.
 
-### `npm run build`
+4. From inside the terminal, run Rails Puma server using <code>rails s</code>. The back-end server will start on port. [http://localhost:3001](http://localhost:3001)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Next, run the front end server. cd into the front-end using <code>cd compact-frontend</code>.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Run <code> npm install </code>in your terminal. Once complete, run <code>npm start </code> to run the front-end's Webpack dev server. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. Sign in to create an account and navigate to add item or gear list in the navbar to use the app. 
 
-### `npm run eject`
+8. To exit, enter <code>CTRL + C</code> in both files. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
