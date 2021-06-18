@@ -4,7 +4,13 @@ const url = "http://localhost:3001/api/v1/items"
 //synchronous actions 
 export const setItems = (items) => ({type: 'SET_ITEMS', items })
 
-export const addItem = (item) => ({type: 'ADD_ITEM', item })
+export const addItem = (item) => {
+    debugger
+    return {
+        type: 'ADD_ITEM', 
+        payload: item 
+    }
+}
 
 //asynchronous actions
 export const getItems = () => {
@@ -70,7 +76,7 @@ export const createItem = (itemFormData, userId) => {
             if (item.error){
                 alert(item.error)
             }else {
-                dispatch(addItem(item))
+                dispatch(addItem(item.data))
                 dispatch(clearItemForm())
                 
 
