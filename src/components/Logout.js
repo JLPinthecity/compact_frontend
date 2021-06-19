@@ -7,7 +7,7 @@ const Logout = ({ logout, history }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        logout()
+        logout(history)
     }
 
     return (

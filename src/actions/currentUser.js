@@ -74,12 +74,13 @@ export const login = (credentials, history) => {
     };
 };
 
-export const logout = () => {
+export const logout = (history) => {
     console.log("inside logout action creator from handleSubmit in logout component")
     return dispatch => {
        
         dispatch(clearCurrentUser());
-
+        history.push("/");
+        
         const configObj = {
             credentials: "include",
             method: 'DELETE',
