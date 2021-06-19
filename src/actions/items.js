@@ -78,7 +78,7 @@ export const createItem = (itemFormData, userId, history) => {
             }else {
                 dispatch(addItem(item.data))
                 dispatch(clearItemForm())
-                history.push("/items")
+                history.push(`/items/${item.data.id}`)
             };
         })
         .catch(console.log)
