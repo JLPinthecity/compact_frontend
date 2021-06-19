@@ -22,12 +22,12 @@ import { signup } from "../actions/currentUser.js"
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" name="name" placeholder="name" alt="name" value={signupForm.name} onChange={handleChange}>
-            </input>
+            </input><br/>
             <input type="text" name="email" placeholder="email" alt="email" value={signupForm.email} onChange={handleChange}>
-            </input>
+            </input><br/>
             <input type="text" name="password" placeholder="password" alt="password" value={signupForm.password} onChange={handleChange}>
-            </input>
-            <input type="Submit" value="Sign up" readOnly/>
+            </input><br/>
+            <input type="Submit" className="btn" value="Sign up" readOnly/>
         </form>
     )
 };

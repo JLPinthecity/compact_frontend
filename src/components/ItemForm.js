@@ -35,65 +35,64 @@ const ItemForm = ({categories, updateItemForm, itemForm, history, createItem, cu
         <form onSubmit={handleSubmit}>
             <h1>Add New Item</h1>
             <label>
-                Name:
-                <input type="text" name="name" placeholder="name" alt="name field" value={itemForm.name} onChange={handleChange}/>
+                NAME  <input type="text" name="name" placeholder="name" alt="name field" value={itemForm.name} onChange={handleChange}/>
             </label><br></br>
 
             <label>
-                Description or notes:
+                DESCRIPTION
                 <input type="text" name="notes" placeholder="description or notes" alt="notes field" value={itemForm.notes} onChange={handleChange}/>
             </label><br></br>
 
             <label>
-                Weight (in ounces):
+                WEIGHT 
                 <input type="text" name="weight" placeholder="weight (ounces)" alt="weight field" value={itemForm.weight} onChange={handleChange}/>
             </label><br></br>
 
             <label>
-                Quantity:
+                QUANTITY
                 <input type="text" name="quantity" placeholder="quantity" alt="quantity field" value={itemForm.quantity} onChange={handleChange}/>
             </label><br></br>
 
             <label>
-                Price:
+                PRICE 
                 <input type="text" name="price" placeholder="price" alt="price field" value={itemForm.price} onChange={handleChange}/>
             </label><br></br>
 
             <label>
-                Link:
+                LINK 
                 <input type="text" name="url" placeholder="url" alt="url field" value={itemForm.url} onChange={handleChange}/>
             </label><br></br>
 
             <label>
-                Image link:
+                IMAGE LINK
                 <input type="text" name="image" placeholder="image url" alt="image url field" value={itemForm.image}onChange={handleChange}/>
-            </label><br></br>
+            </label><br/><br/>
 
             <label>
-                Purchased?
+                PURCHASED
             <select name="purchased" value={itemForm.purchased} onChange={handleChange}>
                 <option value="false" defaultValue>no</option>
                 <option value="true">yes</option>
             </select>
-            </label><br></br>
+            </label><br/><br/>
            
 
             <label>
-            Item sent home or worn on person:
+            ITEM SENT HOME/WORN ON PERSON
             <select name="sent_home" value={itemForm.sent_home} onChange={handleChange}>
                 <option value="false" defaultValue>no</option>
                 <option value="true">yes</option>
             </select>
-            </label><br></br>
+            </label><br/><br/>
 
             <label>
-            Categories:
+            CATEGORY
             <select name="category" value={itemForm.category} onChange={handleChange}>
                 {categoryMapper()}
             </select >
             </label><br/><br/>
 
-            <input type="submit" value="Submit" />
+            <input type="submit" className="btn" value="Submit" />
         </form>
     )
 }

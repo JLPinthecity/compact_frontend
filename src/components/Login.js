@@ -22,10 +22,10 @@ import { login } from "../actions/currentUser.js"
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" name="email" placeholder="email" alt="email" onChange={handleChange}>
-            </input>
+            </input><br/>
             <input type="text" name="password" placeholder="password" alt="password" onChange={handleChange}>
-            </input>
-            <input type="Submit" value="Login" readOnly />
+            </input><br/>
+            <input type="Submit" className="btn" value="Login" readOnly />
         </form>
     )
 };
