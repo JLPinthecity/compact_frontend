@@ -5,6 +5,7 @@ import ItemCard from './ItemCard.js'
 const Items = ({items}) => {
     // console.log(items.items)
     const itemCards = items.items.map(item => <ItemCard item={item} key={item.id}/>)
+
     return (
         <div className="gear-list-container">
             {itemCards.length > 0 ? itemCards : null}
