@@ -67,6 +67,7 @@ export const login = (credentials, history) => {
                 dispatch(setCurrentUser(res.data))
                 dispatch(clearLoginForm())
                 dispatch(getItems())
+                dispatch(getCategories())
                 history.push("/")
             };
         })
