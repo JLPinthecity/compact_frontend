@@ -14,8 +14,6 @@ export const clearItemForm = () => {
 }
 
 export const setEditItemForm = (item) => {
-    debugger
-
     const editItemFormData ={
         name: item.attributes.name,
         notes: item.attributes.notes,

@@ -6,8 +6,7 @@ import { connect } from 'react-redux'
 const NewItemFormContainer = ({history, createItem}) => {
 
     const handleSubmit = (itemForm, userId) => {
-        console.log("INSIDE HANDLE SUBMIT userId", userId)
-
+        // console.log("INSIDE HANDLE SUBMIT userId", userId)
         createItem(itemForm, userId, history)
     };
     
