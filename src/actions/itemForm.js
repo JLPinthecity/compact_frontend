@@ -18,7 +18,7 @@ export const setEditItemForm = (item) => {
 
     const editItemFormData ={
         name: item.attributes.name,
-        notes: item.notes,
+        notes: item.attributes.notes,
         price: item.attributes.price,
         quantity: item.attributes.quantity, 
         weight: item.attributes.weight,

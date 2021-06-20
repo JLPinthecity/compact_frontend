@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 const ItemCard = ({item}) => {
-    debugger
+    // debugger
     return (
 
         item ? 
@@ -21,7 +21,7 @@ const ItemCard = ({item}) => {
                 <h4>Purchased: { item.attributes.purchased ? "no" : "yes"  }</h4>
                 <h4>Worn on person or sent home?: { item.attributes.sent_home ? "no" : "yes"  }</h4>
 
-                <Link to={`/items/${item.id}/edit`}>Make changes to this item.</Link>
+                <Link to={`/items/${item.id}/edit`}><button className="btn">Edit item</button></Link>
             </div>
         </section>
         : "There are no items in your gear list."

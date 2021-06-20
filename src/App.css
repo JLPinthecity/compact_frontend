@@ -109,3 +109,9 @@ select {
   font-family: 'Hammersmith One', sans-serif;
 }
 
+.btn:hover{
+  color: rgb(255, 197, 201);
+  background-color: rgb(138,206,196);
+  border: 5px solid rgb(138,206,196);
+}
+

@@ -1,10 +1,9 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { updateItemForm } from '../actions/itemForm.js'
-import { createItem } from '../actions/items.js'
+import { connect } from 'react-redux'
+import NewItemFormContainer from '../containers/NewItemFormContainer.js';
 
-const ItemForm = ({categories, updateItemForm, itemForm, history, createItem, currentUser}) => {
-
+const ItemForm = ({categories, updateItemForm, itemForm, handleSubmit, userId}) => {
  // {console.log("inside itemForm categories:", props.categories.categories)} 
     const categoryMapper = () => {
         let list = categories.categories.map(category=>{
@@ -14,25 +13,21 @@ const ItemForm = ({categories, updateItemForm, itemForm, history, createItem, cu
             else {
                 return <option name={category.name} key={category.id} value={category.id}>{category.name}</option>
             }
-
         })
         // console.log(list)
         return list     
     }
+
     const handleChange = (event) => {
         const { name, value } = event.target
         updateItemForm(name, value)
     };
     
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(event)
-        const userId = currentUser.id
-        createItem(itemForm, userId, history)
-    }
-    
     return (
-        <form className="bigForm" onSubmit={handleSubmit}>
+        <form className="bigForm" onSubmit={event => {
+            event.preventDefault()
+            handleSubmit(itemForm, userId);
+        }}>
             <h1>Add New Item</h1>
             <label>
                 NAME  <input type="text" name="name" placeholder="name" alt="name field" value={itemForm.name} onChange={handleChange}/>
@@ -95,17 +90,17 @@ const ItemForm = ({categories, updateItemForm, itemForm, history, createItem, cu
             <input type="submit" className="btn" value="Submit" />
         </form>
     )
-}
+};
 
 const mapStateToProps = state => {
     return {
         categories: state.categories,
         itemForm: state.itemForm,
-        currentUser: state.currentUser
-    }
-}
+        userId: state.currentUser.id
+    };
+};
 
-export default connect(mapStateToProps, { updateItemForm, createItem })(ItemForm)
+export default connect(mapStateToProps, { updateItemForm })(ItemForm);
 
 //reminder about mapDispatchToProps. What we import is not what we are calling. Yes, we import the action creator here. We don't invoke it directly. We HAVE to tell redux to invoke it (AKA dispatch the action) or else we won't see the values change in the store.
 

@@ -13,6 +13,8 @@ import Signup from "./components/Signup.js";
 import ItemForm from "./components/ItemForm.js";
 import { createBrowserHistory} from 'history';
 import SignupLoginContainer from "./containers/SignupLoginContainer.js"
+import NewItemFormContainer from "./containers/NewItemFormContainer.js"
+import EditItemFormContainer from "./containers/EditItemFormContainer.js"
 import {
   withRouter,
   Switch,
@@ -37,10 +39,10 @@ class App extends Component{
           <Route exact path="/" component={Home}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/items" component={Items}/>
-          <Route exact path="/items/new" component={ItemForm}/>
           <Route history={history} exact path="/signup" component={Signup}/>
           <Route history={history} exact path="/login" component={Login}/>
           <Route exact path="/signin" component={SignupLoginContainer}/>
+          <Route exact path="/items/new" component={NewItemFormContainer}/>
           <Route exact path="/items/:id" render={props => {
               const item = items.items.find(item => item.id === props.match.params.id)
               return <ItemCard item={item} {...props}/>
@@ -48,7 +50,7 @@ class App extends Component{
           }/>
           <Route exact path="/items/:id/edit" render={props => {
               const item = items.items.find(item => item.id === props.match.params.id)
-              setEditItemForm(item)
+              console.log("FROM EDIT FORM ROUTE", item)
               return <ItemForm item={item} {...props}/>
             }
           }/>
