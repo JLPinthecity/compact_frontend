@@ -19,6 +19,13 @@ export const addItem = (item) => {
     }
 }
 
+export const updateItem = (item) => {
+    debugger
+    return {
+        type: 'UPDATE_ITEM', 
+        payload: item 
+    }
+}
 //asynchronous actions
 export const getItems = () => {
    
@@ -92,7 +99,7 @@ export const createItem = (itemFormData, userId, history) => {
     };
 };
 
-export const updateItem = (itemFormData, userId, history) => {
+export const patchItem = (itemFormData, userId, history) => {
     debugger
     // console.log("INSIDE UPDATEITEM ACTION CREATOR", userId)
     // console.log("INSIDE UPDATEITEM ACTION CREATOR", itemFormData)    
@@ -114,7 +121,7 @@ export const updateItem = (itemFormData, userId, history) => {
     return dispatch => {
         const configObj = {
             credentials: "include",
-            method: 'POST',
+            method: 'PATCH',
             headers: {
                 "Content-Type": "application/json",
                 "Accepts": "application/json"
@@ -122,13 +129,13 @@ export const updateItem = (itemFormData, userId, history) => {
             body: JSON.stringify(item)
         };
 
-        return fetch(url, configObj)
+        return fetch(`url${itemFormData.id}`, configObj)
         .then(res => res.json())
         .then(item => {
             if (item.error){
                 alert(item.error)
             }else {
-                dispatch(addItem(item.data))
+                dispatch(updateItem(item.data))
                 dispatch(clearItemForm())
                 history.push(`/items/${item.data.id}`)
             };
