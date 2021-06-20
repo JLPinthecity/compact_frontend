@@ -19,9 +19,11 @@ const ItemCard = ({item}) => {
                 <h4>Weight: {item.attributes.weight} ounces </h4>
                 <h4>Purchased: { item.attributes.purchased ? "no" : "yes"  }</h4>
                 <h4>Worn on person or sent home?: { item.attributes.sent_home ? "no" : "yes"  }</h4>
+
+                <Link to={`/items/${item.id}/edit`}>Make changes to this item.</Link>
             </div>
         </section>
-        : null
+        : "There are no items in your gear list."
     )
 }
 

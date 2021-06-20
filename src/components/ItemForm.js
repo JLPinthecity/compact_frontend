@@ -32,7 +32,7 @@ const ItemForm = ({categories, updateItemForm, itemForm, history, createItem, cu
     }
     
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="bigForm" onSubmit={handleSubmit}>
             <h1>Add New Item</h1>
             <label>
                 NAME  <input type="text" name="name" placeholder="name" alt="name field" value={itemForm.name} onChange={handleChange}/>

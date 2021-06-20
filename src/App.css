@@ -15,7 +15,7 @@
 .siteTitle {
   font-family: 'Viaoda Libre', cursive;
   color:rgb(20,92,77);
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .NavbarItems {
@@ -48,12 +48,17 @@
 }
 
 .nav-btn:hover{
-  color: rgb(255, 218, 0);
+  color: rgb(255, 197, 201);
 }
 
 img {
   max-width:75%;
   height:auto;
+}
+
+
+.bigForm {
+  align-items: right;
 }
 
 form{
