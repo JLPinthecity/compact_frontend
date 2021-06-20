@@ -13,3 +13,25 @@ export const clearItemForm = () => {
     }
 }
 
+export const setEditItemForm = (item) => {
+    debugger
+
+    const editItemFormData ={
+        name: item.attributes.name,
+        notes: item.notes,
+        price: item.attributes.price,
+        quantity: item.attributes.quantity, 
+        weight: item.attributes.weight,
+        url: item.attributes.url, 
+        image: item.attributes.image,
+        purchased: item.attributes.purchased,
+        sent_home: item.attributes.sent_home,
+        category: item.attributes.category.id
+    }
+
+    return {
+        type: 'SET_EDIT_ITEM_FORM',
+        editItemFormData
+    }
+}
+//we need to repopulate empty item form with existing values from redux

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 const ItemCard = ({item}) => {
-    // debugger
+    debugger
     return (
 
         item ? 
@@ -14,6 +14,7 @@ const ItemCard = ({item}) => {
             <div className="product-info">
                 <h3><Link to={`/items/${item.id}`}>{item.attributes.name}</Link></h3>
                 <h3>Category: { item.attributes.category.name }</h3>
+                <h3>Description: { item.attributes.notes }</h3>
                 <h4>Price: ${item.attributes.price}</h4>
                 <h4>Quantity: {item.attributes.quantity}</h4>
                 <h4>Weight: {item.attributes.weight} ounces </h4>

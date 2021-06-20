@@ -26,6 +26,10 @@ const itemForm = (state = initialState, action) => {
         case 'CLEAR_ITEM_FORM':
             return initialState
 
+        case 'SET_EDIT_ITEM_FORM':
+            console.log("from setedititemform reducer", action)
+            return action.editFormData
+
         default:
             return state
     }

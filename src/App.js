@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar.js';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/currentUser.js';
+import { setEditItemForm } from './actions/itemForm.js';
+import Navbar from './components/Navbar/Navbar.js';
 import Login from "./components/Login.js";
 import Items from "./components/Items.js";
 import About from "./components/About.js";
@@ -26,7 +27,7 @@ class App extends Component{
 
   render(){
     const history = createBrowserHistory();
-    const { items } = this.props
+    const { items, setEditItemForm } = this.props
     // console.log(history)
     return (
       <div>
@@ -45,6 +46,14 @@ class App extends Component{
               return <ItemCard item={item} {...props}/>
             }
           }/>
+          <Route exact path="/items/:id/edit" render={props => {
+              const item = items.items.find(item => item.id === props.match.params.id)
+              setEditItemForm(item)
+              return <ItemForm item={item} {...props}/>
+            }
+          }/>
+
+
         </Switch>
       </div>
     )
@@ -57,7 +66,7 @@ const mapStateToProps = state => {
   })
 }
 
-export default withRouter((connect(mapStateToProps, { getCurrentUser })(App)));
+export default withRouter((connect(mapStateToProps, { getCurrentUser, setEditItemForm })(App)));
 
 
 // console.log("current user is", this.props.currentUser)
