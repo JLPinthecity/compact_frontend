@@ -8,6 +8,12 @@ export const setCategories = (categories) => {
     }
 }
 
+export const clearCategories = () => {
+    return {
+        type: 'CLEAR_CATEGORIES'
+    }
+}
+
 //asynchronous actions
 export const getCategories = () => {
     console.log("inside getCategories")

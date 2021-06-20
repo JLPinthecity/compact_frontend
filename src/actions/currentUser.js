@@ -1,7 +1,7 @@
 import { clearLoginForm } from './loginForm.js'
 import { clearSignupForm } from './signupForm.js'
-import { getItems } from './items.js'
-import { getCategories } from './categories'
+import { clearItems, getItems } from './items.js'
+import { getCategories, clearCategories } from './categories'
 
 const url = "http://localhost:3001"
 const loginPath = "api/v1/login"
@@ -79,7 +79,10 @@ export const logout = (history) => {
     return dispatch => {
        
         dispatch(clearCurrentUser());
+        dispatch(clearItems());
+        dispatch(clearCategories());
         history.push("/");
+        
         
         const configObj = {
             credentials: "include",
