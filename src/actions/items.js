@@ -12,6 +12,14 @@ export const addItem = (item) => {
     }
 }
 
+export const clearItems = () => {
+
+    return {
+        type: 'CLEAR_ITEMS'
+    }
+}
+
+
 //asynchronous actions
 export const getItems = () => {
    

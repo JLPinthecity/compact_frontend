@@ -1,4 +1,10 @@
-const items = (state = {items: [], loading: false}, action) => {
+const initialState = {
+    items: [],
+    loading: false
+}
+
+
+const items = (state = initialState, action) => {
     // console.log("FROM ITEMS REDUCER", action)
     switch (action.type) {
         case "LOADING":
@@ -9,6 +15,10 @@ const items = (state = {items: [], loading: false}, action) => {
 
         case "ADD_ITEM":
             return { ...state, items: [...state.items, action.payload] }
+
+        case "CLEAR_ITEMS":
+            return initialState
+
         default:
             return state
     }
