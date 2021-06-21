@@ -16,6 +16,10 @@ const items = (state = initialState, action) => {
         case "ADD_ITEM":
             return { ...state, items: [...state.items, action.payload] }
 
+        case "UPDATE_ITEM":
+            console.log("INSIDE UPDATEITEM REDUCER", action)
+            return { state }
+
         case "CLEAR_ITEMS":
             return initialState
 
