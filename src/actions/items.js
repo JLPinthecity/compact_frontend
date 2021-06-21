@@ -136,6 +136,7 @@ export const patchItem = (itemFormData, userId, itemId, history) => {
             if (item.error){
                 alert(item.error)
             }else {
+                console.log("THIS IS FROM THE BACKEND/RETURN OF PATCH", item.data)
                 dispatch(updateItem(item.data))
                 dispatch(clearItemForm())
                 history.push(`/items/${item.data.id}`)
@@ -144,3 +145,6 @@ export const patchItem = (itemFormData, userId, itemId, history) => {
         .catch(console.log)
     };
 };
+
+
+

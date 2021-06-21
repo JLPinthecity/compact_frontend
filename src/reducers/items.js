@@ -3,9 +3,8 @@ const initialState = {
     loading: false
 }
 
-
 const items = (state = initialState, action) => {
-    // console.log("FROM ITEMS REDUCER", action)
+    console.log("FROM ITEMS REDUCER state is", state)
     switch (action.type) {
         case "LOADING":
             return  {...state, loading: true }
@@ -17,9 +16,8 @@ const items = (state = initialState, action) => {
             return { ...state, items: [...state.items, action.payload] }
 
         case "UPDATE_ITEM":
-            console.log("INSIDE UPDATEITEM REDUCER", action)
-            return { state }
-
+            return {...state, items: state.items.map(item => item.id === action.payload.id ? action.payload : item) }
+            
         case "CLEAR_ITEMS":
             return initialState
 
