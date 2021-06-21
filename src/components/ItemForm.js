@@ -122,7 +122,7 @@ const mapStateToProps = state => {
     return {
         categories: state.categories,
         itemForm: state.itemForm,
-        userId: state.currentUser.id
+        userId: state.currentUser.id ? state.currentUser.id: ""
     };
 };
 

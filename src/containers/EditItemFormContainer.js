@@ -19,7 +19,7 @@ class EditItemFormContainer extends React.Component {
     
     render(){
         return (
-            <ItemForm history={this.props.history} handleSubmit={this.handleSubmit}/>
+            <ItemForm editMode history={this.props.history} handleSubmit={this.handleSubmit}/>
         )
     }
 }
@@ -28,3 +28,4 @@ class EditItemFormContainer extends React.Component {
 export default connect(null, { updateItem, setEditItemForm })(EditItemFormContainer)
 
 //we need to fire setEditItemForm when we click on edit button
+//adding an attribute like "editMode" while calling a component will make it a boolean and auto-set it to true
