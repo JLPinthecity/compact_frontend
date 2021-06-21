@@ -100,7 +100,7 @@ export const createItem = (itemFormData, userId, history) => {
 };
 
 export const patchItem = (itemFormData, userId, itemId, history) => {
-    debugger
+    // debugger
     // console.log("INSIDE PATCHITEM ACTION CREATOR", userId)
     // console.log("INSIDE PATCHITEM ACTION CREATOR", itemFormData)    
     const item ={
@@ -130,7 +130,7 @@ export const patchItem = (itemFormData, userId, itemId, history) => {
             body: JSON.stringify(item)
         };
 
-        return fetch(`url/${item.id}`, configObj)
+        return fetch(`${url}/${item.id}`, configObj)
         .then(res => res.json())
         .then(item => {
             if (item.error){
