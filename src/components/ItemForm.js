@@ -2,7 +2,7 @@ import React from 'react'
 import { updateItemForm } from '../actions/itemForm.js'
 import { connect } from 'react-redux'
 
-const ItemForm = ({ categories, updateItemForm, itemForm, handleSubmit, userId }) => {
+const ItemForm = ({ categories, updateItemForm, itemForm, handleSubmit, userId, editMode }) => {
  // {console.log("inside itemForm categories:", props.categories.categories)} 
     const categoryMapper = () => {
         let list = categories.categories.map(category=>{
@@ -113,7 +113,9 @@ const ItemForm = ({ categories, updateItemForm, itemForm, handleSubmit, userId }
             </select >
             <br />
 
-            <input type="submit" className="btn" value="Submit" />
+            <input type="submit" 
+                className="btn" 
+                value={ editMode ? "Edit" : "Submit" }/>
         </form>
     )
 };

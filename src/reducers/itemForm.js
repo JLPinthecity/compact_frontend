@@ -27,6 +27,7 @@ const itemForm = (state = initialState, action) => {
             return initialState
 
         case 'SET_EDIT_ITEM_FORM':
+            debugger
             return action.payload
 
         default:

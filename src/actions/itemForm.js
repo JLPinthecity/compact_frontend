@@ -30,7 +30,7 @@ export const setEditItemForm = (item) => {
 
     return {
         type: 'SET_EDIT_ITEM_FORM',
-        payload: item
+        payload: editItemFormData
     }
 }
 
