@@ -1,6 +1,6 @@
 import React from 'react';
 import ItemForm from '../components/ItemForm.js';
-import { updateItem } from '../actions/items.js'
+import { patchItem } from '../actions/items.js'
 import { setEditItemForm } from '../actions/itemForm.js'
 import { connect } from 'react-redux'
 
@@ -13,10 +13,14 @@ class EditItemFormContainer extends React.Component {
 
     handleSubmit = (itemForm, userId) => {
         // console.log("INSIDE HANDLE SUBMIT userId", userId)
-        const { updateItem, item, history } = this.props
-        updateItem(itemForm, userId, history)
+        const { patchItem, item, history } = this.props
+        patchItem(itemForm, userId, history)
     };
     
+    //when we submit edit form
+    //we want to send patchItem fetch to backend
+    //dispatch updateItem action to update the item in our store 
+
     render(){
         return (
             <ItemForm editMode history={this.props.history} handleSubmit={this.handleSubmit}/>
@@ -25,7 +29,7 @@ class EditItemFormContainer extends React.Component {
 }
 
 
-export default connect(null, { updateItem, setEditItemForm })(EditItemFormContainer)
+export default connect(null, { patchItem, setEditItemForm })(EditItemFormContainer)
 
 //we need to fire setEditItemForm when we click on edit button
 //adding an attribute like "editMode" while calling a component will make it a boolean and auto-set it to true

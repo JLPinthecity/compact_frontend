@@ -115,7 +115,7 @@ const ItemForm = ({ categories, updateItemForm, itemForm, handleSubmit, userId, 
 
             <input type="submit" 
                 className="btn" 
-                value={ editMode ? "Edit" : "Submit" }/>
+                value={ editMode ? "Update" : "Submit" }/>
         </form>
     )
 };
