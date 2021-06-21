@@ -99,10 +99,10 @@ export const createItem = (itemFormData, userId, history) => {
     };
 };
 
-export const patchItem = (itemFormData, userId, history) => {
+export const patchItem = (itemFormData, userId, itemId, history) => {
     debugger
-    // console.log("INSIDE UPDATEITEM ACTION CREATOR", userId)
-    // console.log("INSIDE UPDATEITEM ACTION CREATOR", itemFormData)    
+    // console.log("INSIDE PATCHITEM ACTION CREATOR", userId)
+    // console.log("INSIDE PATCHITEM ACTION CREATOR", itemFormData)    
     const item ={
         name: itemFormData.name,
         notes: itemFormData.notes,
@@ -114,10 +114,11 @@ export const patchItem = (itemFormData, userId, history) => {
         purchased: JSON.parse(itemFormData.purchased),
         sent_home: JSON.parse(itemFormData.sent_home),
         category_id: parseInt(itemFormData.category), 
-        user_id: parseInt(userId)
+        user_id: parseInt(userId),
+        id: parseInt(itemId)
     }
 
-    // console.log("sending to backend", item)
+    console.log("sending to backend from PATCHITEM", item)
     return dispatch => {
         const configObj = {
             credentials: "include",
@@ -129,7 +130,7 @@ export const patchItem = (itemFormData, userId, history) => {
             body: JSON.stringify(item)
         };
 
-        return fetch(`url${itemFormData.id}`, configObj)
+        return fetch(`url/${item.id}`, configObj)
         .then(res => res.json())
         .then(item => {
             if (item.error){

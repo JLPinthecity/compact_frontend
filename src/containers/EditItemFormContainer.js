@@ -5,6 +5,7 @@ import { setEditItemForm } from '../actions/itemForm.js'
 import { connect } from 'react-redux'
 
 class EditItemFormContainer extends React.Component {
+
     
     componentDidMount(){
         // debugger
@@ -12,11 +13,14 @@ class EditItemFormContainer extends React.Component {
     }
 
     handleSubmit = (itemForm, userId) => {
+        // debugger
         // console.log("INSIDE HANDLE SUBMIT userId", userId)
         const { patchItem, item, history } = this.props
-        patchItem(itemForm, userId, history)
+        const itemId = item.id
+        patchItem(itemForm, userId, itemId, history)
     };
-    
+
+    //from itemForm, we pass handleSubmit itemForm and userId
     //when we submit edit form
     //we want to send patchItem fetch to backend
     //dispatch updateItem action to update the item in our store 
@@ -27,7 +31,6 @@ class EditItemFormContainer extends React.Component {
         )
     }
 }
-
 
 export default connect(null, { patchItem, setEditItemForm })(EditItemFormContainer)
 
