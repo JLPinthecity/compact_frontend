@@ -5,20 +5,21 @@ import { setEditItemForm } from '../actions/itemForm.js'
 import { connect } from 'react-redux'
 
 class EditItemFormContainer extends React.Component {
-
+    
     componentDidMount(){
-        this.props.setEditItemForm(this.props.item)
+        // debugger
+        this.props.item && this.props.setEditItemForm(this.props.item)
     }
 
     handleSubmit = (itemForm, userId) => {
         // console.log("INSIDE HANDLE SUBMIT userId", userId)
-        const { updateItem, history } = this.props
+        const { updateItem, item, history } = this.props
         updateItem(itemForm, userId, history)
     };
     
     render(){
         return (
-            <ItemForm history={history} handleSubmit={handleSubmit}/>
+            <ItemForm history={this.props.history} handleSubmit={this.handleSubmit}/>
         )
     }
 }

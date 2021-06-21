@@ -51,7 +51,7 @@ class App extends Component{
           <Route exact path="/items/:id/edit" render={props => {
               const item = items.items.find(item => item.id === props.match.params.id)
               console.log("FROM EDIT FORM ROUTE", item)
-              return <ItemForm item={item} {...props}/>
+              return <EditItemFormContainer item={item} {...props}/>
             }
           }/>
 
@@ -73,3 +73,8 @@ export default withRouter((connect(mapStateToProps, { getCurrentUser, setEditIte
 
 // console.log("current user is", this.props.currentUser)
 //render gives you the option of passing all router props or excluding all of them. when we pass props, we are spec not excluding any. 
+
+
+//edit:
+//we are passing the new edititemformcontainer comp the item object that has all the form inputs from the store
+//we are placing in wrapper bc we want to keep reducer a pure function

@@ -1,9 +1,8 @@
 import React from 'react'
 import { updateItemForm } from '../actions/itemForm.js'
 import { connect } from 'react-redux'
-import NewItemFormContainer from '../containers/NewItemFormContainer.js';
 
-const ItemForm = ({categories, updateItemForm, itemForm, handleSubmit, userId}) => {
+const ItemForm = ({ categories, updateItemForm, itemForm, handleSubmit, userId }) => {
  // {console.log("inside itemForm categories:", props.categories.categories)} 
     const categoryMapper = () => {
         let list = categories.categories.map(category=>{
@@ -14,7 +13,6 @@ const ItemForm = ({categories, updateItemForm, itemForm, handleSubmit, userId}) 
                 return <option name={category.name} key={category.id} value={category.id}>{category.name}</option>
             }
         })
-        // console.log(list)
         return list     
     }
 
@@ -28,64 +26,92 @@ const ItemForm = ({categories, updateItemForm, itemForm, handleSubmit, userId}) 
             event.preventDefault()
             handleSubmit(itemForm, userId);
         }}>
+
             <h1>Add New Item</h1>
-            <label>
-                NAME  <input type="text" name="name" placeholder="name" alt="name field" value={itemForm.name} onChange={handleChange}/>
-            </label><br></br>
+            
+            <label>NAME</label> 
+            <input type="text" 
+                name="name" 
+                placeholder="name" 
+                alt="name field" 
+                value={itemForm.name} 
+                onChange={handleChange}/>
+            <br />
 
-            <label>
-                DESCRIPTION
-                <input type="text" name="notes" placeholder="description or notes" alt="notes field" value={itemForm.notes} onChange={handleChange}/>
-            </label><br></br>
+            <label>DESCRIPTION</label>
+            <input type="text" 
+                name="notes" 
+                placeholder="description or notes" 
+                alt="notes field" 
+                value={itemForm.notes} 
+                onChange={handleChange}/>
+            <br />
 
-            <label>
-                WEIGHT 
-                <input type="text" name="weight" placeholder="weight (ounces)" alt="weight field" value={itemForm.weight} onChange={handleChange}/>
-            </label><br></br>
+            <label>WEIGHT</label>
+            <input type="text" 
+                name="weight" 
+                placeholder="weight (ounces)" 
+                alt="weight field" 
+                value={itemForm.weight} 
+                onChange={handleChange}/>
+            <br />
 
-            <label>
-                QUANTITY
-                <input type="text" name="quantity" placeholder="quantity" alt="quantity field" value={itemForm.quantity} onChange={handleChange}/>
-            </label><br></br>
+            <label>QUANTITY</label>
+            <input type="text" 
+                name="quantity" 
+                placeholder="quantity" 
+                alt="quantity field" 
+                value={itemForm.quantity} 
+                onChange={handleChange}/>
+            <br />
 
-            <label>
-                PRICE 
-                <input type="text" name="price" placeholder="price" alt="price field" value={itemForm.price} onChange={handleChange}/>
-            </label><br></br>
+            <label>PRICE</label>
+            <input type="text" 
+                name="price" 
+                placeholder="price" 
+                alt="price field" 
+                value={itemForm.price} 
+                onChange={handleChange}/>
+            <br />
 
-            <label>
-                LINK 
-                <input type="text" name="url" placeholder="url" alt="url field" value={itemForm.url} onChange={handleChange}/>
-            </label><br></br>
+            <label>LINK</label>
+            <input type="text" 
+                name="url" 
+                placeholder="url" 
+                alt="url field" 
+                value={itemForm.url} 
+                onChange={handleChange}/>
+            <br />
 
-            <label>
-                IMAGE LINK
-                <input type="text" name="image" placeholder="image url" alt="image url field" value={itemForm.image}onChange={handleChange}/>
-            </label><br/><br/>
+            <label>IMAGE LINK</label>
+            <input type="text" 
+                name="image" 
+                placeholder="image url" 
+                alt="image url field" 
+                value={itemForm.image}
+                onChange={handleChange}/>
+            <br />
 
-            <label>
-                PURCHASED
+            <label>PURCHASED</label>
             <select name="purchased" value={itemForm.purchased} onChange={handleChange}>
                 <option value="false" defaultValue>no</option>
                 <option value="true">yes</option>
             </select>
-            </label><br/><br/>
+            <br />
            
 
-            <label>
-            ITEM SENT HOME/WORN ON PERSON
+            <label>ITEM SENT HOME/WORN ON PERSON</label>
             <select name="sent_home" value={itemForm.sent_home} onChange={handleChange}>
                 <option value="false" defaultValue>no</option>
                 <option value="true">yes</option>
             </select>
-            </label><br/><br/>
+            <br />
 
-            <label>
-            CATEGORY
+            <label>CATEGORY</label>
             <select name="category" value={itemForm.category} onChange={handleChange}>
                 {categoryMapper()}
             </select >
-            </label><br/><br/>
+            <br />
 
             <input type="submit" className="btn" value="Submit" />
         </form>

@@ -27,8 +27,7 @@ const itemForm = (state = initialState, action) => {
             return initialState
 
         case 'SET_EDIT_ITEM_FORM':
-            // console.log("from setedititemform reducer", action)
-            return action.editFormData
+            return action.payload
 
         default:
             return state

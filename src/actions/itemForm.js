@@ -14,6 +14,7 @@ export const clearItemForm = () => {
 }
 
 export const setEditItemForm = (item) => {
+    // debugger
     const editItemFormData ={
         name: item.attributes.name,
         notes: item.attributes.notes,
@@ -29,7 +30,8 @@ export const setEditItemForm = (item) => {
 
     return {
         type: 'SET_EDIT_ITEM_FORM',
-        editItemFormData
+        payload: item
     }
 }
+
 //we need to repopulate empty item form with existing values from redux
