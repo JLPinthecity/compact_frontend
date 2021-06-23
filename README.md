@@ -26,3 +26,9 @@ To learn more about the project, please read my post on [Medium](https://joannpa
 
 8. To exit, enter <code>CTRL + C</code> in both files. 
 
+## Contributing
+Pull requests are welcome. Pease get in touch about project improvements and suggestions. 
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
