@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 const ItemForm = ({ categories, updateItemForm, itemForm, handleSubmit, userId, editMode }) => {
  // {console.log("inside itemForm categories:", props.categories.categories)} 
     const categoryMapper = () => {
-        let list = categories.categories.map(category=>{
+        let list = categories.categories.map(category => {
             if (category.id === 1){
                 return <option name={category.name} key={category.id} value={category.id} defaultValue>{category.name}</option>
             }

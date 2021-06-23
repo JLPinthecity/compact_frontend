@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import { getCurrentUser } from './actions/currentUser.js';
-import { setEditItemForm } from './actions/itemForm.js';
 import Navbar from './components/Navbar/Navbar.js';
 import Login from "./components/Login.js";
 import Items from "./components/Items.js";
@@ -10,7 +9,6 @@ import About from "./components/About.js";
 import ItemCard from "./components/ItemCard.js";
 import Home from "./components/Home.js";
 import Signup from "./components/Signup.js";
-import ItemForm from "./components/ItemForm.js";
 import { createBrowserHistory} from 'history';
 import SignupLoginContainer from "./containers/SignupLoginContainer.js"
 import NewItemFormContainer from "./containers/NewItemFormContainer.js"
@@ -29,8 +27,9 @@ class App extends Component{
 
   render(){
     const history = createBrowserHistory();
-    const { items, setEditItemForm } = this.props
+    const { items } = this.props
     // console.log(history)
+    // , setEditItemForm
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
@@ -68,7 +67,7 @@ const mapStateToProps = state => {
   })
 }
 
-export default withRouter((connect(mapStateToProps, { getCurrentUser, setEditItemForm })(App)));
+export default withRouter((connect(mapStateToProps, { getCurrentUser })(App)));
 
 
 // console.log("current user is", this.props.currentUser)

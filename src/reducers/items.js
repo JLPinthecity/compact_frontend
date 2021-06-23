@@ -1,16 +1,13 @@
 const initialState = {
-    items: [],
-    loading: false
+    items: []
 }
 
 const items = (state = initialState, action) => {
     console.log("FROM ITEMS REDUCER state is", state)
     switch (action.type) {
-        case "LOADING":
-            return  {...state, loading: true }
         
         case "SET_ITEMS":
-            return {...state, items: action.items, loading: false}
+            return {...state, items: action.items}
 
         case "ADD_ITEM":
             return { ...state, items: [...state.items, action.payload] }
