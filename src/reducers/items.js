@@ -3,7 +3,7 @@ const initialState = {
 }
 
 const items = (state = initialState, action) => {
-    console.log("FROM ITEMS REDUCER state is", state)
+    // console.log("FROM ITEMS REDUCER state is", state)
     switch (action.type) {
         
         case "SET_ITEMS":

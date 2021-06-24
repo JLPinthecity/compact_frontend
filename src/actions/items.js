@@ -161,7 +161,8 @@ export const patchItem = (itemFormData, userId, itemId, history) => {
 
 
 export const deleteItem = (itemId, history) => {
-    // console.log("inside deleteItem action creator")
+    console.log("inside deleteItem action creator", itemId)
+    console.log("inside deleteItem action creator", history)
     return dispatch => { 
         const configObj = {
             credentials: "include",
