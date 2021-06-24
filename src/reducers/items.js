@@ -19,7 +19,7 @@ const items = (state = initialState, action) => {
             return initialState
         
         case "DELETE_ITEM":
-            return state
+            return {...state, items: state.items.filter(item => item.id === action.payload ? false : true)}
 
         default:
             return state
