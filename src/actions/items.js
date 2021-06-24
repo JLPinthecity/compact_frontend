@@ -29,11 +29,11 @@ export const updateItem = (item) => {
 }
 //happens once patch request returns updated object
 
-export const clearItem = (item) => {
-    debugger
+export const clearItem = (itemId) => {
+    // debugger
     return {
         type: 'DELETE_ITEM', 
-        payload: item 
+        payload: itemId 
     }
 }
 //happens once destroy action happens on the backend
@@ -161,8 +161,8 @@ export const patchItem = (itemFormData, userId, itemId, history) => {
 
 
 export const deleteItem = (itemId, history) => {
-    console.log("inside deleteItem action creator", itemId)
-    console.log("inside deleteItem action creator", history)
+    // console.log("inside deleteItem action creator", itemId)
+    // console.log("inside deleteItem action creator", history)
     return dispatch => { 
         const configObj = {
             credentials: "include",
@@ -172,15 +172,15 @@ export const deleteItem = (itemId, history) => {
                 "Accepts": "application/json"
             }
         };
-
         return fetch(`${url}/${itemId}`, configObj)
         .then(res => res.json())
         .then(res => {
             if (res.error) {
                 alert(res.error)
             } else {
-                dispatch(clearItem());
-                history.push("/");
+                // console.log("BACK FROM DELETE REQUEST", res)
+                dispatch(clearItem(itemId));
+                history.push("/items");
             }
         })
     };

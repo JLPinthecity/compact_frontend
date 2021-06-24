@@ -137,14 +137,12 @@ export const signup = (formData, history) => {
 //2) set as current user on front end
 //3) clear signup form
 
-
 //dispatch is a function that comes from redux
 //THUNK allows us to return a function with dispatch as an argument 
 //a function receives dispatch as an argument
 //then we can return a fetch and use dispatch as needed
 //here, we call dispatch as a function in the else and call the action creator of setCurrentUser, passing in user object from backend
 //action creator is a function that returns an action, which has a type and payload
-
 
 //credentials include will send cookies back to backend to enable sessions
 //needed in all fetch requests

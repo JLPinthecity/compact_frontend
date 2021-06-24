@@ -20,10 +20,9 @@ class EditItemFormContainer extends React.Component {
     };
 
     handleClick = () => {
-        // debugger
         const { item, history } = this.props
         const itemId = item.id
-        this.deleteItem(itemId, history) 
+        this.props.deleteItem(itemId, history) 
     }
 
     render(){
