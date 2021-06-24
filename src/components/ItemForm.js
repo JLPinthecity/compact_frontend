@@ -130,7 +130,9 @@ const mapStateToProps = state => {
 
 export default connect(mapStateToProps, { updateItemForm })(ItemForm);
 
-//reminder about mapDispatchToProps. What we import is not what we are calling. Yes, we import the action creator here. We don't invoke it directly. We HAVE to tell redux to invoke it (AKA dispatch the action) or else we won't see the values change in the store.
+//reminder about mapDispatchToProps. What we import is not what we are calling. 
+//Yes, we import the action creator here. We don't invoke it directly. 
+//We HAVE to tell redux to invoke it (AKA dispatch the action) or else we won't see the values change in the store.
 
 
 

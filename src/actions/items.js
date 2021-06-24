@@ -18,6 +18,7 @@ export const addItem = (item) => {
         payload: item 
     }
 }
+//happens after createItem fires post fetch request
 
 export const updateItem = (item) => {
     debugger
@@ -26,6 +27,18 @@ export const updateItem = (item) => {
         payload: item 
     }
 }
+//happens once patch request returns updated object
+
+export const clearItem = (item) => {
+    debugger
+    return {
+        type: 'DELETE_ITEM', 
+        payload: item 
+    }
+}
+//happens once destroy action happens on the backend
+
+
 //asynchronous actions
 export const getItems = () => {
    
@@ -118,7 +131,7 @@ export const patchItem = (itemFormData, userId, itemId, history) => {
         id: parseInt(itemId)
     }
 
-    console.log("sending to backend from PATCHITEM", item)
+    // console.log("sending to backend from PATCHITEM", item)
     return dispatch => {
         const configObj = {
             credentials: "include",
@@ -136,7 +149,7 @@ export const patchItem = (itemFormData, userId, itemId, history) => {
             if (item.error){
                 alert(item.error)
             }else {
-                console.log("THIS IS FROM THE BACKEND/RETURN OF PATCH", item.data)
+                // console.log("THIS IS FROM THE BACKEND/RETURN OF PATCH", item.data)
                 dispatch(updateItem(item.data))
                 dispatch(clearItemForm())
                 history.push(`/items/${item.data.id}`)
@@ -147,4 +160,27 @@ export const patchItem = (itemFormData, userId, itemId, history) => {
 };
 
 
+export const deleteItem = (itemId, history) => {
+    // console.log("inside deleteItem action creator")
+    return dispatch => { 
+        const configObj = {
+            credentials: "include",
+            method: 'DELETE',
+            headers: {
+                "Content-Type": "application/json",
+                "Accepts": "application/json"
+            }
+        };
 
+        return fetch(`${url}/${itemId}`, configObj)
+        .then(res => res.json())
+        .then(res => {
+            if (res.error) {
+                alert(res.error)
+            } else {
+                dispatch(clearItem());
+                history.push("/");
+            }
+        })
+    };
+};

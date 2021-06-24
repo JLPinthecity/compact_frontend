@@ -16,7 +16,7 @@ export const clearCurrentUser = () => ({type: 'CLEAR_CURRENT_USER'})
 
 //asynchronous action creators
 export const getCurrentUser = () => {
-    console.log("inside getCurrentUser")
+    // console.log("inside getCurrentUser")
     return dispatch => {
         const configObj = {
             credentials: "include",
@@ -75,7 +75,7 @@ export const login = (credentials, history) => {
 };
 
 export const logout = (history) => {
-    console.log("inside logout action creator from handleSubmit in logout component")
+    // console.log("inside logout action creator from handleSubmit in logout component")
     return dispatch => {
        
         dispatch(clearCurrentUser());

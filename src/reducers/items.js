@@ -17,6 +17,9 @@ const items = (state = initialState, action) => {
             
         case "CLEAR_ITEMS":
             return initialState
+        
+        case "DELETE_ITEM":
+            return state
 
         default:
             return state

@@ -20,14 +20,20 @@ class EditItemFormContainer extends React.Component {
         patchItem(itemForm, userId, itemId, history)
     };
 
-    //from itemForm, we pass handleSubmit itemForm and userId
-    //when we submit edit form
-    //we want to send patchItem fetch to backend
-    //dispatch updateItem action to update the item in our store 
+    handleClick = () => {
+
+    }
+
+
 
     render(){
         return (
+            <>
             <ItemForm editMode history={this.props.history} handleSubmit={this.handleSubmit}/>
+            <br/>
+            <button onClick={this.handleClick}>Delete item</button>
+            </>
+
         )
     }
 }
@@ -36,3 +42,8 @@ export default connect(null, { patchItem, setEditItemForm })(EditItemFormContain
 
 //we need to fire setEditItemForm when we click on edit button
 //adding an attribute like "editMode" while calling a component will make it a boolean and auto-set it to true
+
+  //from itemForm, we pass handleSubmit itemForm and userId
+    //when we submit edit form
+    //we want to send patchItem fetch to backend
+    //dispatch updateItem action to update the item in our store 
