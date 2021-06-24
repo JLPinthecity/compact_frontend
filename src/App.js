@@ -49,7 +49,7 @@ class App extends Component{
           }/>
           <Route exact path="/items/:id/edit" render={props => {
               const item = items.items.find(item => item.id === props.match.params.id)
-              console.log("FROM EDIT FORM ROUTE", item)
+              // console.log("FROM EDIT FORM ROUTE", item)
               return <EditItemFormContainer item={item} {...props}/>
             }
           }/>
