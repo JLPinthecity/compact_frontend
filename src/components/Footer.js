@@ -2,14 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer-content">
-      <ul className="footer-menu">
-        <li className="footer-menu-item">About</li>
-
-        <li className="footer-menu-item">Movies</li>
-
-        <li className="footer-menu-item">Add Movie</li>
-      </ul>
+    <div className="footer-container">
+      <div className="footer-main">
+        <div className="footer-column"></div>
+        <div className="footer-column"></div>
+        <div className="footer-column"></div>
+      </div>
+      <div className="footer-bottom">TEST TEST TEST</div>
     </div>
   );
 };

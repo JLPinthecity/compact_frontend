@@ -6,6 +6,23 @@
   background-color: rgb(234, 233, 245);
 }
 
+body, html {
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: aquamarine;
+}
+
+
+
 .gear-list-container {
   display: grid;
   grid-gap: 5px;
@@ -68,7 +85,6 @@ form {
   margin: 10px;
   padding: 10px;
   width : 550px;
-   
 }
 
 input {

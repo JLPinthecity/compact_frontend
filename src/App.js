@@ -24,43 +24,45 @@ class App extends Component {
   render() {
     const history = createBrowserHistory();
     const { items } = this.props;
-    // console.log(history)
-    // , setEditItemForm
+
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
         <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/items" component={Items} />
-          <Route history={history} exact path="/signup" component={Signup} />
-          <Route history={history} exact path="/login" component={Login} />
-          <Route exact path="/signin" component={SignupLoginContainer} />
-          <Route exact path="/items/new" component={NewItemFormContainer} />
-          <Route exact path="/footer" component={Footer} />
-          <Route
-            exact
-            path="/items/:id"
-            render={(props) => {
-              const item = items.items.find(
-                (item) => item.id === props.match.params.id
-              );
-              return <ItemCard item={item} {...props} />;
-            }}
-          />
-          <Route
-            exact
-            path="/items/:id/edit"
-            render={(props) => {
-              const item = items.items.find(
-                (item) => item.id === props.match.params.id
-              );
-              // console.log("FROM EDIT FORM ROUTE", item)
-              return <EditItemFormContainer item={item} {...props} />;
-            }}
-          />
-        </Switch>
+        <div className="page-container">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/items" component={Items} />
+            <Route history={history} exact path="/signup" component={Signup} />
+            <Route history={history} exact path="/login" component={Login} />
+            <Route exact path="/signin" component={SignupLoginContainer} />
+            <Route exact path="/items/new" component={NewItemFormContainer} />
+            <Route exact path="/footer" component={Footer} />
+            <Route
+              exact
+              path="/items/:id"
+              render={(props) => {
+                const item = items.items.find(
+                  (item) => item.id === props.match.params.id
+                );
+                return <ItemCard item={item} {...props} />;
+              }}
+            />
+            <Route
+              exact
+              path="/items/:id/edit"
+              render={(props) => {
+                const item = items.items.find(
+                  (item) => item.id === props.match.params.id
+                );
+                // console.log("FROM EDIT FORM ROUTE", item)
+                return <EditItemFormContainer item={item} {...props} />;
+              }}
+            />
+          </Switch>
+          <Footer />
+        </div>
       </div>
     );
   }
