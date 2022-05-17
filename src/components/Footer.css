@@ -1,0 +1,28 @@
+.footer-container{
+    background-color: rgb(84, 86, 76);
+    color: whitesmoke;
+    padding: 5rem 2rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.footer-column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.footer-main {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.footer-main a {
+    color: whitesmoke;
+    background-color: rgb(84, 86, 76);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-main a:hover {
+    color: rgb(187, 115, 86);
+}

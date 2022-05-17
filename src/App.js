@@ -28,8 +28,8 @@ class App extends Component {
     return (
       <div>
         <h1 className="siteTitle">COMPACT</h1>
-        <Navbar />
         <div className="page-container">
+          <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />

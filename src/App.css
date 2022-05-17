@@ -1,16 +1,11 @@
-* {
+body, html {
   box-sizing: border-box;
   text-align: center;
-  margin: 40;
-  padding: 0;
-  background-color: rgb(234, 233, 245);
-}
-
-body, html {
   height: 100%;
   max-width: 100%;
   margin: 0;
   font-family: 'Nunito', sans-serif;
+  background-color: rgb(234, 233, 245);
 }
 
 .page-container {
@@ -20,8 +15,6 @@ body, html {
   box-sizing: border-box;
   background-color: aquamarine;
 }
-
-
 
 .gear-list-container {
   display: grid;
