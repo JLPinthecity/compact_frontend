@@ -14,14 +14,20 @@
 
 /* FLEX CONTAINER - row */
 .row {
-    background-color: blue;
     margin: 1rem;
     display: flex;
     flex-direction: row;
+    background-color: antiquewhite;
 }
 
+.top{
+    background-image: url(../images/organic_1.svg);
+    background-repeat: no-repeat;
+}
+
+
 .column {
-    background-color: bisque;
+    
     margin-left: 1rem;
     margin-right: 1rem;
 }

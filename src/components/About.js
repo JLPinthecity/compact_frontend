@@ -20,7 +20,6 @@ const About = () => {
             volutpat sed cras ornare. Tellus molestie nunc non blandit massa
             enim. Sit amet mauris commodo quis imperdiet.`
           </div>
-
           <div className="column right">
             Bibendum enim facilisis gravida neque convallis a cras semper
             auctor. Velit aliquet sagittis id consectetur purus ut. Sed velit
@@ -40,7 +39,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="row top">
+        <div className="row bottom">
           <div className="column left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Natoque
