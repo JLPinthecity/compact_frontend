@@ -1,19 +1,14 @@
 .footer-container{
     background-color: rgb(84, 86, 76);
     color: whitesmoke;
-    padding: 5rem 2rem;
+    padding: 4rem 1rem;
     font-family: 'Cormorant Garamond', serif;
-}
-
-.footer-column {
-    flex-basis: 200px;
-    flex-grow: 1;
-    text-align: center;
+    margin-top: auto;
 }
 
 .footer-main {
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .footer-main a {
@@ -23,6 +18,18 @@
     transition: color 0.3s;
 }
 
+.footer-column {
+    flex-basis: 25%;
+    flex-grow: 1;
+    text-align: center;
+}
+
 .footer-main a:hover {
     color: rgb(187, 115, 86);
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+    }
 }
