@@ -1,0 +1,29 @@
+.about-container{
+    color: black;
+    padding: 4rem 1rem;
+    background-color: pink;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+
+/* MAIN FLEX CONTAINER */
+.about-main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FLEX CONTAINER - row */
+.row {
+    background-color: blue;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    background-color: bisque;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
