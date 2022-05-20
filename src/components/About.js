@@ -32,6 +32,10 @@ const About = () => {
         </div>
 
         <div className="row two">
+          <div className="column background"></div>
+        </div>
+
+        <div className="row three">
           <div className="column left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Natoque
@@ -79,7 +83,7 @@ const About = () => {
                 sounds, and unexpected splendor at every turn of the trail.
               </li>
               <li>
-                You can say you walked across part of you country. Epic party
+                2. You can say you walked across part of you country. Epic party
                 stories, anyone?
               </li>
               <li>
@@ -89,8 +93,10 @@ const About = () => {
                 You never considered yourself an outdoor person. It's time to
                 prove yourself wrong.
               </li>
-              You love Lord of the Rings and, hey, it's the closest thing to
-              Frodo and Samwise's epic journey.
+              <li>
+                You love Lord of the Rings and, hey, it's the closest thing to
+                Frodo and Samwise's epic journey.
+              </li>
               <li>The longtime friends you'll make along the way.</li>
               <li>Snacks!</li>
             </ul>
