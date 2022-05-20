@@ -12,6 +12,13 @@
     flex-direction: column;
 }
 
+.background-img-container {
+    background-image: url(../images/organic_1.svg);
+    background-repeat: no-repeat;
+    background-position: left 30%;
+    background-size: 50%;
+}
+
 /* FLEX CONTAINER - row */
 .row {
     display: flex;
@@ -36,11 +43,11 @@
 }
 
 .two {
-    background-image: url(../images/organic_5_squiggly.svg);
+    /* background-image: url(../images/organic_5_squiggly.svg);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 30%;
-    transform: rotate(15deg);
+    transform: rotate(15deg); */
 }
 
 /* FLEX CONTAINER - each column */
