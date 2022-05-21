@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import tent from "../images/tent.jpg";
+import pinkcurve from "../images/pink_curve.svg";
 
 const About = () => {
   return (
@@ -8,15 +9,17 @@ const About = () => {
       <div className="about-main">
         <div className="column left">
           <div className="grid-container">
-            <div className="grid-item">
-              <span>1</span>
-            </div>
-            <div className="grid-item">
-              <span>2</span>
-            </div>
-            <div className="grid-item">
-              <span>3</span>
-            </div>
+            <img
+              className="grid-item"
+              alt="tent opening to trees in during daytime"
+              src={tent}
+            />
+
+            <img
+              className="grid-item"
+              alt="tent opening to trees in during daytime"
+              src={pinkcurve}
+            />
           </div>
         </div>
 
@@ -24,7 +27,7 @@ const About = () => {
           <div className="about-statement">
             <h3>
               Think of Compact as the
-              <i>first</i> stop on your epic journey.
+              <i> first</i> stop on your epic journey.
             </h3>
             <p>
               Compact is a gear list planner built for thru-hikers and
