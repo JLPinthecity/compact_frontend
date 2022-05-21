@@ -23,6 +23,7 @@ body, html {
   flex-direction: column;
   min-height: 100vh;
   box-sizing: border-box;
+  animation: transitionIn 0.75s;
 }
 
 .gear-list-container {
@@ -131,5 +132,17 @@ select {
   color: rgb(255, 197, 201);
   background-color: rgb(138,206,196);
   border: 5px solid rgb(138,206,196);
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }
 
