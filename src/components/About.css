@@ -217,24 +217,30 @@
 
 /* THREE-COLUMN SECTION */
 
-.one {
-    width: 33.3%;
+.one, .two, .three {
+    width: 100%;
     
 }
 
-.two {
-    width: 33.3%;
-}
+@media (min-width:600px) {
+    .one, .two, .three {
+        width: 33.3%;
+    }
+} 
 
-.three {
-    width: 33.3%;
-}
 
 .section {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-padding: 2rem;
+    border: 1px solid #000;
+    float: left;
+    padding: 2rem;
 }
+
+/* MAKE BORDER LEFT DISAPPEAR AFTER 600PX TO GET RID OF REPEATING BORDER */
+@media (min-width:600px) {
+    .section:nth-child(n+2) {
+        border-left: 0;
+    }
+} 
 
 .section sup{
     padding-top: 1rem;
