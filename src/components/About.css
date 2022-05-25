@@ -11,8 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 6rem 4rem;
-
+    padding: 4rem 4rem;
 }
 
 /* ROWS WHEN SMALL --> COLUMNS WHEN LARGER */
@@ -45,10 +44,6 @@
         width: 50%;
     }
 } 
-
-.column {
-    border: 2px solid purple;
-}
 
 /* LEFT SECTION 1 */
 .grid-container {
@@ -120,7 +115,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    border: 2px solid pink;
 }
 
 .grid-item-right {
@@ -148,7 +142,6 @@
     gap: 2rem;
     justify-content: flex-start;
     align-items: center;
-    border: 5px solid green;
     padding: 8rem 5rem;
 } 
 
@@ -236,3 +229,21 @@
 .three {
     width: 33.3%;
 }
+
+.section {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+padding: 2rem;
+}
+
+.section sup{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 1.8rem;
+}
+
+.one, .two {
+    border-right: 1px solid gray;
+}
+

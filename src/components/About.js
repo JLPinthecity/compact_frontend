@@ -134,10 +134,35 @@ const About = () => {
       </div>
 
       <div className="about-main">
-        <div className="column one">test</div>
-        <div className="column two">test</div>
-        <div className="column three">test</div>
+        <div className="section one">
+          <sup>(1.) Consider the distance</sup>
+          <p>
+            Picking a thru hike will likely depend on a mix of your experience
+            level, physicality, savings (consider the cost of backpacking
+            essentials and resupplies) and time you can afford to take off work.
+          </p>
+        </div>
+        <div className="section two">
+          <sup>(2.) Make the time work</sup>
+          <p>
+            Once you have an idea of which thru hike you want to do, check the
+            official trail website for information about open dates for applying
+            to permits and when you'll be potentially starting.
+          </p>
+        </div>
+        <div className="section three">
+          <sup>(3.) Find your idols</sup>
+          <p>
+            There’s plenty of vlog-style videos from thru-hikers on nearly every
+            trail. Find someone you relate to (a fellow she-hiker, an
+            ex-corporate person, first-time thru-hiker) and follow their journey
+            on the trail. You’ll learn countless tips about the trail you want
+            to finish. There’s no better way to get a feel for whether one trail
+            is right for you.
+          </p>
+        </div>
       </div>
+      <div>test test</div>
     </div>
   );
 };
