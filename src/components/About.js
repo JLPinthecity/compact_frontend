@@ -90,7 +90,7 @@ const About = () => {
 
       <div className="row bottom">
         <div className="column_1">
-          <h3>Best reasons to commit to a thru hike:</h3>
+          <h3>Reasons to commit to a thru hike:</h3>
         </div>
 
         <div className="column_2">
@@ -129,9 +129,14 @@ const About = () => {
         </div>
       </div>
 
+      <div className="title">
+        <h3>Guide to picking your first thru-hike</h3>
+      </div>
+
       <div className="about-main">
-        <div className="column left">test</div>
-        <div className="column right">test</div>
+        <div className="column one">test</div>
+        <div className="column two">test</div>
+        <div className="column three">test</div>
       </div>
     </div>
   );
