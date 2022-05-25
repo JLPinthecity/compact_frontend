@@ -35,10 +35,12 @@ const About = () => {
                 to the Canadian border), the Continental Divide Trail (3,028
                 miles through New Mexico, Colorado, Wyoming, Idaho and Montana),
                 and the Appalachian Trail (2,185 miles from Georgia to Maine).
+                <br></br>
+                <br></br>
                 Thru-hikers typically carry everything they need from food and
                 water, clothes, and supplies for days-long stints until they
                 reach their next milestone or local town to rest and reload on
-                supplies for their next stretch.{" "}
+                supplies for their next stretch.
               </p>
             </div>
           </div>
@@ -84,6 +86,52 @@ const About = () => {
             />
           </div>
         </div>
+      </div>
+
+      <div className="row bottom">
+        <div className="column_1">
+          <h3>Best reasons to commit to a thru hike:</h3>
+        </div>
+
+        <div className="column_2">
+          <p>
+            <sup>01.</sup>
+            You'll break out of every personal rut—whether it's your 9-to-5 or
+            rinse-and-repeat daily routine. Get ready for new sights, sounds,
+            and unexpected splendor at every turn of the trail.
+          </p>
+
+          <p>
+            <sup>02.</sup>
+            You can say you walked across part of you country. Epic party
+            stories, anyone?
+          </p>
+          <p>
+            <sup>03.</sup>
+            You need some alone time to heal, think, and be one with nature.
+          </p>
+          <p>
+            <sup>04.</sup>
+            You never considered yourself an outdoor person. It's time to prove
+            yourself wrong.
+          </p>
+          <p>
+            <sup>05.</sup>
+            You love Lord of the Rings and, hey, it's the closest thing to Frodo
+            and Samwise's epic journey.
+          </p>
+          <p>
+            <sup>06.</sup>The longtime friends you'll make along the way.
+          </p>
+          <p>
+            <sup>07.</sup>The snacks!
+          </p>
+        </div>
+      </div>
+
+      <div className="about-main">
+        <div className="column left">test</div>
+        <div className="column right">test</div>
       </div>
     </div>
   );
