@@ -1,7 +1,7 @@
 /* MAIN CONTAINER */
 .about-container{
     color: black;
-    padding-top: 4rem;
+    padding-top: 1rem;
     padding-bottom: 4rem; 
     font-family:Geneva, sans-serif
 }
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 4rem 4rem;
+    padding: 1rem 4rem;
 }
 
 /* ROWS WHEN SMALL --> COLUMNS WHEN LARGER */
@@ -251,5 +251,24 @@
 
 .one, .two {
     border-right: 1px solid gray;
+}
+
+/* IMAGE CREDITS */
+.credits {
+    background-image: url(../images/organic_7_flower.svg);
+    background-size: 5%;
+    background-position: center 50%;
+    background-repeat:no-repeat;
+    min-height: 10rem;
+    padding: 4rem;
+    text-align: right;
+    line-height: 0.5rem;
+}
+
+.credits p{
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+  
+    
 }
 

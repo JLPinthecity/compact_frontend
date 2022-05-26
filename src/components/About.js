@@ -162,7 +162,14 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div>test test</div>
+      <div className="credits">
+        <p>
+          <b>IMAGE CREDITS</b>
+        </p>
+        <p>Tent: Scott Goodwill/Unsplash</p>
+        <p>Mountain: Holly Mandarich/Unsplash</p>
+        <p>Illustrations: freepix</p>
+      </div>
     </div>
   );
 };
