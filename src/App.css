@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body, html {
   text-align: center;
   margin: 0;
@@ -71,10 +70,7 @@ body, html {
   color: rgb(255, 197, 201);
 }
 
-img {
-  max-width:75%;
-  height:auto;
-}
+
 
 
 .bigForm {
