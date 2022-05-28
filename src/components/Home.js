@@ -1,10 +1,12 @@
 import React from "react";
 import "./Home.css";
-import woman from "../images/sunset1.jpg";
-// import man from "../images/sunset2.jpg";
-// import comb from "../images/organic_1.svg";
-// import yellow from "../images/yellow.svg";
-// import curl from "../images/ curl.svg";
+import woman from "../images/home/sunset1.jpg";
+import man from "../images/home/sunset2.jpg";
+import comb from "../images/home/organic_1.svg";
+import yellow_drop from "../images/yellow.svg";
+import orange_squiggly from "../images/organic_2_squiggly.svg";
+import corner_piece from "../images/organic_5_squiggly.svg";
+import pink_drop from "../images/pink drop.svg";
 
 const Home = () => {
   return (
@@ -20,14 +22,18 @@ const Home = () => {
               />
             </div>
             <div className="main-grid-item">
+              <img className="purple-graphic" alt="purple graphic" src={man} />
+            </div>
+            <div className="main-grid-item">
+              <img className="purple-graphic" alt="purple graphic" src={comb} />
+            </div>
+            <div className="main-grid-item">
               <img
                 className="purple-graphic"
                 alt="purple graphic"
-                src={woman}
+                src={pink_drop}
               />
             </div>
-            <div className="main-grid-item"></div>
-            <div className="main-grid-item"></div>
           </div>
 
           <div className="intro">test</div>
