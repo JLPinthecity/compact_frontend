@@ -1,0 +1,34 @@
+.home-container {
+    color: black;
+    padding-top: 1rem;
+    padding-bottom: 4rem; 
+    font-family: Geneva, sans-serif
+}
+
+/* FLEX CONTAINER */
+.home-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 4rem;
+    border: 12px solid salmon;
+}
+
+
+/* FLEX CONTAINER - row */
+.horizontal-section{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid pink;
+}
+/* COlUMN 1 */
+.image-main{
+    border: 2px solid green;
+    width: 50%;
+}
+
+/* COlUMN 2 */
+.intro{
+    border: 2px solid purple;
+    width: 50%;
+}
