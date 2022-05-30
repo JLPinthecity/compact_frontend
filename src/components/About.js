@@ -4,6 +4,7 @@ import tent from "../images/about/tent.jpg";
 import mountain from "../images/about/mountain.jpg";
 import pinkcurve from "../images/about/pink_curve.svg";
 import squiggly from "../images/about/pink_squiggle.svg";
+import yellow from "../images/about/yellow_squiggly.svg";
 
 const About = () => {
   return (
@@ -79,11 +80,7 @@ const About = () => {
               src={mountain}
             />
 
-            <img
-              className="grid-item-right"
-              alt="pink graphic"
-              src={squiggly}
-            />
+            <img className="grid-item-right" alt="pink graphic" src={yellow} />
           </div>
         </div>
       </div>
