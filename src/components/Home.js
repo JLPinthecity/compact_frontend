@@ -2,11 +2,13 @@ import React from "react";
 import "./Home.css";
 import woman from "../images/home/sunset1.jpg";
 import man from "../images/home/sunset2.jpg";
-import comb from "../images/home/organic_1.svg";
-import green_curve from "../images/green_curve.svg";
-import orange_squiggly from "../images/organic_2_squiggly.svg";
-import corner_piece from "../images/organic_5_squiggly.svg";
-import pink_drop from "../images/pink drop.svg";
+import blue from "../images/home/blue.svg";
+import star from "../images/home/orange_star.svg";
+import dot from "../images/dot.svg";
+import squiggly from "../images/organic_3_squiggly.svg";
+import yellow_tear from "../images/home/yellow_tear.svg";
+import teeth from "../images/teeth.svg";
+import curve from "../images/curve.svg";
 
 const Home = () => {
   return (
@@ -14,7 +16,7 @@ const Home = () => {
       <div className="home-main">
         <div className="image-main">
           <div className="main-grid-item">
-            <img className="curve" alt="purple graphic" src={corner_piece} />
+            <img className="curve" alt="purple graphic" src={teeth} />
           </div>
           <div className="main-grid-item">
             <img
@@ -28,31 +30,38 @@ const Home = () => {
           </div>
 
           <div className="main-grid-item">
-            <img
-              className="purple-graphic"
-              alt="purple graphic"
-              src={green_curve}
-            />
+            <img className="purple-graphic" alt="purple graphic" src={blue} />
           </div>
-          <div className="main-grid-item">
-            <img className="purple-graphic" alt="purple graphic" src={comb} />
-          </div>
+
           <div className="main-grid-item">
             <img
               className="purple-graphic"
               alt="purple graphic"
-              src={orange_squiggly}
+              src={squiggly}
             />
           </div>
           <div className="main-grid-item">
-            <img
-              className="purple-graphic"
-              alt="purple graphic"
-              src={corner_piece}
-            />
+            <img className="purple-graphic" alt="purple graphic" src={dot} />
           </div>
           <div className="main-grid-item">
-            <p>Prep for the adventure of your life.</p>
+            <img className="purple-graphic" alt="purple graphic" src={curve} />
+          </div>
+        </div>
+        <div className="text-main">
+          <div className="intro-grid">
+            <div className="intro-item">
+              <p>Prep for the adventure of your life.</p>
+            </div>
+            <div className="intro-item">
+              <img
+                className="purple-graphic"
+                alt="purple graphic"
+                src={yellow_tear}
+              />
+            </div>
+            <div className="intro-item">
+              <img className="purple-graphic" alt="purple graphic" src={star} />
+            </div>
           </div>
         </div>
       </div>

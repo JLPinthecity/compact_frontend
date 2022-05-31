@@ -64,13 +64,15 @@
     grid-column: 1 / 4;
     grid-row: 1 / 4;
     place-self: center;
-    width: 90%;
 }
 
 .grid-item:nth-of-type(2){
     grid-column: 3 / 4;
     grid-row: 3 / 4;
-    width: 110%;
+    top: 10%;
+    left: 10%;
+    position: relative;
+    transform: rotate(190deg);
 }
 
 .about-statement {
@@ -135,7 +137,6 @@
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     width: 80%;
-   
     position: relative;
 }
 

@@ -2,8 +2,7 @@ import React from "react";
 import "./About.css";
 import tent from "../images/about/tent.jpg";
 import mountain from "../images/about/mountain.jpg";
-import pinkcurve from "../images/about/pink_curve.svg";
-import squiggly from "../images/about/pink_squiggle.svg";
+import curve from "../images/about/curve.svg";
 import yellow from "../images/about/yellow_squiggly.svg";
 
 const About = () => {
@@ -19,7 +18,11 @@ const About = () => {
               src={tent}
             />
 
-            <img className="grid-item" alt="pink graphic" src={pinkcurve} />
+            <img
+              className="grid-item"
+              alt="blue blob j-shaped curve"
+              src={curve}
+            />
           </div>
 
           {/* BACKGROUND IMG CONTAINER */}
