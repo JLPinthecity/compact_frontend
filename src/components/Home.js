@@ -7,7 +7,7 @@ import star from "../images/home/orange_star.svg";
 import dot from "../images/dot.svg";
 import squiggly from "../images/organic_3_squiggly.svg";
 import yellow_tear from "../images/home/yellow_tear.svg";
-import teeth from "../images/teeth.svg";
+import halfmoon from "../images/halfmoon.svg";
 import curve from "../images/curve.svg";
 
 const Home = () => {
@@ -15,36 +15,42 @@ const Home = () => {
     <div className="home-container">
       <div className="home-main">
         <div className="image-main">
-          <div className="main-grid-item">
-            <img className="curve" alt="purple graphic" src={teeth} />
-          </div>
-          <div className="main-grid-item">
-            <img
-              className="hiker"
-              alt="a female hiker sitting on top of mountain and staring in the distance"
-              src={woman}
-            />
-          </div>
-          <div className="main-grid-item">
-            <img className="hiker" alt="purple graphic" src={man} />
-          </div>
+          <div className="grid-cont">
+            <div className="main-grid-item">
+              <img className="curve" alt="purple graphic" src={halfmoon} />
+            </div>
+            <div className="main-grid-item">
+              <img
+                className="hiker"
+                alt="a female hiker sitting on top of mountain and staring in the distance"
+                src={woman}
+              />
+            </div>
+            <div className="main-grid-item">
+              <img className="hiker" alt="purple graphic" src={man} />
+            </div>
 
-          <div className="main-grid-item">
-            <img className="purple-graphic" alt="purple graphic" src={blue} />
-          </div>
+            <div className="main-grid-item">
+              <img className="purple-graphic" alt="purple graphic" src={blue} />
+            </div>
 
-          <div className="main-grid-item">
-            <img
-              className="purple-graphic"
-              alt="purple graphic"
-              src={squiggly}
-            />
-          </div>
-          <div className="main-grid-item">
-            <img className="purple-graphic" alt="purple graphic" src={dot} />
-          </div>
-          <div className="main-grid-item">
-            <img className="purple-graphic" alt="purple graphic" src={curve} />
+            <div className="main-grid-item">
+              <img
+                className="purple-graphic"
+                alt="purple graphic"
+                src={squiggly}
+              />
+            </div>
+            <div className="main-grid-item">
+              <img className="purple-graphic" alt="purple graphic" src={dot} />
+            </div>
+            <div className="main-grid-item">
+              <img
+                className="purple-graphic"
+                alt="purple graphic"
+                src={curve}
+              />
+            </div>
           </div>
         </div>
         <div className="text-main">
