@@ -2,13 +2,12 @@ import React from "react";
 import "./Home.css";
 import woman from "../images/home/sunset1.jpg";
 import man from "../images/home/sunset2.jpg";
-import halfmoon from "../images/halfmoon.svg";
-import blue from "../images/dot.svg";
-import rainbow from "../images/rainbow.svg";
+import halfmoon from "../images/home/halfmoon.svg";
 import squiggly from "../images/organic_3_squiggly.svg";
-import yellow_tear from "../images/home/yellow_tear.svg";
-import green_curve from "../images/green_curve.svg";
-import curve from "../images/curve.svg";
+import green_curve from "../images/home/green_curve.svg";
+import curve from "../images/home/curve.svg";
+import dot from "../images/home/dot.svg";
+import orange from "../images/home/orange_star.svg";
 
 const Home = () => {
   return (
@@ -54,24 +53,22 @@ const Home = () => {
               />
             </div>
             <div className="main-grid-item">
-              <img className="purple-graphic" alt="purple graphic" src={blue} />
+              <img className="purple-graphic" alt="purple graphic" src={dot} />
             </div>
           </div>
         </div>
         <div className="text-main">
           <div className="grid-cont">
             <div className="intro-item">
-              <p>Prep for the adventure of your life.</p>
+              <p>Prep for the adventure of your life</p>
             </div>
+
             <div className="intro-item">
               <img
                 className="purple-graphic"
                 alt="purple graphic"
-                src={yellow_tear}
+                src={orange}
               />
-            </div>
-            <div className="intro-item">
-              <img className="purple-graphic" alt="purple graphic" src={blue} />
             </div>
           </div>
         </div>
