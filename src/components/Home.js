@@ -8,7 +8,6 @@ import green_curve from "../images/home/green_curve.svg";
 import curve from "../images/home/curve.svg";
 import dot from "../images/home/dot.svg";
 import orange from "../images/home/orange_star.svg";
-import camping from "../images/home/camping.svg";
 
 const Home = () => {
   return (
@@ -78,7 +77,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="svg-section"></div>
+      <div className="svg-section">
+        <div className="svg-item"></div>
+        <div className="svg-item">test</div>
+        <div className="svg-item">test</div>
+      </div>
     </div>
   );
 };
