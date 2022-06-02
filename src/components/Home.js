@@ -8,22 +8,27 @@ import green_curve from "../images/home/green_curve.svg";
 import curve from "../images/home/curve.svg";
 import dot from "../images/home/dot.svg";
 import orange from "../images/home/orange_star.svg";
+import camping from "../images/home/camping.svg";
 
 const Home = () => {
   return (
     <div className="home-container">
       <div className="home-main">
-        <div className="image-main">
+        <div className="left">
           <div className="grid-cont">
             <div className="main-grid-item">
               <img
-                className="purple-graphic"
-                alt="purple graphic"
+                className="graphic"
+                alt="navy blue graphic shaped like half moon"
                 src={halfmoon}
               />
             </div>
             <div className="main-grid-item">
-              <img className="curve" alt="purple graphic" src={curve} />
+              <img
+                className="graphic"
+                alt="dark yellow shaped noodle shape"
+                src={curve}
+              />
             </div>
             <div className="main-grid-item">
               <img
@@ -32,23 +37,20 @@ const Home = () => {
                 src={woman}
               />
             </div>
-
-            <div className="main-grid-item">
-              <img className="hiker" alt="purple graphic" src={man} />
-            </div>
-
             <div className="main-grid-item">
               <img
-                className="purple-graphic"
-                alt="purple graphic"
-                src={green_curve}
+                className="hiker"
+                alt="male hiker staring off cliff during sunset"
+                src={man}
               />
             </div>
-
+            <div className="main-grid-item">
+              <img className="graphic" alt="green blob" src={green_curve} />
+            </div>
             <div className="main-grid-item">
               <img
-                className="purple-graphic"
-                alt="purple graphic"
+                className="graphic"
+                alt="blue squiggly line"
                 src={squiggly}
               />
             </div>
@@ -56,11 +58,13 @@ const Home = () => {
               <img className="purple-graphic" alt="purple graphic" src={dot} />
             </div>
           </div>
+
+          <div className="text-section">testtesttest</div>
         </div>
-        <div className="text-main">
+        <div className="right">
           <div className="grid-cont">
             <div className="intro-item">
-              <p>Prep for the adventure of your life</p>
+              <h3>Prep for the adventure of your life</h3>
             </div>
 
             <div className="intro-item">
@@ -73,6 +77,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="svg-section"></div>
     </div>
   );
 };
