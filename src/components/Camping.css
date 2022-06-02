@@ -1,26 +1,43 @@
 
-#fire{
-    animation: flicker 5ms ease-in-out infinite;
+#outer-flame{
+    transform-origin: bottom center;
+    animation: grow 4s infinite alternate;
+    animation-timing-function: ease-out;
     
 }
 
-
-@keyframes flicker {
-    0% {transform: rotate(-0.2deg);}
-    20% {transform: rotate(0.2deg)}
-    40% {transform: rotate(-0.2deg);}
-    60% {transform: rotate(0.2deg);}
-    80% {transform: rotate(-0.2deg);}
-    100% {transform: rotate(0.5deg);}
-
-   
+#inner-flame{
+    transform-origin: bottom center;
+    animation: grow 4s infinite alternate;
+    animation-timing-function: ease-out;
 }
 
-@keyframes dip {
-    from{
-        transform: translateY(0px);
+@keyframes grow {
+    0% {transform: rotate(-1deg) ;
+        opacity: 0.85; }
+    20% {transform: rotate(1deg); 
+        opacity: 0.9; }
+    40% {transform: rotate(-1deg);
+        opacity: 0.6;}
+    60% {transform: rotate(1deg);
+        opacity: 1;}
+    80% {transform: rotate(-1deg);
+        opacity: 0.9;}
+    100% {transform: rotate(1deg);
+        opacity: 0.85;}
+  }
+
+
+  @keyframes grow2 {
+    from {
+      opacity: 1; 
+      transform: scale(.9) rotate(2deg);
     }
-    to{
-        transform: translateY(-10px);
+    to {
+      opacity: .9;
+      transform: scale(1) rotate(0deg);
     }
-}
+  }
+
+  
+  
