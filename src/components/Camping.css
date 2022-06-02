@@ -1,0 +1,26 @@
+
+#fire{
+    animation: flicker 5ms ease-in-out infinite;
+    
+}
+
+
+@keyframes flicker {
+    0% {transform: rotate(-0.2deg);}
+    20% {transform: rotate(0.2deg)}
+    40% {transform: rotate(-0.2deg);}
+    60% {transform: rotate(0.2deg);}
+    80% {transform: rotate(-0.2deg);}
+    100% {transform: rotate(0.5deg);}
+
+   
+}
+
+@keyframes dip {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
