@@ -9,6 +9,7 @@ import curve from "../images/home/curve.svg";
 import dot from "../images/home/dot.svg";
 import orange from "../images/home/orange_star.svg";
 import Camping from "./CampingSVG";
+import Walking from "./WalkingSVG";
 
 const Home = () => {
   return (
@@ -82,7 +83,9 @@ const Home = () => {
         <div className="svg-item">
           <Camping />;
         </div>
-        <div className="svg-item">test</div>
+        <div className="svg-item">
+          <Walking />;
+        </div>
         <div className="svg-item">test</div>
       </div>
     </div>

@@ -5,8 +5,8 @@ const Camping = () => {
   return (
     <div className="camping-svg">
       <svg
-        width="940"
-        height="727"
+        width="100%"
+        height="500px"
         viewBox="0 0 940 727"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
