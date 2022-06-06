@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="home-main">
-        <div className="left">
+        <div className="home-left">
           <div className="grid-cont">
             <div className="main-grid-item">
               <img
@@ -60,11 +60,9 @@ const Home = () => {
               <img className="purple-graphic" alt="purple graphic" src={dot} />
             </div>
           </div>
-
-          <div className="text-section">testtesttest</div>
         </div>
-        <div className="right">
-          <div className="grid-cont">
+        <div className="home-right">
+          <div className="title-container">
             <div className="intro-item">
               <h3>Prep for the adventure of your life</h3>
             </div>
@@ -88,18 +86,38 @@ const Home = () => {
       </div>
 
       <div className="svg-section">
-        <div className="svg-item">
-          <Explore />;
+        <div className="svg-container">
+          <div className="svg-item">
+            <Camping />
+          </div>
+          <div className="compact-use">
+            To calculate your base weight, start with the big three (backpack,
+            sleeping bag and shelter). Be sure to include the weight of your
+            ground insulation layer (sleeping pad), blanket, and clothes you'll
+            be wearing to sleep.
+          </div>
         </div>
-        <div className="svg-item">
-          <Walking />;
+        <div className="svg-container">
+          <div className="svg-item">
+            <Walking />
+          </div>
+          <div className="compact-use">
+            What else to include? Add anything you'll be carrying in your pack
+            including clothing, cooking essentials if you're bringing a portable
+            stove and fuel, food, and water treatment supplies (filter).
+          </div>
         </div>
-        <div className="svg-item">
-          <Camping />;
+        <div className="svg-container">
+          <div className="svg-item">
+            <Explore />
+          </div>
+          <div className="compact-use">
+            Don't forget batteries, first-aid, and hygiene supplies. Once you
+            know your base weight, tack on the likely weight of water you'll
+            carry between water sources.
+          </div>
         </div>
       </div>
-
-      <div className="three-ways"></div>
     </div>
   );
 };

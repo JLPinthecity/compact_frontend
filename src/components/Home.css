@@ -21,8 +21,7 @@
 } 
 
 /* LEFT COLUMN - FLEXBOX CHILD + GRID CONTAINER */
-.left{
-    border: 2px solid green;
+.home-left{
     flex: 1;
     width: 100%;
 }
@@ -33,9 +32,8 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(4, 1fr);
-   
-}
 
+}
 /* COlUMN 1 - GRID ITEM */
 .main-grid-item {
 width: 100%;
@@ -113,31 +111,36 @@ width: 100%;
      transform: rotate(-55deg)
 }
 
+
  /* RIGHT COLUMN  */
-.right{
-     width: 100%;
- flex: 1; 
+.home-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.home-container h3 {
-    font-size: 2rem;
+@media (min-width:600px) {
+    .home-right {
+        width: 40%;
+    }
+    .title-container{
+        width: 100%;
+        text-align: center;
+    }
+} 
+
+
+.title-container {
+    font-size: 3rem;
     line-height: 1;
-  
+    padding: 4rem;
 }
 
-.intro-item:nth-of-type(1){
-    grid-column: 2 / 7;
-    
+.intro-item .purple-graphic {
+    width: 20%;
 }
 
-/* rainbow */
-
-.intro-item:nth-of-type(2){
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-    align-self:flex-start;
-
-}
 
 
 
@@ -147,16 +150,19 @@ width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
 }
 
-.svg-item {
+.svg-container{
     flex: 1;
-    width: 100%; 
-    height: auto;
     border: 1px solid black;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
+.svg-item, .compact-use {
+    flex: 1;
+    
+} 
 /* ROW WHEN SMALl, COLUMNS WHEN LARGER */
 @media (min-width:800px) {
     .svg-section {
@@ -175,3 +181,28 @@ width: 100%;
     padding: 5rem;
 }
 
+.compact-use{
+    background-color:  rgb(26, 33, 120);
+    color: whitesmoke;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.three-ways{
+    display: flex;
+    flex-direction: row;
+   
+   
+    color: whitesmoke;
+    padding: 2rem;
+    font-size: 1.5rem;
+    align-items:flex-start;
+}
+
+.how-item{
+    text-align: center;
+    border: 1px solid pink;
+    flex: 1;
+    padding: 3rem;
+  
+}
