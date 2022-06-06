@@ -10,7 +10,7 @@ import dot from "../images/home/dot.svg";
 import orange from "../images/home/orange_star.svg";
 import Camping from "./CampingSVG";
 import Walking from "./WalkingSVG";
-import Moonlight from "./MoonlightSVG";
+import Explore from "./ExploreSVG";
 
 const Home = () => {
   return (
@@ -80,17 +80,26 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="how-to-use">
+        <h3>
+          Use Compact to calculate the weight of your backpack for day treks,
+          overnight camping trips, and thru hikes.
+        </h3>
+      </div>
+
       <div className="svg-section">
         <div className="svg-item">
-          <Camping />;
+          <Explore />;
         </div>
         <div className="svg-item">
           <Walking />;
         </div>
         <div className="svg-item">
-          <Moonlight />;
+          <Camping />;
         </div>
       </div>
+
+      <div className="three-ways"></div>
     </div>
   );
 };
