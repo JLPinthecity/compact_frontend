@@ -118,6 +118,17 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="divider"></div>
+
+      <div className="credits">
+        <p>
+          <b>IMAGE CREDITS</b>
+        </p>
+        <p>Hikers: Lane Smith/Unsplash</p>
+        <p>SVGs: Undraw</p>
+        <p>Orange heart: freepix</p>
+      </div>
     </div>
   );
 };
