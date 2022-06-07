@@ -121,7 +121,7 @@ const Home = () => {
 
       <div className="divider"></div>
 
-      <div className="credits">
+      <div className="home-credits">
         <p>
           <b>IMAGE CREDITS</b>
         </p>
