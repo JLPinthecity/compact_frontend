@@ -1,9 +1,7 @@
-
 #outer-flame{
     transform-origin: bottom center;
     animation: grow 4s infinite alternate;
     animation-timing-function: ease-out;
-    
 }
 
 #inner-flame{

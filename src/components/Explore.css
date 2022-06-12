@@ -1,0 +1,23 @@
+#clouds1{
+    animation: hover-left 20s linear infinite;
+    animation-timing-function: ease-out;
+}
+
+#clouds2{
+    animation: hover-right 20s linear infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes hover-right {
+    from {transform: translate3d(0px,0px,0px);
+    opacity: 100%;}  
+    to {transform: translate3d(850px,0px,0px);
+        opacity: 40%;}  
+  }
+
+  @keyframes hover-left {
+    from {transform: translate3d(0px,0px,0px);
+        opacity: 100%;}  
+    to {transform: translate3d(-850px,0px,0px);
+        opacity: 40%;}  
+  }
