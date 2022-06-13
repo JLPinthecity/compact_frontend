@@ -1,10 +1,10 @@
 #clouds1{
-    animation: hover-left 20s linear infinite;
+    animation: hover-left 10s linear infinite;
     animation-timing-function: ease-out;
 }
 
 #clouds2{
-    animation: hover-right 20s linear infinite;
+    animation: hover-right 10s linear infinite;
     animation-timing-function: ease-out;
 }
 
