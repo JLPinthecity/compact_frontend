@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { connect } from "react-redux";
 import { getCurrentUser } from "./actions/currentUser.js";
-import Navbar from "./components/Navbar/Navbar.js";
+import Navbar from "./components/Navbar.js";
 import Login from "./components/Login.js";
 import Items from "./components/Items.js";
 import About from "./components/About.js";
@@ -11,7 +11,6 @@ import Home from "./components/Home.js";
 import Signup from "./components/Signup.js";
 import Footer from "./components/Footer.js";
 import { createBrowserHistory } from "history";
-import SignupLoginContainer from "./containers/SignupLoginContainer.js";
 import NewItemFormContainer from "./containers/NewItemFormContainer.js";
 import EditItemFormContainer from "./containers/EditItemFormContainer.js";
 import { withRouter, Switch, Route } from "react-router-dom";
@@ -36,7 +35,7 @@ class App extends Component {
             <Route exact path="/items" component={Items} />
             <Route history={history} exact path="/signup" component={Signup} />
             <Route history={history} exact path="/login" component={Login} />
-            <Route exact path="/signin" component={SignupLoginContainer} />
+
             <Route exact path="/items/new" component={NewItemFormContainer} />
             <Route exact path="/footer" component={Footer} />
             <Route
