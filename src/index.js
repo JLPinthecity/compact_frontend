@@ -12,6 +12,7 @@ import signupForm from "./reducers/signupForm";
 import itemForm from "./reducers/itemForm";
 import categories from "./reducers/categories";
 import { BrowserRouter as Router } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 const reducer = combineReducers({
   items,
@@ -30,6 +31,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
+        <ScrollToTop />
         <App />
       </Router>
     </Provider>

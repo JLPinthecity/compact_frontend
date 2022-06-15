@@ -9,13 +9,17 @@
 .footer-main {
     display: flex;
     margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-main a {
     color: whitesmoke;
     background-color: rgb(84, 86, 76);
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.2s;
+    text-transform: lowercase;
+    font-size: 1.2rem;
 }
 
 .footer-column {
@@ -25,7 +29,7 @@
 }
 
 .footer-main a:hover {
-    color: rgb(187, 115, 86);
+    color: rgb(225, 97, 46);
 }
 
 @media only screen and (max-width: 768px) {
