@@ -1,33 +1,32 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import Logout from "./Logout";
 import "./Navbar.css";
 
 const Navbar = (props) => {
-  debugger;
-
   return (
     <nav className="nav-container">
-      <div className="menu-items">
-        <Link to="/" className="menu-item">
+      <div className="menu">
+        <Link to="/" className="item">
           Home
         </Link>
 
-        <Link to="/about" className="menu-item">
+        <Link to="/about" className="item">
           About
         </Link>
 
-        <Link to="/sample" className="menu-item">
-          Sample Gear List
-        </Link>
-
-        <Link to="/items" className="menu-item">
+        <Link to="/items" className="item">
           Create Gear List
         </Link>
 
-        <Link to="/login" className="menu-item">
-          Login
-        </Link>
+        {props.currentUser ? (
+          <Logout className="item" />
+        ) : (
+          <Link to="/login" className="item">
+            Login
+          </Link>
+        )}
       </div>
     </nav>
   );

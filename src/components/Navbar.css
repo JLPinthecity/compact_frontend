@@ -1,27 +1,26 @@
 /* MAIN CONTAINER */
 .nav-container{
-    width: 100%;
+    padding: .8rem 1.2rem;
 }
 
-.menu-items{
+.menu{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
 
-.menu-item {
+.item {
+    font-weight: 400;
+    font-style: normal;
+    font-size: .8rem;
+    letter-spacing: .05em;
     text-transform: uppercase;
-    width: 100%;
-    font-weight: 700;
-    font-size: .9rem;
-    letter-spacing: .2em;
     text-decoration: none;
     color: black;
+    white-space: nowrap;
+    line-height: 1em;
 }
 
-.menu-item:hover {
+.item:hover {
     color: rgb(225, 97, 46);
 }

@@ -36,45 +36,6 @@ body, html {
   font-size: 55px;
 }
 
-.NavbarItems {
-  height: 80 px;
-  color: rgb(250, 220, 60);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2 rem;
-}
-
-.nav-menu{
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 20px;
-  list-style:none;
-  text-align: center;
-  width: 70vw;
-}
-
-.nav-links, .nav-btn{
-  font-family: 'Hammersmith One', sans-serif;
-  color: rgb(0, 25, 19);
-  text-decoration: none;
-}
-
-.nav-links:hover{
-  color: rgb(255, 218, 0);
-  text-decoration: none;
-}
-
-.nav-btn:hover{
-  color: rgb(255, 197, 201);
-}
-
-
-.bigForm {
-  align-items: right;
-}
-
-
 @keyframes transitionIn {
   from {
     opacity: 0;
