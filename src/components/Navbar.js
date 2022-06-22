@@ -3,31 +3,35 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-class Navbar extends React.Component {
-  render() {
-    return (
-      <nav className="nav-container">
-        <div className="menu-items">
-          <Link to="/" className="menu-item">
-            Home
-          </Link>
+const Navbar = (props) => {
+  debugger;
 
-          <Link to="/about" className="menu-item">
-            About
-          </Link>
+  return (
+    <nav className="nav-container">
+      <div className="menu-items">
+        <Link to="/" className="menu-item">
+          Home
+        </Link>
 
-          <Link to="/items" className="menu-item">
-            Gear List
-          </Link>
+        <Link to="/about" className="menu-item">
+          About
+        </Link>
 
-          <Link to="/login" className="menu-item">
-            Login
-          </Link>
-        </div>
-      </nav>
-    );
-  }
-}
+        <Link to="/sample" className="menu-item">
+          Sample Gear List
+        </Link>
+
+        <Link to="/items" className="menu-item">
+          Create Gear List
+        </Link>
+
+        <Link to="/login" className="menu-item">
+          Login
+        </Link>
+      </div>
+    </nav>
+  );
+};
 
 const mapStateToProps = (state) => {
   return {
