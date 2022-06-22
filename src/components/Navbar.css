@@ -1,4 +1,27 @@
 /* MAIN CONTAINER */
 .nav-container{
-    border: 1px solid orange
+    width: 100%;
+}
+
+.menu-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+}
+
+.menu-item {
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .2em;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item:hover {
+    color: rgb(225, 97, 46);
 }

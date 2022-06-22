@@ -8,19 +8,19 @@ class Navbar extends React.Component {
     return (
       <nav className="nav-container">
         <div className="menu-items">
-          <Link to="/" className="footer-menu-item">
+          <Link to="/" className="menu-item">
             Home
           </Link>
 
-          <Link to="/about" className="footer-menu-item">
+          <Link to="/about" className="menu-item">
             About
           </Link>
 
-          <Link to="/items" className="footer-menu-item">
+          <Link to="/items" className="menu-item">
             Gear List
           </Link>
 
-          <Link to="/login" className="footer-menu-item">
+          <Link to="/login" className="menu-item">
             Login
           </Link>
         </div>
