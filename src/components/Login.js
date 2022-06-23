@@ -48,7 +48,7 @@ const Login = ({ loginForm, updateLoginForm, login, history }) => {
           ></input>
         </div>
         <br />
-        <input type="Submit" className="btn" value="Sign in" readOnly />
+        <input type="Submit" className="btn" value="Login" readOnly />
         <div className="signup_call">
           <p className="input-title">DON'T HAVE AN ACCOUNT?</p>
           <Link to="/signup" className="input-title create">

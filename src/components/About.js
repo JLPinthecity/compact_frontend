@@ -97,13 +97,13 @@ const About = () => {
           <p>
             <sup>01.</sup>
             You'll break out of every personal rut—whether it's your 9-to-5 or
-            rinse-and-repeat daily routine. Get ready for new sights, sounds,
-            and unexpected splendor at every turn of the trail.
+            rinse-and-repeat routine. Get ready for new sights, sounds, and
+            unexpected splendor at every turn.
           </p>
 
           <p>
             <sup>02.</sup>
-            You can say you walked across part of you country. Epic party
+            You can say you walked across part of your country. Epic party
             stories, anyone?
           </p>
           <p>
@@ -112,19 +112,20 @@ const About = () => {
           </p>
           <p>
             <sup>04.</sup>
-            You never considered yourself an outdoor person. It's time to prove
+            You don't consider yourself an outdoor person. It's time to prove
             yourself wrong.
           </p>
           <p>
             <sup>05.</sup>
-            You love Lord of the Rings and, hey, it's the closest thing to Frodo
-            and Samwise's epic journey.
+            You love Lord of the Rings and, hey, it's the modern-day version of
+            Frodo and Samwise's epic journey—minus the orcs.
           </p>
           <p>
-            <sup>06.</sup>The longtime friends you'll make along the way.
+            <sup>06.</sup>The life-long friends you'll make along the way.
           </p>
           <p>
-            <sup>07.</sup>The snacks!
+            <sup>07.</sup>The snacks! You have to refuel often while walking 20
+            to 30 miles a day.
           </p>
         </div>
       </div>
