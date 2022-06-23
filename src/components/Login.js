@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { updateLoginForm } from "../actions/loginForm.js";
 import { login } from "../actions/currentUser.js";
+import { Link } from "react-router-dom";
 import "./Form.css";
 
 const Login = ({ loginForm, updateLoginForm, login, history }) => {
@@ -48,8 +49,12 @@ const Login = ({ loginForm, updateLoginForm, login, history }) => {
         </div>
         <br />
         <input type="Submit" className="btn" value="Sign in" readOnly />
-        <p className="input-title">DON'T HAVE AN ACCOUNT? Create one</p>
-        <p className="input-title">Create one</p>
+        <div className="signup_call">
+          <p className="input-title">DON'T HAVE AN ACCOUNT?</p>
+          <Link to="/signup" className="input-title create">
+            Create one
+          </Link>
+        </div>
       </div>
     </form>
   );

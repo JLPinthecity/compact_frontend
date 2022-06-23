@@ -5,8 +5,8 @@
 }
 
 .form-main{
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +34,8 @@
 .btn {
   padding: .5rem;
   margin: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   background-color: transparent;
   font-family: 'Cormorant Garamond', serif;
   border: 1px solid black;
@@ -43,10 +44,9 @@
 }
 
 .btn:hover{
-  
+  background-color: orangered;
+  transition: .6s;
 }
-
-
 
 .form-input{
   margin: .5rem;
@@ -58,6 +58,21 @@
   border-radius: 5px;
   min-width: 350px;
 }
+
+.signup_call{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.signup_call .create{
+  color: black;
+}
+
+.signup_call .create:hover{
+color: orangered;
+}
+
 
 select {
   width: 30%;
