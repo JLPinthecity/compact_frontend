@@ -3,14 +3,10 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Logout from "./Logout";
 import "./Navbar.css";
-import Burger from "./Burger";
 
 const Navbar = (props) => {
   return (
     <nav className="nav-container">
-      <div className="burger-icon">
-        <Burger />
-      </div>
       <div className="menu">
         <Link to="/" className="item">
           Home

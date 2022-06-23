@@ -1,7 +1,7 @@
 import React from "react";
-import "./Burger.css";
+import "../Header/Burger.css";
 
-function Burger(props) {
+const Burger = () => {
   return (
     <button>
       <div className="toggle-button__line" id="line1" />
@@ -9,6 +9,6 @@ function Burger(props) {
       <div className="toggle-button__line" id="line3" />
     </button>
   );
-}
+};
 
 export default Burger;

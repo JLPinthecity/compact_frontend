@@ -10,6 +10,7 @@ import ItemCard from "./components/ItemCard.js";
 import Home from "./components/Home.js";
 import Signup from "./components/Signup.js";
 import Footer from "./components/Footer.js";
+import Header from "./components/Header/Header.js";
 import { createBrowserHistory } from "history";
 import NewItemFormContainer from "./containers/NewItemFormContainer.js";
 import EditItemFormContainer from "./containers/EditItemFormContainer.js";
@@ -26,6 +27,8 @@ class App extends Component {
 
     return (
       <div>
+        <Header />
+
         <div className="page-container">
           <Navbar />
           <Switch>
