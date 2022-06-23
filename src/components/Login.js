@@ -19,25 +19,27 @@ const Login = ({ loginForm, updateLoginForm, login, history }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <p className="form-title">Login</p>
-      <input
-        type="text"
-        name="email"
-        placeholder="email"
-        alt="email"
-        onChange={handleChange}
-      ></input>
-      <br />
-      <input
-        type="text"
-        name="password"
-        placeholder="password"
-        alt="password"
-        onChange={handleChange}
-      ></input>
-      <br />
-      <input type="Submit" className="btn" value="Login" readOnly />
+    <form className="form-container" onSubmit={handleSubmit}>
+      <div className="form-main">
+        <p className="form-title">Login</p>
+        <input
+          type="text"
+          name="email"
+          placeholder="email"
+          alt="email"
+          onChange={handleChange}
+        ></input>
+        <br />
+        <input
+          type="text"
+          name="password"
+          placeholder="password"
+          alt="password"
+          onChange={handleChange}
+        ></input>
+        <br />
+        <input type="Submit" className="btn" value="Login" readOnly />
+      </div>
     </form>
   );
 };
