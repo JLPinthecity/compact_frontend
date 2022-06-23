@@ -30,11 +30,7 @@ body, html {
   grid-template-columns: repeat(auto-fit, minmax(300px, 10fr));
 }
 
-.siteTitle {
-  font-family: 'Viaoda Libre', cursive;
-  color:rgb(20,92,77);
-  font-size: 55px;
-}
+
 
 @keyframes transitionIn {
   from {

@@ -1,9 +1,18 @@
 .header-container{
     width: 100%;
-    border: 1px solid orange;
 }
 
 .header-main{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.siteTitle {
+    font-family: 'Viaoda Libre', cursive;
+    color:rgb(20,92,77);
+    font-size: 55px;
 }
