@@ -1,31 +1,62 @@
 
 .form-container {
-  border: 1px solid purple;
   display: flex;
   justify-content: center;
-
 }
 
 .form-main{
-  border: 1px solid orange;
-  padding: 4rem;
-  font-family: 'Cormorant Garamond', serif;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 60%;
+  font-family: 'Cormorant Garamond', serif;
 }
+
+.form-title{
+  font-size: 2rem;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.input-title{
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: .5rem;
+}
+
+.btn {
+  padding: .5rem;
+  margin: 2rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  font-family: 'Cormorant Garamond', serif;
+  border: 1px solid black;
+  width: 30%;
+
+}
+
+.btn:hover{
   
-input {
+}
+
+
+
+.form-input{
   margin: .5rem;
   font-size: 1rem;
-  padding: .8rem 1rem;
+  padding: .8rem .5rem;
   box-sizing: border-box;
   border: 2px solid gray;
   background-color: #f1f1f1;
-  border-radius: 4px;
-  min-width: 300px;
+  border-radius: 5px;
+  min-width: 350px;
 }
 
 select {
@@ -41,23 +72,3 @@ select {
   border: 2px solid gray;
 }
 
-.btn {
-  background-color: rgb(9,82,66);
-  color: rgb(138,206,196);
-  border: 5px solid rgb(0, 25, 19);
-  font-size: 10 px;
-  width: 20%;
-  margin-top: 50px;
-  font-family: 'Hammersmith One', sans-serif;
-}
-
-.btn:hover{
-  color: rgb(255, 197, 201);
-  background-color: rgb(138,206,196);
-  border: 5px solid rgb(138,206,196);
-}
-
-.form-title{
-    font-size: 2rem;
-
-}

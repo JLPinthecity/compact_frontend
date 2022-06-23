@@ -1,7 +1,7 @@
 /* MAIN CONTAINER */
 .about-container{
     color: black;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     padding-bottom: 4rem; 
     font-family:Geneva, sans-serif
 }
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1rem 4rem;
+    padding: 2rem 2rem;
 }
 
 /* ROWS WHEN SMALL --> COLUMNS WHEN LARGER */
