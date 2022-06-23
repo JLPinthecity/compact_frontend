@@ -45,6 +45,7 @@
 
 .btn:hover{
   background-color: orangered;
+  color: cornsilk;
   transition: .6s;
 }
 
@@ -70,20 +71,6 @@
 }
 
 .signup_call .create:hover{
-color: orangered;
+  color: orangered;
+  transition: .6s;
 }
-
-
-select {
-  width: 30%;
-  margin-top: 5px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 2px;
-  padding: 5px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: #f1f1f1;
-  border: 2px solid gray;
-}
-
