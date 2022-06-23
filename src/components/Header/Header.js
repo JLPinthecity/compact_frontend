@@ -1,6 +1,7 @@
 import React from "react";
 import Burger from "../Header/Burger.js";
 import "../Header/Header.css";
+import SearchIcon from "@mui/icons-material/Search";
 
 const Header = () => {
   return (
@@ -10,6 +11,9 @@ const Header = () => {
           <Burger />
         </div>
         <h1 className="siteTitle">COMPACT</h1>
+        <div className="search-icon">
+          <SearchIcon />
+        </div>
       </div>
     </div>
   );
