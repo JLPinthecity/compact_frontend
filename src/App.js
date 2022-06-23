@@ -26,7 +26,6 @@ class App extends Component {
 
     return (
       <div>
-        <h1 className="siteTitle">COMPACT</h1>
         <div className="page-container">
           <Navbar />
           <Switch>

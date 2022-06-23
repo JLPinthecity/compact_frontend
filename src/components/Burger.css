@@ -1,0 +1,58 @@
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: 4rem;
+  }
+  
+  .toggle-button:focus {
+    outline: none;
+  }
+  
+  .toggle-button__line {
+    width: 35px;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #line1 {
+    background-color: rgb(18, 26, 92);
+  }
+  
+  #line2 {
+    background-color: rgb(224, 133, 236);
+  }
+  
+  #line3 {
+    background-color: rgb(134, 40, 63);
+  }
+  
+  .open #line1 {
+    /* transform-origin: 10px 0px; */
+    transform: rotate(-45deg);
+    background-color: #43035a;
+  }
+  
+  .open #line2 {
+    width: 0;
+  }
+  
+  .open #line3 {
+    transform: translateY(-19px) rotate(45deg);
+    background-color: #43035a;
+  }
+  
+  /* Small screen max-width 600px */
+  @media only screen and (max-width: 600px) {
+    .toggle-button {
+      margin-right: 1rem;
+    }
+  }
+  
