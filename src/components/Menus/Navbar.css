@@ -75,12 +75,21 @@ FLEX CONTAINER SIDEBAR */
 
 .sidebar-main .first-row {
     display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 /* SHOW SIDEBAR - MENU COLUMN */
 .sidebar-main .menu-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: flex-start;
     height: 100%;
+}
+
+.menu-column .item{
+
+    padding: 2rem 1rem;
 }
