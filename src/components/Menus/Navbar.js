@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import Logout from "./Logout";
-import "./Navbar.css";
+import Logout from "../Logout";
+import "../Menus/Navbar.css";
 
 const Navbar = (props) => {
   return (

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { connect } from "react-redux";
 import { getCurrentUser } from "./actions/currentUser.js";
-import Navbar from "./components/Navbar.js";
+import Navbar from "./components/Menus/Navbar.js";
 import Login from "./components/Login.js";
 import Items from "./components/Items.js";
 import About from "./components/About.js";
