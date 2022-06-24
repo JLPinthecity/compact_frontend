@@ -5,6 +5,7 @@ import Logout from "../Logout";
 import "../Menus/Navbar.css";
 
 const Navbar = (props) => {
+  debugger;
   return (
     <nav className="nav-container">
       <div className="menu">
@@ -35,6 +36,7 @@ const Navbar = (props) => {
 const mapStateToProps = (state) => {
   return {
     currentUser: state.currentUser,
+    showSidebar: state.showSidebar,
   };
 };
 

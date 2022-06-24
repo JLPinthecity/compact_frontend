@@ -1,10 +1,12 @@
-const showSidebar = (state = false, action) => {
+const showLinks = false;
+
+const showSidebar = (state = showLinks, action) => {
   switch (action.type) {
     case "OPEN_SIDEBAR":
-      return true;
+      return !showLinks;
 
     case "CLOSE_SIDEBAR":
-      return false;
+      return showLinks;
 
     default:
       return state;
@@ -12,5 +14,3 @@ const showSidebar = (state = false, action) => {
 };
 
 export default showSidebar;
-
-//we want to set up current user in state

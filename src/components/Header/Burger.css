@@ -48,7 +48,7 @@
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1050px) {
   .toggle-button {
       display: none;
   }
