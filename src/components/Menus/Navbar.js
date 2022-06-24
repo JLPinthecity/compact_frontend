@@ -15,36 +15,39 @@ const Navbar = (props) => {
 
   return (
     <nav className="nav-container">
-      <div id={props.menuButtonClicked ? "hidden" : ""}>
-        <div className="menu-row">
-          <span className={props.menuButtonClicked ? "menu-title" : "hide"}>
-            Menu
-          </span>
+      <div className={props.showSidebar ? "modal-background" : ""}>
+        <div className={props.showSidebar ? "sidebar-main" : ""}>
+          <div className="first-row">
+            <span className={props.showSidebar ? "menu-title" : "hide"}>
+              Menu
+            </span>
 
-          <span className={props.menuButtonClicked ? "menu-close" : "hide"}>
-            <CloseIcon onClick={closeSidebar} />
-          </span>
-        </div>
-        <div className={props.showSidebar ? "menu-column" : "menu"}>
-          <Link to="/" className="item">
-            Home
-          </Link>
+            <span className={props.showSidebar ? "menu-close" : "hide"}>
+              <CloseIcon onClick={closeSidebar} />
+            </span>
+          </div>
 
-          <Link to="/about" className="item">
-            About
-          </Link>
-
-          <Link to="/items" className="item">
-            Create Gear List
-          </Link>
-
-          {props.currentUser ? (
-            <Logout className="item" />
-          ) : (
-            <Link to="/login" className="item">
-              Login
+          <div className={props.showSidebar ? "menu-column" : "menu"}>
+            <Link to="/" className="item">
+              Home
             </Link>
-          )}
+
+            <Link to="/about" className="item">
+              About
+            </Link>
+
+            <Link to="/items" className="item">
+              Create Gear List
+            </Link>
+
+            {props.currentUser ? (
+              <Logout className="item" />
+            ) : (
+              <Link to="/login" className="item">
+                Login
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </nav>
