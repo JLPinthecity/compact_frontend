@@ -11,6 +11,7 @@ import loginForm from "./reducers/loginForm";
 import signupForm from "./reducers/signupForm";
 import itemForm from "./reducers/itemForm";
 import categories from "./reducers/categories";
+import showSidebar from "./reducers/showSidebar";
 import { BrowserRouter as Router } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -21,6 +22,7 @@ const reducer = combineReducers({
   signupForm,
   itemForm,
   categories,
+  showSidebar,
 });
 //reducer needs to be an object
 //we take each reducer and pass it into an object here
