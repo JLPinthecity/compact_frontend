@@ -4,7 +4,7 @@
     width: 100%;
 }
 
-.menu{
+.menu {
     padding: .6rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -26,4 +26,12 @@
 
 .item:hover {
     color: rgb(225, 97, 46);
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .menu {
+        display: none;
+    }
 }

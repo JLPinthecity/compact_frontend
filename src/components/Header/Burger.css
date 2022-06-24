@@ -46,3 +46,10 @@
   transform: translateY(-19px) rotate(45deg);
   background-color: #43035a;
 }
+
+
+@media only screen and (min-width: 900px) {
+  .toggle-button {
+      display: none;
+  }
+}
