@@ -1,11 +1,11 @@
 /* MAIN CONTAINER */
 .nav-container{
-    padding: .8rem;
+    padding: .5rem;
     width: 100%;
 }
 
 .menu{
-    padding: 1rem 2rem;
+    padding: .6rem 2rem;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid black;

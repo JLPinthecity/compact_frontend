@@ -1,7 +1,7 @@
 /* MAIN CONTAINER */
 .home-container {
     color: black;
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 4rem;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -103,17 +103,17 @@ width: 100%;
 /* dot  */
 .main-grid-item:nth-of-type(7){ 
     grid-column: 2 / 4; 
-     grid-row: 3 / 4;  
-     position: relative;
-     align-self: center;
-     width: 25%;
-     left:30%;
-     top: 35%;
-     transform: rotate(-55deg)
+    grid-row: 3 / 4;  
+    position: relative;
+    align-self: center;
+    width: 25%;
+    left:30%;
+    top: 35%;
+    transform: rotate(-55deg)
 }
 
 
- /* RIGHT COLUMN - FLEX CONTAINER*/
+/* RIGHT COLUMN - FLEX CONTAINER*/
 .home-right{
     display: flex;
     justify-content: center;
@@ -142,9 +142,6 @@ width: 100%;
 .intro-item .purple-graphic {
     width: 20%;
 }
-
-
-
 
 
 /* HOW TO USE BEFORE SVGS */
