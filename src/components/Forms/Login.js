@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-import { updateLoginForm } from "../actions/loginForm.js";
-import { login } from "../actions/currentUser.js";
+import { updateLoginForm } from "../../actions/loginForm.js";
+import { login } from "../../actions/currentUser";
 import { Link } from "react-router-dom";
-import "./Form.css";
+import "../Forms/Form.css";
 
 const Login = ({ loginForm, updateLoginForm, login, history }) => {
   const handleChange = (event) => {
