@@ -28,22 +28,22 @@ const Navbar = (props) => {
           </div>
 
           <div className={props.showSidebar ? "menu-column" : "menu"}>
-            <Link to="/" className="item">
+            <Link to="/" className="item" onClick={closeSidebar}>
               Home
             </Link>
 
-            <Link to="/about" className="item">
+            <Link to="/about" className="item" onClick={closeSidebar}>
               About
             </Link>
 
-            <Link to="/items" className="item">
+            <Link to="/items" className="item" onClick={closeSidebar}>
               Create Gear List
             </Link>
 
             {props.currentUser ? (
-              <Logout className="item" />
+              <Logout className="item" onClick={closeSidebar} />
             ) : (
-              <Link to="/login" className="item">
+              <Link to="/login" className="item" onClick={closeSidebar}>
                 Login
               </Link>
             )}
