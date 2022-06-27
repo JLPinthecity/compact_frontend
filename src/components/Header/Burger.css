@@ -8,7 +8,6 @@
   cursor: pointer;
   box-sizing: border-box;
   justify-content: space-around;
-  
 }
 
 .toggle-button:focus {
@@ -30,7 +29,6 @@
   display: none;
 }
 
-
 .open #line1 {
   /* transform-origin: 10px 0px; */
   transform: rotate(-45deg);
@@ -45,7 +43,6 @@
   transform: translateY(-19px) rotate(45deg);
   background-color: #43035a;
 }
-
 
 @media only screen and (min-width: 1050px) {
   .toggle-button {

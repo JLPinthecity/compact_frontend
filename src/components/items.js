@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import ItemCard from "./ItemCard.js";
+import "./Items.css";
 
 const Items = ({ items }) => {
   // console.log(items.items)
@@ -10,7 +11,7 @@ const Items = ({ items }) => {
 
   return (
     <div className="gear-list-container">
-      {itemCards.length > 0 ? itemCards : null}
+      <div className="list-main">{itemCards.length > 0 ? itemCards : null}</div>
     </div>
   );
 };

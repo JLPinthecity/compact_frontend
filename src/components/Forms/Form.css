@@ -31,24 +31,6 @@
   padding-left: .5rem;
 }
 
-.btn {
-  padding: .5rem;
-  margin: 2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  background-color: transparent;
-  font-family: 'Cormorant Garamond', serif;
-  border: 1px solid black;
-  width: 30%;
-
-}
-
-.btn:hover{
-  background-color: orangered;
-  color: cornsilk;
-  transition: .6s;
-}
-
 .form-input{
   margin: .5rem;
   font-size: 1rem;

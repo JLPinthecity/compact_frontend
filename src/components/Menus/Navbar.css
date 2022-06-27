@@ -64,6 +64,7 @@ FLEX CONTAINER SIDEBAR */
     position: fixed;
     top: 0;
     width: 50vw;
+    padding: 1.5rem;
     transition: 0.5s ease;
     height: 100vh;
     cursor: pointer;
@@ -90,6 +91,6 @@ FLEX CONTAINER SIDEBAR */
 }
 
 .menu-column .item{
-
     padding: 2rem 1rem;
+    font-size: 1rem;
 }

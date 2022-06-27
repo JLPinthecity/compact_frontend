@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { closeSidebar } from "../../actions/showSidebar";
 import CloseIcon from "@mui/icons-material/Close";
-import Logout from "../Logout";
+import Logout from "../Forms/Logout";
 import "../Menus/Navbar.css";
 
 const Navbar = (props) => {

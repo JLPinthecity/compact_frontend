@@ -9,7 +9,7 @@ import About from "./components/About.js";
 import ItemCard from "./components/ItemCard.js";
 import Home from "./components/Home.js";
 import Signup from "./components/Forms/Signup.js";
-import Footer from "./components/Footer.js";
+import Footer from "./components/Header/Footer.js";
 import Header from "./components/Header/Header.js";
 import { createBrowserHistory } from "history";
 import NewItemFormContainer from "./containers/NewItemFormContainer.js";

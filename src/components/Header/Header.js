@@ -1,5 +1,5 @@
 import React from "react";
-import Burger from "../Header/Burger.js";
+import Burger from "./Burger.js";
 import "../Header/Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 

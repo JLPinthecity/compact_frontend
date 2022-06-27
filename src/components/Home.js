@@ -8,9 +8,9 @@ import green_curve from "../images/home/green_curve.svg";
 import curve from "../images/home/curve.svg";
 import dot from "../images/home/dot.svg";
 import orange from "../images/home/orange_star.svg";
-import Camping from "./CampingSVG";
-import Walking from "./WalkingSVG";
-import Explore from "./ExploreSVG";
+import Camping from "./SVGs/CampingSVG";
+import Walking from "./SVGs/WalkingSVG";
+import Explore from "./SVGs/ExploreSVG";
 
 const Home = () => {
   return (
