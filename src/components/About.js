@@ -1,9 +1,9 @@
 import React from "react";
-import "./About.css";
 import tent from "../images/about/tent.jpg";
 import mountain from "../images/about/mountain.jpg";
 import curve from "../images/about/curve.svg";
 import yellow from "../images/about/yellow_squiggly.svg";
+import "./About.css";
 
 const About = () => {
   return (

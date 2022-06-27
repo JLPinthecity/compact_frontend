@@ -1,23 +1,22 @@
-import React from 'react';
-import ItemForm from '../components/ItemForm.js';
-import { createItem } from '../actions/items.js'
-import { connect } from 'react-redux'
+import React from "react";
+import ItemForm from "../components/Items/ItemForm.js";
+import { createItem } from "../actions/items.js";
+import { connect } from "react-redux";
 
-const NewItemFormContainer = ({history, createItem}) => {
+const NewItemFormContainer = ({ history, createItem }) => {
+  const handleSubmit = (itemForm, userId) => {
+    // console.log("INSIDE HANDLE SUBMIT userId", userId)
+    createItem(itemForm, userId, history);
+  };
 
-    const handleSubmit = (itemForm, userId) => {
-        // console.log("INSIDE HANDLE SUBMIT userId", userId)
-        createItem(itemForm, userId, history)
-    };
-    
-    return (
-        <div>
-            <ItemForm history={history} handleSubmit={handleSubmit}/>
-        </div>
-    )
-}
+  return (
+    <div>
+      <ItemForm history={history} handleSubmit={handleSubmit} />
+    </div>
+  );
+};
 
-export default connect(null, { createItem })(NewItemFormContainer)
+export default connect(null, { createItem })(NewItemFormContainer);
 
 //parent container of itemform
 //passing down handleubmit and history

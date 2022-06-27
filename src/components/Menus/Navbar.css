@@ -63,7 +63,7 @@ FLEX CONTAINER SIDEBAR */
 .nav-container .sidebar-main {
     position: fixed;
     top: 0;
-    width: 50vw;
+    width: 60vw;
     padding: 1.5rem;
     transition: 0.5s ease;
     height: 100vh;

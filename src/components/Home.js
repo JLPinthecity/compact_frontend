@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.css";
 import woman from "../images/home/sunset1.jpg";
 import man from "../images/home/sunset2.jpg";
 import halfmoon from "../images/home/halfmoon.svg";
@@ -11,6 +10,7 @@ import orange from "../images/home/orange_star.svg";
 import Camping from "./SVGs/CampingSVG";
 import Walking from "./SVGs/WalkingSVG";
 import Explore from "./SVGs/ExploreSVG";
+import "./Home.css";
 
 const Home = () => {
   return (

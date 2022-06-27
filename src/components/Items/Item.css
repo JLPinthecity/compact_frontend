@@ -43,8 +43,12 @@
 }
 
 /* SIMPLIFIED FOR MAIN PAGE ITEMS */
+.simplified-item-container{
+    width: 100%;
+}
+
 .simplified-item-main {
-    padding: 3rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,6 +60,14 @@
     border: 1px solid black;
     display: block;
     width: 100%;
+    max-height: 500px;
 }
 
 
+.simplified-product-info-right{
+
+}
+
+.simplified-product-info-right button{
+    width: 100%;
+}

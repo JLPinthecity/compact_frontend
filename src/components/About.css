@@ -138,7 +138,6 @@
 }
 
 /* ROW - SECTION 3  */
-
 .row {
     display: flex;
     flex-direction: column;
@@ -190,8 +189,6 @@
     padding-bottom: 1rem;
     font-family: 'Hammersmith One', sans-serif;
 } 
-
-
 
 .title {
     background-image: url(../images/about/pink_squiggle.svg);
