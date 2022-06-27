@@ -1,10 +1,6 @@
 .item-container {
     width: 100%;
-    border-top: 1px solid black;
-}
-
-.item-container h3{
-    font-family: Geneva, sans-serif
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /* FLEX CONTAINER */
@@ -39,3 +35,27 @@
     width: 50%; 
     border: 5px solid purple;
 }
+
+
+.item-container {
+    width: 100%;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* SIMPLIFIED FOR MAIN PAGE ITEMS */
+.simplified-item-main {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.simplified-image-left img{
+    border: 1px solid black;
+    display: block;
+    width: 100%;
+}
+
+

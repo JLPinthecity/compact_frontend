@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import "./Item.css";
 
 const ItemCard = ({ item }) => {
-  // debugger
   return item ? (
     <section className="item-container">
-      <h3>Gear List/Item details</h3>
       <div className="item-main">
         <div className="image-left">
           <img alt="hiking gear" src={item.attributes.image} />

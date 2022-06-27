@@ -1,12 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
-import ItemCard from "./ItemCard.js";
+import SimplifiedItemCard from "./SimplifiedItemCard.js";
 import "./Items.css";
 
 const Items = ({ items }) => {
   // console.log(items.items)
   const itemCards = items.items.map((item) => (
-    <ItemCard item={item} key={item.id} />
+    <SimplifiedItemCard item={item} key={item.id} />
   ));
 
   return (
