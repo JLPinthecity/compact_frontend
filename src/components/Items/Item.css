@@ -64,8 +64,9 @@
 }
 
 
-.simplified-product-info-right{
-
+.simplified-item-name{
+font-size: 1.1rem;
+text-transform: uppercase;
 }
 
 .simplified-product-info-right button{

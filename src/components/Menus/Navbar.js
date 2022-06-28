@@ -37,7 +37,7 @@ const Navbar = (props) => {
             </Link>
 
             <Link to="/items" className="item" onClick={closeSidebar}>
-              Create Gear List
+              Gear List
             </Link>
 
             {props.currentUser ? (

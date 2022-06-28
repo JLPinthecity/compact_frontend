@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import "./Item.css";
+import "./Item.css";
 
 const SimplifiedItemCard = ({ item }) => {
   return item ? (
@@ -11,12 +11,12 @@ const SimplifiedItemCard = ({ item }) => {
         </div>
 
         <div className="simplified-product-info-right">
-          <h3>
+          <h3 className="simplified-item-name">
             <Link to={`/items/${item.id}`}>{item.attributes.name}</Link>
           </h3>
 
           <Link to={`/items/${item.id}/edit`}>
-            <button className="btn">See item</button>
+            <button className="btn">Edit item</button>
           </Link>
         </div>
       </div>
