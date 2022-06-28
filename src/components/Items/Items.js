@@ -13,11 +13,7 @@ const Items = (props) => {
 
   const isLoggedIn = props.loggedIn;
 
-  debugger;
-
   if (isLoggedIn) {
-    return <Sample />;
-  } else {
     return (
       <div className="gear-list-container">
         <div className="gear-list-flex">
@@ -36,6 +32,8 @@ const Items = (props) => {
         </div>
       </div>
     );
+  } else {
+    return <Sample />;
   }
 };
 
