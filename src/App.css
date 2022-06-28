@@ -38,20 +38,18 @@ body, html {
 
 .btn {
   padding: .5rem;
-  margin: 2rem;
   font-size: 1.2rem;
   font-weight: 600;
   background-color: transparent;
   font-family: 'Cormorant Garamond', serif;
   border: 1px solid black;
-  width: 30%;
-
+  width: 15rem;
 }
 
 .btn:hover{
   background-color: orangered;
   color: cornsilk;
-  transition: .6s;
+  transition: .5s;
 }
 
 

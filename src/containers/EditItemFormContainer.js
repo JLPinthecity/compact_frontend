@@ -33,14 +33,15 @@ class EditItemFormContainer extends React.Component {
           history={this.props.history}
           handleSubmit={this.handleSubmit}
         />
-
-        <input
-          type="Submit"
-          className="btn"
-          value="Delete"
-          onClick={this.handleClick}
-          readOnly
-        />
+        <div className="form-button-container">
+          <input
+            type="Submit"
+            className="btn"
+            value="Delete"
+            onClick={this.handleClick}
+            readOnly
+          />
+        </div>
       </div>
     );
   }

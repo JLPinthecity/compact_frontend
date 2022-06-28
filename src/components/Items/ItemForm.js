@@ -182,11 +182,13 @@ const ItemForm = ({
           </select>
         </div>
 
-        <input
-          type="submit"
-          className="btn"
-          value={editMode ? "Update" : "Submit"}
-        />
+        <div className="form-button-container">
+          <input
+            type="submit"
+            className="btn"
+            value={editMode ? "Update" : "Submit"}
+          />
+        </div>
       </div>
     </form>
   );
