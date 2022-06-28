@@ -3,6 +3,7 @@ import ItemForm from "../components/Items/ItemForm.js";
 import { patchItem, deleteItem } from "../actions/items.js";
 import { setEditItemForm } from "../actions/itemForm.js";
 import { connect } from "react-redux";
+import "../components/Forms/Form.css";
 
 class EditItemFormContainer extends React.Component {
   componentDidMount() {
@@ -26,17 +27,21 @@ class EditItemFormContainer extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="edit-container">
         <ItemForm
           editMode
           history={this.props.history}
           handleSubmit={this.handleSubmit}
         />
-        <br />
-        <button className="btn" onClick={this.handleClick}>
-          Delete item
-        </button>
-      </>
+
+        <input
+          type="Submit"
+          className="btn"
+          value="Delete"
+          onClick={this.handleClick}
+          readOnly
+        />
+      </div>
     );
   }
 }
