@@ -8,7 +8,9 @@ const Sample = () => {
     <div className="gear-list-container">
       <div className="gear-list-flex">
         <div className="gear-list-grid">
-          <div className="gear-grid-item">Your backpack currently weighs</div>
+          <div className="gear-grid-item">
+            Your backpack currently weighs 10.9125 pounds or 174.6 ounces.
+          </div>
         </div>
         `
       </div>

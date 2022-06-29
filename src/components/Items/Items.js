@@ -12,12 +12,22 @@ const Items = (props) => {
 
   const isLoggedIn = props.loggedIn;
 
+  const weightInOunces = props.weight;
+
+  function doMath(weightInOunces) {
+    const result = weightInOunces / 16;
+    return result;
+  }
+
   if (isLoggedIn) {
     return (
       <div className="gear-list-container">
         <div className="gear-list-flex">
           <div className="gear-list-grid">
-            <div className="gear-grid-item">Your backpack currently weighs</div>
+            <div className="gear-grid-item">
+              Your backpack currently weighs&nbsp;
+              {doMath(weightInOunces)} pounds or {weightInOunces} ounces.
+            </div>
           </div>
 
           <div className="add-new-item-button">
@@ -40,6 +50,7 @@ const mapStateToProps = (state) => {
   return {
     items: state.items,
     loggedIn: state.currentUser,
+    weight: state.currentUser.attributes.total_weight,
   };
 };
 
