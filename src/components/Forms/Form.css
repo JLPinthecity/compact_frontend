@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 100%;
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -34,13 +34,23 @@
 .form-input, select {
   margin: .5rem;
   font-size: 1rem;
-  padding: .6rem .4rem;
+  padding: .6rem .5rem;
   box-sizing: border-box;
   border: 1px solid black;
   background-color: #f1f1f1;
   border-radius: 3px;
-  min-width: 450px;
+  min-width: 300px;
+  
 }
+
+
+
+/* ROW WHEN SMALl, COLUMNS WHEN LARGER */
+@media (min-width: 600px) {
+  .form-input {
+    width: 100%;
+  }
+} 
 
 .signup_call{
   display: flex;
