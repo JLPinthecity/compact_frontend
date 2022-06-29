@@ -34,9 +34,17 @@ const Navbar = (props) => {
             <Link to="/about" className="item" onClick={closeSidebar}>
               About
             </Link>
-            <Link to="/items" className="item" onClick={closeSidebar}>
-              Gear List
-            </Link>
+
+            {props.currentUser ? (
+              <Link to="/items" className="item" onClick={closeSidebar}>
+                Gear List
+              </Link>
+            ) : (
+              <Link to="/sample" className="item" onClick={closeSidebar}>
+                Sample Gear List
+              </Link>
+            )}
+
             {props.currentUser ? (
               <Logout className="item" onClick={closeSidebar} />
             ) : (
