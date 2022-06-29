@@ -11,6 +11,7 @@ import Home from "./components/Home.js";
 import Signup from "./components/Forms/Signup.js";
 import Footer from "./components/Header/Footer.js";
 import Header from "./components/Header/Header.js";
+import Sample from "./components/Sample";
 import { createBrowserHistory } from "history";
 import NewItemFormContainer from "./containers/NewItemFormContainer.js";
 import EditItemFormContainer from "./containers/EditItemFormContainer.js";
@@ -35,6 +36,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/items" component={Items} />
+            <Route exact path="/sample" component={Sample} />
             <Route history={history} exact path="/signup" component={Signup} />
             <Route history={history} exact path="/login" component={Login} />
 
