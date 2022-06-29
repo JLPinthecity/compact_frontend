@@ -53,7 +53,7 @@ const About = () => {
         <div className="column right">
           {/* SECTION 1 */}
           <div className="about-statement">
-            <h3>
+            <h3 className="about-title">
               Think of Compact as the
               <i> first</i> stop on your epic journey.
             </h3>

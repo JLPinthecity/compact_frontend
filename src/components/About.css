@@ -73,6 +73,9 @@
     transform: rotate(190deg);
 }
 
+.about-title{
+    text-align: center;
+}
 .about-statement {
     padding: 1rem 3rem 5rem;
     text-align: left;
