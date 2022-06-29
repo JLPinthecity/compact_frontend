@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 import "../Header/Footer.css";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div className="footer-container">
       <div className="footer-main">
@@ -22,9 +23,15 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer-column">
-          <Link to="/items" className="footer-menu-item">
-            See backpack
-          </Link>
+          {props.currentUser ? (
+            <Link to="/items" className="footer-menu-item">
+              see backpack
+            </Link>
+          ) : (
+            <Link to="/sample" className="footer-menu-item">
+              see backpack
+            </Link>
+          )}
         </div>
       </div>
 
@@ -35,4 +42,10 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+const mapStateToProps = (state) => {
+  return {
+    currentUser: state.currentUser,
+  };
+};
+
+export default connect(mapStateToProps)(Footer);
