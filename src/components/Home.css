@@ -211,7 +211,7 @@ width: 100%;
     background-image: url(../images/organic_3_squiggly.svg);
     background-size: 30%;
     background-position: center 50%;
-    min-height: 12rem; 
+    min-height: 5rem; 
     padding: 4rem;
     text-align: right;
     line-height: 5rem; 
@@ -224,10 +224,9 @@ width: 100%;
     background-position: center 50%;
     background-repeat:no-repeat;
     min-height: 10rem;
-    padding: 3rem;
+    padding: 1rem;
     text-align: right;
     line-height: 0.5rem;
     font-family: Arial;
     font-size: 0.7rem;
-
 }

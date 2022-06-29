@@ -79,10 +79,10 @@ const Home = () => {
       </div>
 
       <div className="how-to-use">
-        <h3>
+        <p>
           Use Compact to calculate the weight of your backpack for day treks,
           overnight camping trips, and thru hikes.
-        </h3>
+        </p>
       </div>
 
       <div className="svg-section">
