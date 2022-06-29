@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import SimplifiedItemCard from "./SimplifiedItemCard.js";
 import Sample from "../Sample";
-
 import "./Items.css";
 
 const Items = (props) => {
