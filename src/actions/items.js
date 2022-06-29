@@ -1,7 +1,8 @@
 import { clearItemForm } from "./itemForm.js";
 
-const url = "https://compact-backend.herokuapp.com/";
-const items = "api/v1/items";
+// const local = "http://localhost:3000";
+const url = "https://compact-backend.herokuapp.com";
+const itemsPath = "api/v1/items";
 //synchronous actions
 export const setItems = (items) => ({ type: "SET_ITEMS", items });
 
@@ -52,7 +53,9 @@ export const getItems = () => {
 
     fetch(url + "/" + itemsPath, configObj)
       .then((res) => res.json())
+
       .then((items) => {
+        debugger;
         //items returns an array of all objects with attr nested under attributes
         if (items.error) {
           alert(items.error);

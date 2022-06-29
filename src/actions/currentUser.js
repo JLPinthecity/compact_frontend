@@ -3,7 +3,8 @@ import { clearSignupForm } from "./signupForm.js";
 import { clearItems, getItems } from "./items.js";
 import { getCategories, clearCategories } from "./categories";
 
-const url = "https://compact-backend.herokuapp.com/";
+// const local = "http://localhost:3000";
+const url = "https://compact-backend.herokuapp.com";
 const loginPath = "api/v1/login";
 const userPath = "api/v1/get_current_user";
 const logoutPath = "api/v1/logout";

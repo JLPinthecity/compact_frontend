@@ -1,4 +1,5 @@
-const url = "https://compact-backend.herokuapp.com/";
+// const local = "http://localhost:3000";
+const url = "https://compact-backend.herokuapp.com";
 const categoriesPath = "api/v1/categories";
 //synchronous actions
 export const setCategories = (categories) => {
