@@ -1,6 +1,8 @@
 .item-container {
     width: 100%;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 1rem;
+    line-height: 1.1;
 }
 
 /* FLEX CONTAINER */
@@ -33,14 +35,10 @@
 
 .item-main .product-info-right {
     width: 50%; 
-    border: 5px solid purple;
 }
 
 
-.item-container {
-    width: 100%;
-    font-family: 'Cormorant Garamond', serif;
-}
+
 
 /* SIMPLIFIED FOR MAIN PAGE ITEMS */
 .simplified-item-container{
@@ -66,7 +64,9 @@
 
 .simplified-item-name{
 font-size: 1.1rem;
+font-family: 'Hammersmith One', sans-serif;
 text-transform: uppercase;
+text-decoration: none;
 }
 
 .simplified-product-info-right button{

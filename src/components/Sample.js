@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import noodle from "../images/noodle.svg";
 import "./Items/Items.css";
 import "./Items/Item.css";
 
@@ -11,8 +12,19 @@ const Sample = () => {
           <div className="gear-grid-item">
             Your backpack currently weighs 10.9125 pounds or 174.6 ounces.
           </div>
+
+          <div className="gear-grid-item">
+            <img
+              className="gear-grid-item"
+              alt="yellow corner graphic"
+              src={noodle}
+            />
+          </div>
         </div>
-        `
+      </div>
+
+      <div className="testtt">
+        <div className="gear-title">Your Sample Backpack</div>
       </div>
 
       <div className="list-main">
@@ -27,12 +39,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.hyperlitemountaingear.com/products/3400-southwest">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Hyperlite Mountain Gear 3400 SOUTHWEST
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -50,12 +62,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.rei.com/product/188354/big-agnes-tiger-wall-ul-2-solution-dyed-tent">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Big Agnes Tiger Wall UL 2 Solution-Dyed Tent
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -73,12 +85,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://ugqoutdoor.com/top-quilts/bandit/">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   UGQ Outdoor BANDIT Quilt
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -96,12 +108,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://seatosummitusa.com/products/comfort-plus-insulated-mat">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Sea To Summit Comfort Plus Insulated Sleep Mat
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -119,12 +131,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://seatosummitusa.com/products/aeros-pillow-ultra-light">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Sea To Summit AEROS™ Ultralight Pillow
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -142,12 +154,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://seatosummit.com/products/premium-silk-travel-liner">
-                  Sea To Summit Premium Silk Travel Liner
+                <Link to="/signup" style={{ textDecoration: "none" }}>
+                  SEA TO SUMMIT PREMIUM SILK TRAVEL LINER
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -165,12 +177,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.tarptent.com/product/tyvek-groundsheet/">
-                  Tarptent Tyvek Groundsheet
+                <Link to="/signup" style={{ textDecoration: "none" }}>
+                  TARPTENT TYVEK GROUNDSHEET
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -188,12 +200,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://waymarkgearco.com/accessories/zipp">
-                  Waymark Zipp Pack
+                <Link to="/signup" style={{ textDecoration: "none" }}>
+                  WAYMARK ZIPP PACK
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -211,12 +223,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.rei.com/product/783045/gear-aid-tenacious-tape-repair-tape">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Gear Aid Tenacious Tape Repair Tape
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -234,12 +246,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://sawyer.com/products/sawyer-squeeze-filter/">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Sawyer Squeeze Filter
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -257,12 +269,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.amazon.com/TOAKS-Titanium-750ml-Pot">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   TOAKS Titanium 750ml Pot
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -280,12 +292,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.amazon.com/BRS-BRS-3000T-Ultra-Light-Titanium-Miniature/dp/B06XNLSNFR">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   BRS 3000T Stove Backpacking Stove Camping Stove Ultralight
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -303,12 +315,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.llbean.com/llb/shop/77871?page=sea-to-summit-tek-towel&bc=29-915-506842&feat=506842-GN3&csp=a&pos=1">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Sea to Summit Tek Towel
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -326,12 +338,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://bootstrapadventure.com/product/diddy-bag-dry-bag-by-liteaf/">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Diddy Bag (Dry Bag) by LiteAF
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -349,12 +361,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://buy.garmin.com/en-US/US/p/561269">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Garmin inReach Explorer®+
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -372,12 +384,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.amazon.com/Black-Diamond-Spot-Headlamp-Size/dp/B06W54SBSL">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Black Diamond Spot Headlamp
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -395,12 +407,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.rei.com/product/131611/thetentlab-the-deuce-2-ul-backcountry-trowel">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   TheTentLab The Deuce #2 UL Backcountry Trowel
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -418,12 +430,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://kulacloth.com/collections/shop-all-kula/products/kula-cloth%C2%AE-artist-series-sunrise-over-ahwahnee">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Kula Cloth Reusable Antimicrobial Pee Cloth
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -441,12 +453,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.rei.com/product/135481/arcteryx-zeta-sl-rain-jacket-womens">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Arcteryx Zeta SL Rain Jacket
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -464,12 +476,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.patagonia.com/product/womens-micro-puff-jacket/84070.html">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Patagonia Womens Micro Puff® Jacket
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -487,12 +499,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.backcountry.com/patagonia-tropic-comfort-hooded-shirt-womens">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Patagonia Tropic Comfort Hooded Shirt
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -510,12 +522,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://www.getwelly.com/products/assorted-flex-fabric-bandages-solid-orange">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Welly assorted flex bandages
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
@@ -533,12 +545,12 @@ const Sample = () => {
 
             <div className="simplified-product-info-right">
               <h3 className="simplified-item-name">
-                <Link to="https://gothink.com/products/thinksport-safe-sunscreen-spf-50-3oz-52">
+                <Link to="/signup" style={{ textDecoration: "none" }}>
                   Thinksport Safe Sunscreen SPF 50+ (3oz)
                 </Link>
               </h3>
 
-              <Link to={"/items"}>
+              <Link to="/signup">
                 <button className="btn">Edit item</button>
               </Link>
             </div>
