@@ -58,7 +58,7 @@ export const getItems = () => {
         debugger;
         //items returns an array of all objects with attr nested under attributes
         if (items.error) {
-          alert(items.error);
+          // alert(items.error);
         } else {
           // console.log(items.data)
           dispatch(setItems(items.data));
@@ -102,7 +102,7 @@ export const createItem = (itemFormData, userId, history) => {
       .then((res) => res.json())
       .then((item) => {
         if (item.error) {
-          alert(item.error);
+          // alert(item.error);
         } else {
           dispatch(addItem(item.data));
           dispatch(clearItemForm());
@@ -148,7 +148,7 @@ export const patchItem = (itemFormData, userId, itemId, history) => {
       .then((res) => res.json())
       .then((item) => {
         if (item.error) {
-          alert(item.error);
+          // alert(item.error);
         } else {
           // console.log("THIS IS FROM THE BACKEND/RETURN OF PATCH", item.data)
           dispatch(updateItem(item.data));
@@ -176,7 +176,7 @@ export const deleteItem = (itemId, history) => {
       .then((res) => res.json())
       .then((res) => {
         if (res.error) {
-          alert(res.error);
+          // alert(res.error);
         } else {
           // console.log("BACK FROM DELETE REQUEST", res)
           dispatch(clearItem(itemId));

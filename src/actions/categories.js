@@ -33,7 +33,7 @@ export const getCategories = () => {
       .then((res) => res.json())
       .then((categories) => {
         if (categories.error) {
-          alert(categories.error);
+          // alert(categories.error);
         } else {
           // console.log("categories:", categories)
           dispatch(setCategories(categories));

@@ -6,6 +6,22 @@
     padding: .5rem;
     width: 100%;
     font-family: 'Hammersmith One', sans-serif;
+    animation: transitionLeft 8s;
+}
+
+
+@keyframes transitionLeft {
+  from {
+    opacity: 1;
+    transform: translateX(90px);
+    transform: rotateX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    transform: rotateX(0);
+  }
 }
 
 /* MENU ROW */

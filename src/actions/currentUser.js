@@ -32,7 +32,7 @@ export const getCurrentUser = () => {
       .then((resp) => resp.json())
       .then((user) => {
         if (user.error) {
-          alert(user.error);
+          // alert(user.error);
         } else {
           dispatch(setCurrentUser(user.data));
           dispatch(clearSignupForm());
@@ -61,7 +61,7 @@ export const login = (credentials, history) => {
       .then((res) => res.json())
       .then((res) => {
         if (res.error) {
-          alert(res.error);
+          // alert(res.error);
         } else {
           dispatch(setCurrentUser(res.data));
           dispatch(clearLoginForm());
@@ -116,7 +116,7 @@ export const signup = (formData, history) => {
       .then((res) => res.json())
       .then((user) => {
         if (user.error) {
-          alert(user.error);
+          // alert(user.error);
         } else {
           dispatch(setCurrentUser(user.data));
           // console.log("user sent back from backend is", user.data)
