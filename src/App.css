@@ -44,6 +44,7 @@ body, html {
   font-family: 'Cormorant Garamond', serif;
   border: 1px solid black;
   width: 12rem;
+  color:black;
 }
 
 .btn:hover{
