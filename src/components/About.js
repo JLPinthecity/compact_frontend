@@ -168,8 +168,8 @@ const About = () => {
           <b>IMAGE CREDITS</b>
         </p>
         <p>Tent: Scott Goodwill/Unsplash</p>
-        <p>Mountain: Holly Mandarich/Unsplash</p>
-        <p>Illustrations: freepix</p>
+        <p>Hike: Holly Mandarich/Unsplash</p>
+        <p>Others: freepix</p>
       </div>
     </div>
   );

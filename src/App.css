@@ -7,7 +7,6 @@
 body, html {
   text-align: center;
   margin: 0;
-  font-family: 'Nunito', sans-serif;
   background-color: rgb(245, 245, 238);
   font-weight: 200;
   font-style: normal;
@@ -22,6 +21,7 @@ body, html {
   flex-direction: column;
   min-height: 100vh;
   animation: transitionIn 0.75s;
+  transform-origin: top left;
 }
 
 @keyframes transitionIn {
