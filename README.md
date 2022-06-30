@@ -2,6 +2,12 @@
 
 Compact is a gear list planner built for thru-hikers and backpackers. Use Compact to calculate your pack's final weight and track details about individual items. The front end was built using React and Redux with a Rails API backend. The backend repo can be found [here](https://github.com/JLPinthecity/compact_backend).
 
+
+<img width="190" alt="Screen Shot 2022-06-30 at 10 05 29 AM" src="https://user-images.githubusercontent.com/38967615/176698095-4942453b-d751-4af0-83b0-5cf8f719a119.png">
+<img width="345" alt="Screen Shot 2022-06-30 at 10 05 15 AM" src="https://user-images.githubusercontent.com/38967615/176698060-05fffc89-6fc3-44c0-944f-f8dacd4750c5.png">
+<img width="1055" alt="Screen Shot 2022-06-30 at 10 05 47 AM" src="https://user-images.githubusercontent.com/38967615/176698084-7404e42b-bf6d-4ddc-bc31-75f31c3192a5.png">
+
+
 ## Learn More 
 
 The first iteration of this project was submitted as my final project for the Flatiron School's online web dev program. 
