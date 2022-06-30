@@ -23,7 +23,7 @@ const Sample = () => {
         </div>
       </div>
 
-      <div className="testtt">
+      <div className="filler-section">
         <div className="gear-title">Your Sample Backpack</div>
       </div>
 

@@ -150,14 +150,13 @@ width: 100%;
     background-color:  rgb(26, 33, 120);
     color: whitesmoke;
     font-family: 'Josefin Sans', sans-serif;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
 }
 
-.how-to-use h3 {
-    padding: 7rem;
-    font-size: 2rem;
-    line-height: 1.6;
-    
-}
 
 
 /* SVG SECTION */
