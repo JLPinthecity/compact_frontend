@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import noodle from "../images/noodle.svg";
+import camp from "../images/camp.jpg";
 import "./Items/Items.css";
 import "./Items/Item.css";
+import "./Sample.css";
 
 const Sample = () => {
   return (
@@ -24,8 +26,10 @@ const Sample = () => {
       </div>
 
       <div className="filler-section">
-        <div className="gear-title">Your Sample Backpack</div>
+        <img className="camp" alt="blue blob j-shaped curve" src={camp} />
       </div>
+
+      <div className="gear-title">Your Sample Backpack</div>
 
       <div className="list-main">
         <section className="simplified-item-container">
@@ -556,6 +560,14 @@ const Sample = () => {
             </div>
           </div>
         </section>
+      </div>
+      <div className="filler-section-end">
+        <div className="prompt">
+          Create your thru-hike pack.{" "}
+          <Link to="/signup" style={{ textDecoration: "none" }}>
+            Sign up.
+          </Link>
+        </div>
       </div>
     </div>
   );

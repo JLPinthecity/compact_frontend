@@ -1,0 +1,56 @@
+.gear-list-container .filler-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(250, 228, 157);
+}
+
+.filler-section .camp {
+    width: 18%;
+}
+
+
+
+
+.gear-title{
+    color: black;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-family: Geneva, sans-serif;
+padding: 4rem 1rem;
+background-size: 100%;
+}
+
+.filler-section-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(250, 228, 157);
+    height: 5rem;
+}
+
+
+.gear-list-container .prompt{
+    font-family: Geneva, sans-serif;
+    width: 100%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+}
+
+
+.add-new-item-button{
+    margin: 1rem;
+    padding: 2rem;
+    border: 2px solid rgb(218, 203, 200);
+    background-color: rgb(218, 203, 200);
+    font-family: 'Josefin Sans', sans-serif;
+    color:black;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 15rem;
+    text-decoration: none;
+    color:black;
+}

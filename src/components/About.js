@@ -154,11 +154,11 @@ const About = () => {
         <div className="section three">
           <sup>(3.) Find your idols</sup>
           <p>
-            There’s plenty of vlog-style videos from thru-hikers on nearly every
+            There's plenty of vlog-style videos from thru-hikers on nearly every
             trail. Find someone you relate to (a fellow she-hiker, an
             ex-corporate person, first-time thru-hiker) and follow their journey
-            on the trail. You’ll learn countless tips about the trail you want
-            to finish. There’s no better way to get a feel for whether one trail
+            on the trail. You'll learn countless tips about the trail you want
+            to finish. There's no better way to get a feel for whether one trail
             is right for you.
           </p>
         </div>
